@@ -1,0 +1,11 @@
+<%= render :partial => "layouts/adminheader" %>
+<DIV id=ou52 style="position:absolute; left:218px; top:200px; width:591px; height:369px;; overflow:visible">
+
+
+<h1>Editing news</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @news %> |
+<%= link_to 'Back', news_index_path %>
+</DIV>

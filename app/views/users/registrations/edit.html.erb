@@ -1,0 +1,110 @@
+
+<%= render :partial => "layouts/header" %>
+<DIV id=u2 style="position:absolute; left:21px; top:146px; width:109px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u2_rtf><span style=" font-family:'Verdana'; color:#FFFFFF; font-size:11pt;"><b>Template</b></span></DIV></DIV>
+<DIV id=ou3 style="position:absolute; left:8px; top:174px; width:175px; height:154px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:183px; height:162px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/clientarea/u3.png',sizingMethod='scale');
+"><img style="width:183px; height:162px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="images/clientarea/u3.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u3container style="position:absolute; left:8px; top:174px; width:175px; height:154px;; overflow:visible">
+
+<DIV id=u4 style="position:absolute; left:2px; top:68.5px; width:170px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u4_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u3 src="Resources/transparent.gif" style="position:absolute; left:8px; top:174px; width:174px; height:153px"  >
+
+<span style="position:absolute; left:10px; top:246px; width:173px; height:5px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/clientarea/u5.png',sizingMethod='scale');
+"><img style="width:173px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="images/clientarea/u5.png" border="0" alt=""></span>
+
+<IMG id=u5 src="Resources/transparent.gif" style="position:absolute; left:10px; top:245.5px; width:170px; height:2px">
+
+<DIV id=u6 style="position:absolute; left:19px; top:259px; width:90px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u6_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to'Submit Ticket', new_ticket_path %></span></DIV></DIV>
+<DIV id=u7 style="position:absolute; left:20px; top:222px; width:80px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u7_rtf><span style=" color:#333399; font-size:10pt;">My details</span></DIV></DIV>
+<span style="position:absolute; left:10px; top:210px; width:173px; height:5px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/clientarea/u8.png',sizingMethod='scale');
+"><img style="width:173px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="images/clientarea/u8.png" border="0" alt=""></span>
+
+<IMG id=u8 src="Resources/transparent.gif" style="position:absolute; left:10px; top:209.5px; width:170px; height:2px">
+
+<DIV id=u9 style="position:absolute; left:20px; top:186px; width:80px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u9_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to'My Tickets', tickets_path %></span></DIV></DIV>
+<span style="position:absolute; left:10px; top:282px; width:173px; height:5px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/clientarea/u10.png',sizingMethod='scale');
+"><img style="width:173px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="images/clientarea/u10.png" border="0" alt=""></span>
+
+<IMG id=u10 src="Resources/transparent.gif" style="position:absolute; left:10px; top:281.5px; width:170px; height:2px">
+
+<DIV id=u11 style="position:absolute; left:18px; top:296px; width:120px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u11_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to'Change Password', edit_user_password_path %></span></DIV></DIV>
+<DIV style="position:absolute; left:200px; top:150px; width:300px; height:61px;; overflow:visible">
+
+
+
+<h2>My Details</h2>
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div><%= f.label :fullname %>
+  <%= f.text_field :fullname %></div>
+
+<div><%= f.label :username %>
+  <%= f.text_field :username %></div>
+
+<div><%= f.label :email %><br />
+  <%= f.email_field :email %></div>
+
+<div><%= f.label :company_name %>
+  <%= f.text_field :company %></div>
+
+<div><%= f.label :address %>
+  <%= f.text_field :address1 %></div>
+
+<div><%= f.label :address %>
+  <%= f.text_field :address2 %></div>
+
+<div><%= f.label :city %>
+  <%= f.text_field :city %></div>
+
+<div><%= f.label :state %>
+  <%= f.text_field :state %></div>
+
+
+<div><%= f.label :country %>
+  <%= f.text_field :country %></div>
+
+<div><%= f.label :phone1 %>
+  <%= f.text_field :phone1 %></div>
+
+<div><%= f.label :phone2 %>
+  <%= f.text_field :phone2 %></div>
+
+<div><%= f.label :fax %>
+  <%= f.text_field :fax %></div>
+
+<div><%= f.label :web %>
+  <%= f.text_field :web %></div>
+   
+  <div><%= f.label :current_password %> 
+  <%= f.password_field :current_password %></div>
+
+  <div><%= f.submit "Update" %></div>
+<% end %>
+
+
+
+<p> <%#= link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete %></p>
+
+<%= link_to "Back", :back %>
+
+</DIV>

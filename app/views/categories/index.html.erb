@@ -1,0 +1,26 @@
+
+<h1>Listing categories</h1>
+
+<table border = "1">
+  <tr>
+    <th>Category name</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @categories.each do |category| %>
+  <tr>
+    <td><%= link_to category.category_name, category %></td>
+    <td><%= category.description %></td>
+    
+    
+    <td><%= link_to 'Delete', category, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Category', new_category_path %>

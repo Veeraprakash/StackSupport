@@ -1,0 +1,14 @@
+<%= render :partial => "layouts/adminheader" %>
+<DIV id=u53container style="position:absolute; left:100px; top:219px; width:641px; height:31px;; overflow:visible">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Question:</b>
+  <%= @faq.subject %>
+</p>
+<p>
+  <b>Answer:</b>
+  <%= @faq.contents %>
+</p>
+
+</DIV>

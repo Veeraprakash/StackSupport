@@ -1,0 +1,137 @@
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="imagetoolbar" content="no"><link href="Resources/axurerppage.css" type="text/css" rel="stylesheet"></HEAD><BODY>
+<script type="text/javascript">
+function InitializeSubmenu(submenucontainerid, tablecellroid, tablecellid, fname) { 
+var s = "";
+s = s + "function " + fname + "() { ";
+s = s + "document.getElementById(submenucontainerid).style.visibility='';";
+s = s + "BringToFront(submenucontainerid);";
+s = s + "}";
+if ((index = navigator.userAgent.indexOf("MSIE")) >= 0)
+s = s + "document.getElementById('" + tablecellid + "').attachEvent(\"onmouseover\", " + fname + ");";
+else
+s = s + "document.getElementById('" + tablecellid + "').addEventListener(\"mouseover\", " + fname + ", true);";
+s = s + "document.getElementById(tablecellroid).onclick = function() {";
+s = s + "if( document.createEvent ) {";
+s = s + "var evObj = document.createEvent('MouseEvents');";
+s = s + "evObj.initEvent( 'click', true, false );";
+s = s + "document.getElementById(tablecellid).dispatchEvent(evObj);";
+s = s + "} else if( document.createEventObject ) {";
+s = s + "document.getElementById(tablecellid).fireEvent('onclick');";
+s = s + "}";
+s = s + "}";
+eval(s);
+}
+</script>
+ <%= render :partial => "layouts/header" %>
+
+<%= render :partial => "layouts/login" %>
+
+<DIV id=u17container style="position:absolute; left:5px; top:127px; width:626px; height:31px;; overflow:visible">
+
+<DIV id=u18 style="position:absolute; left:2px; top:7px; width:621px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u18_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u17 src="Resources/transparent.gif" style="position:absolute; left:5px; top:127px; width:625px; height:30px"  >
+
+<DIV id=u19 style="position:absolute; left:10px; top:136px; width:100px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u19_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">You are here:</span></DIV></DIV>
+<DIV id=ou20 style="position:absolute; left:110px; top:129px; width:81px; height:31px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:89px; height:39px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='News_files/u20.png',sizingMethod='scale');
+"><img style="width:89px; height:39px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="News_files/u20.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u20container style="position:absolute; left:110px; top:129px; width:81px; height:31px;; overflow:visible">
+
+<DIV id=u21 style="position:absolute; left:2px; top:8px; width:76px; height:14px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u21_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#3366FF; font-size:9pt;">Support &gt;</span></div></DIV></DIV>
+</DIV>
+<IMG id=u20 src="Resources/transparent.gif" style="position:absolute; left:110px; top:129px; width:80px; height:30px"  >
+
+<DIV id=u20ann style="font-size:1px; position:absolute; left:181px; top:125px; width:1px; height:1px; overflow:visible"></DIV>
+
+<DIV id=ou22 style="position:absolute; left:184px; top:129px; width:67px; height:31px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:75px; height:39px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='News_files/u22.png',sizingMethod='scale');
+"><img style="width:75px; height:39px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="News_files/u22.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u22container style="position:absolute; left:184px; top:129px; width:67px; height:31px;; overflow:visible">
+
+<DIV id=u23 style="position:absolute; left:2px; top:8px; width:62px; height:14px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u23_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;">News</span></div></DIV></DIV>
+</DIV>
+<IMG id=u22 src="Resources/transparent.gif" style="position:absolute; left:184px; top:129px; width:66px; height:30px"  >
+
+<DIV id=u22ann style="font-size:1px; position:absolute; left:241px; top:125px; width:1px; height:1px; overflow:visible"></DIV>
+
+<DIV id=ou24 style="position:absolute; left:18px; top:177px; width:613px; height:354px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:621px; height:362px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='News_files/u24.png',sizingMethod='scale');
+"><img style="width:621px; height:362px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="News_files/u24.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u24container style="position:absolute; left:18px; top:177px; width:613px; height:354px;; overflow:visible">
+
+<DIV id=u25 style="position:absolute; left:2px; top:168.5px; width:608px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u25_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u24 src="Resources/transparent.gif" style="position:absolute; left:18px; top:177px; width:612px; height:353px"  >
+
+<DIV id=ou26 style="position:absolute; left:20px; top:179px; width:609px; height:36px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:617px; height:44px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='News_files/u26.png',sizingMethod='scale');
+"><img style="width:617px; height:44px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="News_files/u26.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u26container style="position:absolute; left:20px; top:179px; width:609px; height:36px;; overflow:visible">
+
+<DIV id=u27 style="position:absolute; left:2px; top:8px; width:604px; height:19px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u27_rtf><span style=" color:#000000; font-size:12pt;"><b>&nbsp;&nbsp; News</b></span></DIV></DIV>
+</DIV>
+
+
+<DIV id=u44container style="position:absolute; left:664px; top:370px; width:196px; height:37px;; overflow:visible">
+
+<DIV id=u45 style="position:absolute; left:2px; top:10px; width:191px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u45_rtf><span style=" color:#000000; font-size:10pt;"><b>&nbsp;&nbsp; Search</b></span></DIV></DIV>
+</DIV>
+<IMG id=u44 src="Resources/transparent.gif" style="position:absolute; left:664px; top:370px; width:195px; height:36px"  >
+
+<DIV id=u46 style="position:absolute; left:668px; top:420px; width:170px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u46_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Search by entering keywords</span></DIV></DIV>
+<INPUT id=u47  type=text value="" style="position:absolute; left:668px; top:448px; width:170px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
+
+<INPUT id=u48  type=submit value="Search" style="position:absolute; left:758px; top:485px; width:70px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+
+<DIV id=u49 style="position:absolute; left:31px; top:229px; width:600px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u49_rtf><span style=" font-family:'Verdana'; color:#808080; font-size:10pt;">Here is the latest news and announcements from our company. </span></DIV></DIV>
+
+<DIV id=u52container style="position:absolute; left:35px; top:300px; width:576px; height:91px;; overflow:visible">
+
+<table >
+  <tr>
+    <th>News</th>
+    <th>Posted by</th>
+    <th>Date & Time Created</th>
+  </tr>
+
+<% @news.each do |news| %>
+  <tr>
+    <td><%= link_to news.subject, "/home/newsview/#{news.id}" %></td>
+    <td><%= news.posted_by %></td>
+      <td><%= news.created_at %></td>
+    
+  </tr>
+<% end %>
+</table>
+</DIV>
+<SCRIPT src="News_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>

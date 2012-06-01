@@ -1,0 +1,28 @@
+<%= render :partial => "layouts/adminheader" %>
+<DIV id=ou52 style="position:absolute; left:218px; top:200px; width:591px; height:369px;; overflow:visible">
+
+<h1>Listing news</h1>
+
+<table cellspacing = 40>
+  <tr>
+    <th>Subject</th>
+    
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @news.each do |news| %>
+  <tr>
+    <td><%= news.subject %></td>
+    
+  
+    <td><%= link_to 'Click here to Edit', edit_news_path(news) %></td>
+    
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New News', new_news_path %>
+</DIV>

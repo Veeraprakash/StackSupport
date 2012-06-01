@@ -1,0 +1,28 @@
+<h1>News</h1>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Subject:</b>
+  <%= @news.subject %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @news.description %>
+</p>
+
+<p>
+  <b>News type:</b>
+  <%= @news.news_type %>
+</p>
+
+<p>
+  <b>Posted by:</b>
+  <%= @news.posted_by %>
+</p>
+
+<p>
+  <b>Contents:</b>
+  <%= @news.contents %>
+</p>
+

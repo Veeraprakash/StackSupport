@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sample</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+<p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+<%= yield %>
+
+<% if admin_signed_in? %>
+  <% if current_admin.privilege==true%>
+           <%= render :partial => "layouts/adminheader" %>
+	 <% end %>
+<% end %>	 
+  <% if admin_signed_in?  %>
+          <% if current_admin.privilege==false%>
+           <%= render :partial => 'layouts/staffheader' %>
+  <% end %>
+  <% end %>
+</body>
+</html>

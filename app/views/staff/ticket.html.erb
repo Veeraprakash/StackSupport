@@ -1,0 +1,31 @@
+<h1>Staff#ticket</h1>
+
+<DIV style="position:absolute; left:200px; top:140px;; overflow:visible">
+<h1>Tickets --> Assigned tickets</h1>
+<table border ="1">
+  <tr>
+    <th>Client name</th>
+    <th>Ticket ID</th>
+    <th>Date</th>
+    <th>Ticket</th>
+    <th>Priority</th>
+    <th>Status</th>
+    <th>Department</th>
+    <th></th>
+       </tr>
+
+<% @tickets.each do |ticket| %>
+  <tr>
+    <td><%= ticket.customer_name %></td>
+    <td><%= ticket.id %></td>
+    <td><%= ticket.created_at %></td>
+    <td><%= ticket.subject %></td>
+    <td><%= ticket.priority %></td>
+    <td><%= ticket.status %></td>
+    <td><%= ticket.to %></td>
+  
+       <td><%= link_to 'Delete', ticket, :confirm => 'Are you sure?', :method => :delete %></td>
+        </tr>
+<% end %>
+</table>
+</DIV>

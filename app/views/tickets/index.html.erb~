@@ -1,0 +1,41 @@
+ <%= render :partial => "layouts/header1" %>
+
+<DIV id=u127 style="position:absolute; left:685px; top:278px; width:105px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u127_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><%= link_to 'Create a Ticket', new_ticket_path %></span></DIV></DIV>
+<DIV id=u127ann style="font-size:1px; position:absolute; left:831px; top:264px; width:1px; height:1px; overflow:visible"></DIV>
+ <DIV id=u106container style="position:absolute; left:70px; top:152px; width:565px; height:39px;; overflow:visible">
+<h1>Listing tickets</h1>
+
+<table border = "1">
+  <tr>
+    <th>Ticket ID</th>
+    <th>Date</th>
+    <th>Ticket</th>
+    <th>Priority</th>
+    <th>Status</th>
+    <th>Department</th>
+    <th>Action</th>
+    <th></th>
+       </tr>
+
+<% @tickets.each do |ticket| %>
+  <tr>
+    <td><%= ticket.id %></td>
+    <td><%= ticket.created_at %></td>
+    <td><%= link_to ticket.subject, ticket_path(ticket) %></td>
+    <td><%= ticket.priority %></td>
+    <td><%= ticket.status %></td>
+    <td><%= ticket.to %></td>
+    
+    <td><%= link_to 'Delete', ticket, :confirm => 'Are you sure?', :method => :delete %></td>
+   
+    
+    <td></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+
+</DIV>

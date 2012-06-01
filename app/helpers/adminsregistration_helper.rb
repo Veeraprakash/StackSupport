@@ -1,0 +1,2 @@
+module AdminsregistrationHelper
+end

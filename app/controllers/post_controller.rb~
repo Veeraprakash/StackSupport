@@ -1,0 +1,11 @@
+class PostController < ApplicationController
+  def create
+@ticket = Ticket.find(params[:ticket_id])
+   @post =@ticket.post.build(params[:post])
+   @post.save
+
+   redirect_to @ticket
+  end
+
+end
+

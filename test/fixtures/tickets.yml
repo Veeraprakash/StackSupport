@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  to: MyString
+  category: MyString
+  priority: MyString
+  subject: MyString
+  message: MyString
+
+two:
+  to: MyString
+  category: MyString
+  priority: MyString
+  subject: MyString
+  message: MyString

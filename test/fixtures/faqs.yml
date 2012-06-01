@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  category: MyString
+  subject: MyString
+  private: false
+  contents: MyString
+  votes_up: 1
+  votes_down: 1
+
+two:
+  category: MyString
+  subject: MyString
+  private: false
+  contents: MyString
+  votes_up: 1
+  votes_down: 1

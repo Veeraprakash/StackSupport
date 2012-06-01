@@ -1,0 +1,39 @@
+
+
+<%= form_for(@news) do |f| %>
+  <% if @news.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@news.errors.count, "error") %> prohibited this news from being saved:</h2>
+
+      <ul>
+      <% @news.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :subject %><br />
+    <%= f.text_field :subject %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :news_type %><br />
+    <%= f.check_box :news_type %><%= f.label :Make_this_news_as_private_one %>
+  </div>
+  <div class="field">
+    <%= f.label :posted_by %><br />
+    <%= f.text_field :posted_by %>
+  </div>
+  <div class="field">
+    <%= f.label :contents %><br />
+    <%= f.text_field :contents %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

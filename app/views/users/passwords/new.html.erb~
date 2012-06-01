@@ -1,0 +1,197 @@
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="imagetoolbar" content="no"><link href="Resources/axurerppage.css" type="text/css" rel="stylesheet"></HEAD><BODY>
+<script type="text/javascript">
+function InitializeSubmenu(submenucontainerid, tablecellroid, tablecellid, fname) { 
+var s = "";
+s = s + "function " + fname + "() { ";
+s = s + "document.getElementById(submenucontainerid).style.visibility='';";
+s = s + "BringToFront(submenucontainerid);";
+s = s + "}";
+if ((index = navigator.userAgent.indexOf("MSIE")) >= 0)
+s = s + "document.getElementById('" + tablecellid + "').attachEvent(\"onmouseover\", " + fname + ");";
+else
+s = s + "document.getElementById('" + tablecellid + "').addEventListener(\"mouseover\", " + fname + ", true);";
+s = s + "document.getElementById(tablecellroid).onclick = function() {";
+s = s + "if( document.createEvent ) {";
+s = s + "var evObj = document.createEvent('MouseEvents');";
+s = s + "evObj.initEvent( 'click', true, false );";
+s = s + "document.getElementById(tablecellid).dispatchEvent(evObj);";
+s = s + "} else if( document.createEventObject ) {";
+s = s + "document.getElementById(tablecellid).fireEvent('onclick');";
+s = s + "}";
+s = s + "}";
+eval(s);
+}
+</script>
+<%= render :partial => "layouts/header" %>
+<DIV id=ou0 style="position:absolute; left:522px; top:137px; width:180px; height:36px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:188px; height:44px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Forgot your password_files/u0.png',sizingMethod='scale');
+"><img style="width:188px; height:44px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Forgot your password_files/u0.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u0container style="position:absolute; left:522px; top:137px; width:180px; height:36px;; overflow:visible">
+<%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post }) do |f| %>
+<DIV id=u1 style="position:absolute; left:2px; top:9.5px; width:175px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u1_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;">Already member? </span><span style=" font-family:'Verdana'; color:#0000FF; font-size:10pt;"><%= link_to 'Log in', new_user_session_path %></u></span></div></DIV></DIV>
+</DIV>
+
+
+<DIV id=u0ann style="font-size:1px; position:absolute; left:692px; top:133px; width:1px; height:1px; overflow:visible"></DIV>
+
+<DIV id=u2 style="position:absolute; left:239px; top:222px; width:225px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u2_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:12pt;"><b>Forgot your password?</b></span></DIV></DIV>
+<div style="position:absolute; left:426px; top:341px; width:224px; height:35px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.email_field :email %></div>
+
+<DIV id=u4 style="position:absolute; left:274px; top:350px; width:150px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u4_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:11pt;">Your Email Address</span></DIV></DIV>
+<DIV id=u5 style="position:absolute; left:240px; top:251px; width:482px; height:13px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u5_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:8pt;">If you forgot your password, please enter the email associated with your ProjectX</span></DIV></DIV>
+<DIV id=u6 style="position:absolute; left:238px; top:270px; width:471px; height:13px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u6_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:8pt;">account. Click &quot;Get My Password&quot; and an email will be sent with a new password.</span></DIV></DIV>
+<DIV id=ou7 style="position:absolute; left:648px; top:440px; width:60px; height:27px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:68px; height:35px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Forgot your password_files/u7.png',sizingMethod='scale');
+"><img style="width:68px; height:35px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Forgot your password_files/u7.png" border="0" alt=""></span>
+
+</DIV>
+
+<DIV id=u7container style="position:absolute; left:648px; top:440px; width:60px; height:27px;; overflow:visible">
+
+<DIV id=u8 style="position:absolute; left:2px; top:5px; width:55px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u8_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#0000FF; font-size:10pt;">Home</u></span></div></DIV></DIV>
+</DIV>
+<IMG id=u7 src="Resources/transparent.gif" style="position:absolute; left:648px; top:440px; width:59px; height:26px"  >
+
+<DIV id=u7ann style="font-size:1px; position:absolute; left:698px; top:436px; width:1px; height:1px; overflow:visible"></DIV>
+
+<DIV id=u9 style="visibility:hidden; position:absolute; left:273px; top:295px; width:418px; height:41px;; overflow:hidden">
+<DIV id=pd0u9 style="position:absolute; left:0px; top:0px; width:1px; height:1px; visibility:hidden;">
+<DIV id=ou10 style="position:absolute; left:14px; top:6px; width:402px; height:28px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:410px; height:36px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Forgot your password_files/u10.png',sizingMethod='scale');
+"><img style="width:410px; height:36px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Forgot your password_files/u10.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u10container style="position:absolute; left:14px; top:6px; width:402px; height:28px;; overflow:visible">
+
+<DIV id=u11 style="position:absolute; left:2px; top:7px; width:397px; height:13px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u11_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#000000; font-size:8pt;">&nbsp; &nbsp; &nbsp; The Email-Id you provided is not present in [ Company name ]</span></div></DIV></DIV>
+</DIV>
+<IMG id=u10 src="Resources/transparent.gif" style="position:absolute; left:14px; top:6px; width:401px; height:27px"  >
+
+<span style="position:absolute; left:21px; top:6px; width:25px; height:25px">
+<IMG id=ou12 src="Forgot your password_files/u12.gif" style="position:absolute;left:0px;top:0px;width:25px;height:25px">
+</span>
+<IMG id=u12 src="Resources/transparent.gif" style="position:absolute; left:21px; top:6px; width:25px; height:25px"   >
+
+</DIV>
+</DIV>
+<div style="position:absolute; left:430px; top:390px; width:130px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" ><%= f.submit "Get My Password" %></div>
+
+<span style="position:absolute; left:0px; top:517px; width:893px; height:9px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Forgot your password_files/u14.png',sizingMethod='scale');
+"><img style="width:893px; height:9px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Forgot your password_files/u14.png" border="0" alt=""></span>
+
+<IMG id=u14 src="Resources/transparent.gif" style="position:absolute; left:0px; top:516.5px; width:890px; height:6px">
+
+<DIV id=ou15 style="position:absolute; left:0px; top:525px; width:891px; height:76px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:899px; height:84px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Forgot your password_files/u15.png',sizingMethod='scale');
+"><img style="width:899px; height:84px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Forgot your password_files/u15.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u15container style="position:absolute; left:0px; top:525px; width:891px; height:76px;; overflow:visible">
+
+<DIV id=u16 style="position:absolute; left:2px; top:29.5px; width:886px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u16_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u15 src="Resources/transparent.gif" style="position:absolute; left:0px; top:525px; width:890px; height:75px"  >
+
+<DIV id=u17 style="position:absolute; left:207px; top:550px; width:80px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u17_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Copyright Â©</span></DIV></DIV>
+<DIV id=u18 style="position:absolute; left:282px; top:550px; width:165px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u18_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">ProjectX.com 2007</span></DIV></DIV>
+<span style="position:absolute; left:396px; top:549px; width:6px; height:23px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Forgot your password_files/u19.png',sizingMethod='scale');
+"><img style="width:6px; height:23px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Forgot your password_files/u19.png" border="0" alt=""></span>
+
+<IMG id=u19 src="Resources/transparent.gif" style="position:absolute; left:396px; top:549px; width:3px; height:20px">
+
+<DIV id=u20 style="position:absolute; left:407px; top:550px; width:100px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u20_rtf><span style=" font-family:'Arial'; color:#4096EE; font-size:10pt;">Terms of use</span></DIV></DIV>
+<DIV id=u21 style="position:absolute; left:506px; top:551px; width:100px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u21_rtf><span style=" font-family:'Arial'; color:#4096EE; font-size:10pt;">Privacy Policy</span></DIV></DIV>
+<span style="position:absolute; left:493px; top:550px; width:6px; height:23px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Forgot your password_files/u22.png',sizingMethod='scale');
+"><img style="width:6px; height:23px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Forgot your password_files/u22.png" border="0" alt=""></span>
+
+<IMG id=u22 src="Resources/transparent.gif" style="position:absolute; left:493px; top:550px; width:3px; height:20px">
+
+<DIV id=ou23 style="position:absolute; left:10px; top:20px; width:91px; height:61px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:99px; height:69px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Forgot your password_files/u23.png',sizingMethod='scale');
+"><img style="width:99px; height:69px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Forgot your password_files/u23.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u23container style="position:absolute; left:10px; top:20px; width:91px; height:61px;; overflow:visible">
+
+<DIV id=u24 style="position:absolute; left:2px; top:22px; width:86px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u24_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u23 src="Resources/transparent.gif" style="position:absolute; left:10px; top:20px; width:90px; height:60px"  >
+
+<DIV id=u25 style="position:absolute; left:121px; top:20px; width:189px; height:24px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+
+
+
+</DIV>
+<IMG id=u40 src="Resources/transparent.gif" style="position:absolute; left:231px; top:142px; width:90px; height:60px"  >
+
+<DIV id=u42 style="position:absolute; left:252px; top:160px; width:60px; height:24px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u42_rtf><span style=" font-family:'Arial'; color:#000000; font-size:16pt;"><b>Logo</b></span></DIV></DIV>
+<span style="position:absolute; left:215px; top:121px; width:509px; height:15px">
+<span id=ou43 style="position:absolute;left:0px;top:0px;width:509px;height:15px;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Forgot your password_files/u43.png',sizingMethod='scale');
+"><img style="width:509px; height:15px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Forgot your password_files/u43.png" border="0" alt=""></span>
+</span>
+<IMG id=u43 src="Resources/transparent.gif" style="position:absolute; left:215px; top:121px; width:509px; height:15px"   >
+
+<span style="position:absolute; left:213px; top:472px; width:510px; height:15px">
+<span id=ou44 style="position:absolute;left:0px;top:0px;width:510px;height:15px;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Forgot your password_files/u44.png',sizingMethod='scale');
+"><img style="width:510px; height:15px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Forgot your password_files/u44.png" border="0" alt=""></span>
+</span>
+<IMG id=u44 src="Resources/transparent.gif" style="position:absolute; left:213px; top:472px; width:510px; height:15px"   >
+
+<span style="position:absolute; left:217px; top:135px; width:5px; height:341px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Forgot your password_files/u45.png',sizingMethod='scale');
+"><img style="width:5px; height:341px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Forgot your password_files/u45.png" border="0" alt=""></span>
+
+<IMG id=u45 src="Resources/transparent.gif" style="position:absolute; left:216.5px; top:135px; width:2px; height:338px">
+
+<span style="position:absolute; left:716px; top:134px; width:5px; height:342px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Forgot your password_files/u46.png',sizingMethod='scale');
+"><img style="width:5px; height:342px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Forgot your password_files/u46.png" border="0" alt=""></span>
+
+<IMG id=u46 src="Resources/transparent.gif" style="position:absolute; left:715.5px; top:134px; width:2px; height:339px">
+<% end %>
+<SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
+<SCRIPT src="Forgot your password_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>
+

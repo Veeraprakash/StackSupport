@@ -1,0 +1,49 @@
+<h2>Edit <%= resource_name.to_s.humanize %></h2>
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+  <%= devise_error_messages! %>
+
+ <div><%= f.label :fullname %><br />
+  <%= f.text_field :fullname %></div>
+
+<div><%= f.label :email %><br />
+  <%= f.email_field :email %></div>
+
+<div><%= f.label :username %><br />
+  <%= f.text_field :username %></div>
+
+<div><%= f.label :phone %><br />
+  <%= f.text_field :phone %></div>
+
+<div><%= f.label :mobile %><br />
+  <%= f.text_field :mobile %></div>
+
+<div class="field">
+    <%= f.label :department %><br />
+    <%= f.select :department, options_for_select(['General', 'Others', 'Technical Support', 'Sales']) %>
+  </div>
+
+<div><%= f.label :ticket_notifier %>
+  <%= f.check_box :ticket_notifier %> <%= f.label :Receive_Email_alert %><dd>
+
+<div><%= f.label :privilege %>
+  <%= f.check_box :privilege %><%= f.label :Admin_privilege %></div>
+
+<div><%= f.label :new_password %> <i>(leave blank if you don't want to change it)</i><br />
+  <%= f.password_field :password %></div>
+
+  <div><%= f.label :password_confirmation %><br />
+  <%= f.password_field :password_confirmation %></div>
+
+  <div><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
+  <%= f.password_field :current_password %></div>
+
+<div><%= f.label :find_your_attachment %><br />
+  <%= f.text_field :find_your_attachment %>	<%= f.submit "Browse" %></div>
+
+    <div><%= f.submit "Modify" %></div>
+<% end %>
+
+
+
+<%= link_to "Back", :back %>

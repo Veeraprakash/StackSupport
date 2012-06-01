@@ -1,0 +1,50 @@
+
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="imagetoolbar" content="no"><link href="Resources/axurerppage.css" type="text/css" rel="stylesheet"></HEAD><BODY>
+<script type="text/javascript">
+function InitializeSubmenu(submenucontainerid, tablecellroid, tablecellid, fname) { 
+var s = "";
+s = s + "function " + fname + "() { ";
+s = s + "document.getElementById(submenucontainerid).style.visibility='';";
+s = s + "BringToFront(submenucontainerid);";
+s = s + "}";
+if ((index = navigator.userAgent.indexOf("MSIE")) >= 0)
+s = s + "document.getElementById('" + tablecellid + "').attachEvent(\"onmouseover\", " + fname + ");";
+else
+s = s + "document.getElementById('" + tablecellid + "').addEventListener(\"mouseover\", " + fname + ", true);";
+s = s + "document.getElementById(tablecellroid).onclick = function() {";
+s = s + "if( document.createEvent ) {";
+s = s + "var evObj = document.createEvent('MouseEvents');";
+s = s + "evObj.initEvent( 'click', true, false );";
+s = s + "document.getElementById(tablecellid).dispatchEvent(evObj);";
+s = s + "} else if( document.createEventObject ) {";
+s = s + "document.getElementById(tablecellid).fireEvent('onclick');";
+s = s + "}";
+s = s + "}";
+eval(s);
+}
+</script>
+
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<DIV id=u468 style="position:absolute; left:120px; top:307px; width:85px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u468_rtf><span style=" font-family:'Arial'; color:#3366FF; font-size:10pt;"><%= link_to "Client Area", new_user_session_path %></span></DIV></DIV>
+<DIV id=u468ann style="font-size:1px; position:absolute; left:196px; top:303px; width:1px; height:1px; overflow:visible"></DIV>
+
+<DIV id=u469 style="position:absolute; left:119px; top:329px; width:179px; height:30px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u469_rtf><span style=" font-family:'Arial'; color:#000000; font-size:9pt;">Click here to edit&nbsp; your details, and other additional services</span></DIV></DIV><SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
+<% end %>
+<SCRIPT src="images/home_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>

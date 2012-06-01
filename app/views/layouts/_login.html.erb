@@ -1,0 +1,23 @@
+<%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+<DIV id=u432container style="position:absolute; left:630px; top:130px; width:91px; height:61px;; overflow:visible">
+
+<DIV id=u359 style="position:absolute; left:2px; top:10px; width:193px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u359_rtf><span style=" color:#000000; font-size:10pt;"><b>&nbsp;&nbsp; My Account</b></span></DIV></DIV>
+<DIV id=u351 style="position:absolute; left:21px; top:120px; width:67px; height:14px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u351_rtf><span style=" font-family:'Arial'; color:#000000; font-size:8pt;">Username:</span></DIV></DIV>
+<DIV id=u352 style="position:absolute; left:21px; top:155px; width:70px; height:14px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u352_rtf><span style=" font-family:'Arial'; color:#000000; font-size:8pt;">Password</span></DIV></DIV>
+<div style="position:absolute; left:78px; top:115px; width:93px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.email_field :email, :size => "10x5" %></div>
+
+<div style="position:absolute; left:78px; top:150px; width:93px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.password_field :password,:size => "10x5"  %></div>
+
+<DIV id=u355 style="position:absolute; left:16px; top:48px; width:182px; height:28px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u355_rtf><span style=" font-family:'Arial'; color:#000000; font-size:8pt;">Sign in to access your personal support services.</span></DIV></DIV>
+<DIV style="position:absolute; left:57px; top:183px; width:50px; height:20px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" ><%= f.submit "Login" %></DIV>
+
+<DIV id=u357 style="position:absolute; left:70px; top:216px; width:124px; height:14px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u357_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:8pt;"><%= link_to 'Forgot your password ?', new_user_password_path %></u></span></DIV></DIV>
+<DIV id=u357ann style="font-size:1px; position:absolute; left:185px; top:212px; width:1px; height:1px; overflow:visible"></DIV>
+
+<% end %>
+</DIV>
