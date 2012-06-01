@@ -5,8 +5,8 @@ class CreateFaqs < ActiveRecord::Migration
       t.string :subject
       t.boolean :private
       t.string :contents
-      t.integer :votes_up, :default = "0"
-      t.integer :votes_down, :default = "0"
+      t.integer :votes_up, :default =>0
+      t.integer :votes_down, :default =>0
 
       t.timestamps
     end

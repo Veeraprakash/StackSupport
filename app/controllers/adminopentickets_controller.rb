@@ -16,9 +16,8 @@ def staff
     respond_to do |format|
    @ticket.update_attributes(params[:id])
         format.html { redirect_to :action=>'show', :controller=>"adminopentickets" }
-        format.xml  { head :ok }
+      format.xml  { head :ok }
       
-      end
   end
 end  
 
