@@ -94,7 +94,7 @@ src="images/clientarea_files/u77.png" border="0" alt=""></span>
 <DIV id=u29 style="position:absolute; left:670px; top:175px; width:300px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u29_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>Welcome <% if user_signed_in? %><%= current_user.fullname %></b></span></DIV></DIV>
 <DIV id=u30 style="position:absolute; left:685px; top:243px; width:154px; height:15px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u30_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:9pt;"><u>Change&nbsp; your password ?</u></span></DIV></DIV>
+<DIV id=u30_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:9pt;"><%= link_to 'Change your password ?', edit_user_registration_path %></u></span></DIV></DIV>
 <DIV id=ou31 style="position:absolute; left:656px; top:125px; width:184px; height:37px;; overflow:visible">
 
 <span style="position:absolute; left:-3px; top:-3px; width:192px; height:45px; ;

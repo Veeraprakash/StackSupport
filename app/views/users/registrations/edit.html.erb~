@@ -50,6 +50,7 @@ src="images/clientarea/u10.png" border="0" alt=""></span>
 
 
 
+
 <h2>My Details</h2>
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
@@ -94,6 +95,12 @@ src="images/clientarea/u10.png" border="0" alt=""></span>
 
 <div><%= f.label :web %>
   <%= f.text_field :web %></div>
+
+  <div><%= f.label :new_password %> <i>(leave blank if you don't want to change it)</i><br />
+  <%= f.password_field :password %></div>
+
+  <div><%= f.label :password_confirmation %><br />
+  <%= f.password_field :password_confirmation %></div>
    
   <div><%= f.label :current_password %> 
   <%= f.password_field :current_password %></div>
@@ -104,7 +111,7 @@ src="images/clientarea/u10.png" border="0" alt=""></span>
 
 
 <p> <%#= link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete %></p>
-
+</style>
 <%= link_to "Back", :back %>
 
 </DIV>
