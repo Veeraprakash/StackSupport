@@ -77,7 +77,7 @@ src="Admin -- Open Tickets_files/u106.png" border="0" alt=""></span>
 <DIV id=u111ann style="font-size:1px; position:absolute; left:547px; top:12px; width:1px; height:1px; overflow:visible"></DIV>
 
 <DIV id=u112 style="position:absolute; left:554px; top:16px; width:100px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u112_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><%= link_to 'Support Ticket', {:controller=>"adminopentickets", :action=>"support"} %></span></DIV></DIV>
+<DIV id=u112_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><%= link_to 'Support Ticket', "/adminopentickets/support/#{@ticket.id}" %></span></DIV></DIV>
 
 </DIV>
 

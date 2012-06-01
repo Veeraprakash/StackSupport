@@ -1,5 +1,5 @@
 class Admin < ActiveRecord::Base
-has_many :tickets
+#has_many :tickets
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,

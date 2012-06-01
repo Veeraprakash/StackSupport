@@ -36,10 +36,11 @@ Sample::Application.routes.draw do
   match 'tickets/show/:id' => 'tickets#show'
   match 'home/newsview/:id' => 'home#newsview'
   match "knowlwedgebase/show/:id" => "knowlwedgebase#show"
-   match "knowlwedgebase/detail/:id" => "knowlwedgebase#detail"
+  match "knowlwedgebase/detail/:id" => "knowlwedgebase#detail"
   match "knowlwedgebase/kbase/:id" => "knowlwedgebase#kbase"
   match 'adminpendingtickets/view/:id' => 'adminpendingtickets#view'
   match 'adminpendingtickets/assign/:id' => 'adminpendingtickets#assign'
+  match 'adminpendingtickets/change/:id' => 'adminpendingtickets#change'
   match 'adminpendingtickets/support/:id' => 'adminpendingtickets#support'
   match 'adminopentickets/view/:id' => 'adminopentickets#view'
   match 'adminopentickets/assign/:id' => 'adminopentickets#assign'
