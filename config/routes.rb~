@@ -40,6 +40,7 @@ Sample::Application.routes.draw do
   match "knowlwedgebase/kbase/:id" => "knowlwedgebase#kbase"
   match 'adminpendingtickets/view/:id' => 'adminpendingtickets#view'
   match 'adminpendingtickets/assign/:id' => 'adminpendingtickets#assign'
+
   match 'adminpendingtickets/change/:id' => 'adminpendingtickets#change'
   match 'adminpendingtickets/support/:id' => 'adminpendingtickets#support'
   match 'adminopentickets/view/:id' => 'adminopentickets#view'

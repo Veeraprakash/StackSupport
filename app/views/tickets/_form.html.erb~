@@ -36,7 +36,8 @@ eval(s);
     </div>
   <% end %>
  <%= f.hidden_field :user_id, :value => current_user.id %>
- <%= f.hidden_field :customer_name, :value => current_user.email %>
+ <%= f.hidden_field :customer_name, :value => current_user.fullname %>
+ <%= f.hidden_field :client_email, :value => current_user.email %>
 <span style="position:absolute; left:10px; top:166px; width:623px; height:5px; ;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Create a ticket_files/u0.png',sizingMethod='scale');
 "><img style="width:623px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 

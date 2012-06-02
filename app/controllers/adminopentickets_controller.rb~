@@ -9,17 +9,10 @@ class AdminopenticketsController < ApplicationController
   def assign
   @ticket = Ticket.find(params[:id])
   @staff = Admin.all
+ 
   end
 
-def staff
-     @ticket = Ticket.find(params[:id])
-    respond_to do |format|
-   @ticket.update_attributes(params[:id])
-        format.html { redirect_to :action=>'show', :controller=>"adminopentickets" }
-      format.xml  { head :ok }
-      
-  end
-end  
+
 
   def support
  @ticket = Ticket.find(params[:id])

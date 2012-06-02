@@ -1,6 +1,6 @@
 class TicketsController < ApplicationController
 
-before_filter :authenticate_user!
+before_filter :authenticate_user!, :only => [:index, :show, :new, :create, :destroy]
 
   # GET /tickets
   # GET /tickets.xml
@@ -18,10 +18,8 @@ before_filter :authenticate_user!
   # GET /tickets/1.xml
   def show
     @ticket = Ticket.find(params[:id])
-    
-    @post = @ticket.posts.build
-	
-    respond_to do |format|
+     @post = @ticket.posts.build
+       respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @ticket }
     end
@@ -59,16 +57,14 @@ before_filter :authenticate_user!
     end
   end
 
-  # PUT /tickets/1
-  # PUT /tickets/1.xml
+
   def update
     @ticket = Ticket.find(params[:id])
-
     respond_to do |format|
       if @ticket.update_attributes(params[:ticket])
-        format.html { redirect_to(@ticket, :notice => 'Ticket was successfully updated.') }
+	format.html { redirect_to(@ticket, :notice => 'Ticket was successfully updated.') }
         format.xml  { head :ok }
-      else
+	else
         format.html { render :action => "edit" }
         format.xml  { render :xml => @ticket.errors, :status => :unprocessable_entity }
       end

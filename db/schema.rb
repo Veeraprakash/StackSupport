@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120530104419) do
+ActiveRecord::Schema.define(:version => 20120602074213) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                                 :default => "",      :null => false
@@ -24,9 +24,6 @@ ActiveRecord::Schema.define(:version => 20120530104419) do
     t.string   "current_sign_in_ip"
     t.string   "last_sign_in_ip"
     t.string   "password_salt"
-    t.string   "confirmation_token"
-    t.datetime "confirmed_at"
-    t.datetime "confirmation_sent_at"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "role",                                  :default => "admin"
@@ -40,7 +37,6 @@ ActiveRecord::Schema.define(:version => 20120530104419) do
     t.string   "find_your_attachment"
   end
 
-  add_index "admins", ["confirmation_token"], :name => "index_admins_on_confirmation_token", :unique => true
   add_index "admins", ["email"], :name => "index_admins_on_email", :unique => true
   add_index "admins", ["reset_password_token"], :name => "index_admins_on_reset_password_token", :unique => true
 
@@ -85,8 +81,8 @@ ActiveRecord::Schema.define(:version => 20120530104419) do
     t.string   "subject"
     t.boolean  "private"
     t.string   "contents"
-    t.integer  "votes_up"
-    t.integer  "votes_down"
+    t.integer  "votes_up",    :default => 0
+    t.integer  "votes_down",  :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "category_id"
@@ -117,7 +113,7 @@ ActiveRecord::Schema.define(:version => 20120530104419) do
     t.string   "message"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "status"
+    t.string   "status",                :default => "Open"
     t.string   "customer_name"
     t.integer  "user_id"
     t.integer  "staff_id"
@@ -126,6 +122,7 @@ ActiveRecord::Schema.define(:version => 20120530104419) do
     t.string   "avatar_file_type"
     t.date     "avatar_file_updatedat"
     t.string   "staff_email"
+    t.string   "client_email"
   end
 
   create_table "users", :force => true do |t|
