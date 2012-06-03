@@ -39,9 +39,7 @@
 </div>
 <img id="u396" style="position:absolute; left:21px; top:240px; width:576px; height:378px" src="Resources/transparent.gif">
 
-<DIV style="position:absolute; left:494px; top:35px; width:200px; height:35px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :email, :size => "15x5" %></DIV>
 
-<DIV style="position:absolute; left:703px; top:35px; width:70px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" ><%= f.submit "Search" %></DIV>
 
 <DIV id=u432container style="position:absolute; left:590px; top:250px; width:91px; height:61px;; overflow:visible">
 
@@ -83,13 +81,16 @@
 </DIV>
 </DIV>
 <DIV id=u431 style="position:absolute; left:33px; top:148px; width:772px; height:64px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u431_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Welcome to <b>[ Company name ]</b> Support. Our goal is to provide you with support services that protect and enhance your investment in our technology. To meet your unique support needs, <b>[ Company name ]</b> has a variety of support options available.<br><br>Please select your type from the options below to learn more about the support options available to you and how to contact us.</span></DIV></DIV>
+<DIV id=u431_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Welcome to Support stack customer Support. Our goal is to provide you with support services that protect and enhance your investment in our technology. To meet your unique support needs, Support stack has a variety of support options available.<br><br>Please select your type from the options below to learn more about the support options available to you and how to contact us.</span></DIV></DIV>
 <DIV id=ou432 style="position:absolute; left:15px; top:20px; width:91px; height:61px;; overflow:visible">
 
-<span style="position:absolute; left:-3px; top:-3px; width:99px; height:69px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/home_files/u432.png',sizingMethod='scale');
-"><img style="width:99px; height:69px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="/images/home_files/u432.png" border="0" alt=""></span>
+<IMG id=u0 src="/images/LiveSupportLogo.gif" style="position:absolute; left:10px; top:0px; width:200px; height:100px"  >
+
+<DIV id=u64 style="position:absolute; left:225px; top:15px; width:200px; height:30px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u64_rtf><span style=" font-family:'Arial'; color:#000000; font-size:16pt;"><b>Support Stack</b></span></DIV></DIV>
+<DIV id=u66 style="position:absolute; left:225px; top:50px; width:300px; height:19px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u66_rtf><span style=" font-family:'Arial'; color:#000000; font-size:12pt;"><b>World wide Technical Support</b></span></DIV></DIV>
+<DIV id=ou67 style="position:absolute; left:10px; top:94px; width:841px; height:9px;; overflow:visible">
 
 </DIV>
 <DIV id=u432container style="position:absolute; left:15px; top:20px; width:91px; height:61px;; overflow:visible">
@@ -97,14 +98,8 @@ src="/images/home_files/u432.png" border="0" alt=""></span>
 <DIV id=u433 style="position:absolute; left:2px; top:22px; width:86px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u433_rtf>&nbsp;</DIV></DIV>
 </DIV>
-<IMG id=u432 src="/images/TheTechSupportTeamLogo.jpg" style="position:absolute; left:15px; top:20px; width:90px; height:60px"  >
 
-<DIV id=u434 style="position:absolute; left:35px; top:37px; width:60px; height:24px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u434_rtf><span style=" font-family:'Arial'; color:#000000; font-size:16pt;"><b>Logo</b></span></DIV></DIV>
-<DIV id=u435 style="position:absolute; left:116px; top:51px; width:99px; height:19px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u435_rtf><span style=" font-family:'Arial'; color:#000000; font-size:12pt;"><b>Support</b></span></DIV></DIV>
-<DIV id=ou436 style="position:absolute; left:15px; top:110px; width:801px; height:9px;; overflow:visible">
-
+<DIV id=u432container style="position:absolute; left:15px; top:110px; width:91px; height:61px;; overflow:visible">
 <span style="position:absolute; left:-3px; top:-3px; width:809px; height:17px; ;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/home_files/u436.png',sizingMethod='scale');
 "><img style="width:809px; height:17px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
@@ -193,10 +188,10 @@ src="/images/home_files/u436.png" border="0" alt=""></span>
 
 </DIV>
 </DIV>
-<span style="position:absolute; left:441px; top:736px; width:108px; height:40px">
+<span style="position:absolute; left:460px; top:760px; width:108px; height:40px">
 <IMG id=ou90 src="/images/home_files/u90.gif" style="position:absolute;left:0px;top:0px;width:108px;height:40px">
 </span>
-<IMG id=u90 src="Resources/transparent.gif" style="position:absolute; left:441px; top:736px; width:108px; height:40px"   >
+<IMG id=u90 src="Resources/transparent.gif" style="position:absolute; left:460px; top:800px; width:108px; height:40px"   >
 
 <span style="position:absolute; left:45px; top:300px; width:70px; height:70px">
 <IMG id=ou91 src="/images/home_files/u91.gif" style="position:absolute;left:0px;top:0px;width:70px;height:70px">

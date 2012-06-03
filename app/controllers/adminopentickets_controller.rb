@@ -10,10 +10,7 @@ before_filter :authenticate_admin!
   def assign
   @ticket = Ticket.find(params[:id])
   @staff = Admin.all
- 
-  end
-
-
+   end
 
   def support
  @ticket = Ticket.find(params[:id])

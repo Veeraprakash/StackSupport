@@ -1,7 +1,7 @@
 class TicketsController < ApplicationController
 
 before_filter :authenticate_user!, :unless => :admin_signed_in?
-before_filter :authenticate_admin!, :only => [:update, :show], :if => :admin_signed_in?
+
   def index
     @tickets = Ticket.find_all_by_user_id(current_user.id)
     #@tickets = Ticket.all
@@ -54,8 +54,9 @@ before_filter :authenticate_admin!, :only => [:update, :show], :if => :admin_sig
     @ticket = Ticket.find(params[:id])
     respond_to do |format|
       if @ticket.update_attributes(params[:ticket])
+	@ticket.update_attributes(:status => "Pending")
         if admin_signed_in?  
-       format.html { redirect_to(adminopentickets_show_path, :notice => 'Ticket was successfully updated.') }
+       format.html { redirect_to(admin_ticket_path, :notice => 'Ticket was successfully updated.') }
 else
 	format.html { redirect_to(@ticket, :notice => 'Ticket was successfully updated.') }
 end

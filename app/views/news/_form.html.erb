@@ -1,17 +1,3 @@
-<DIV id=u58 style="position:absolute; left:20px; top:260px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u58_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'Edit Latest News', news_index_path %></span></DIV></DIV>
-<DIV id=u59 style="position:absolute; left:22px; top:225px; width:110px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u59_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'Account Info', contacts_accinfo_path %></span></DIV></DIV>
-<span style="position:absolute; left:10px; top:284px; width:173px; height:5px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- Contact page_files/u60.png',sizingMethod='scale');
-"><img style="width:173px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="Admin -- Contact page_files/u60.png" border="0" alt=""></span>
-
-<IMG id=u60 src="Resources/transparent.gif" style="position:absolute; left:10px; top:283.5px; width:170px; height:2px">
-
-<DIV id=u61 style="position:absolute; left:17px; top:300px; width:160px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u61_rtf><span style=" color:#333399; font-size:10pt;">Edit Contact Us information </span></DIV></DIV>
-<DIV id=u61ann style="font-size:1px; position:absolute; left:168px; top:296px; width:1px; height:1px; overflow:visible"></DIV>
 
 <%= form_for(@news) do |f| %>
   <% if @news.errors.any? %>
@@ -50,3 +36,5 @@ src="Admin -- Contact page_files/u60.png" border="0" alt=""></span>
     <%= f.submit %>
   </div>
 <% end %>
+
+

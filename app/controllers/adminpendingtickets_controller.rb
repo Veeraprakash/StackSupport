@@ -13,6 +13,7 @@ before_filter :authenticate_admin!
   end
  def change
   @ticket = Ticket.find(params[:id])
+  @staff = Admin.all
 end
 
   def support

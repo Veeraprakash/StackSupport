@@ -1,51 +1,4 @@
 
-<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="imagetoolbar" content="no"><link href="Resources/axurerppage.css" type="text/css" rel="stylesheet"></HEAD><BODY>
-<script type="text/javascript">
-
-
-
-
-<link rel="stylesheet" href="styles.css" type="text/css" />
-</head>
-<body>
-<h1>Horizontal CSS Navigation Menu</h1>
-<hr />
-<div id="tabs">
-  <ul>
-    <li><a href="http://www.free-css.com/"><span>CSS Templates</span></a></li>
-    <li><a href="http://www.free-css.com/"><span>CSS Layouts</span></a></li>
-    <li><a href="http://www.free-css.com/"><span>CSS Books</span></a></li>
-    <li><a href="http://www.free-css.com/"><span>CSS Menus</span></a></li>
-    <li><a href="http://www.free-css.com/"><span>CSS Tutorials</span></a></li>
-    <li><a href="http://www.free-css.com/"><span>CSS Reference</span></a></li>
-    <li><a rel="nofollow" target="_blank" href="http://www.exploding-boy.com/" title="explodingboy"><span>explodingboy</span></a></li>
-  </ul>
-</div>
-</body>
-
-
-function InitializeSubmenu(submenucontainerid, tablecellroid, tablecellid, fname) { 
-var s = "";
-s = s + "function " + fname + "() { ";
-s = s + "document.getElementById(submenucontainerid).style.visibility='';";
-s = s + "BringToFront(submenucontainerid);";
-s = s + "}";
-if ((index = navigator.userAgent.indexOf("MSIE")) >= 0)
-s = s + "document.getElementById('" + tablecellid + "').attachEvent(\"onmouseover\", " + fname + ");";
-else
-s = s + "document.getElementById('" + tablecellid + "').addEventListener(\"mouseover\", " + fname + ", true);";
-s = s + "document.getElementById(tablecellroid).onclick = function() {";
-s = s + "if( document.createEvent ) {";
-s = s + "var evObj = document.createEvent('MouseEvents');";
-s = s + "evObj.initEvent( 'click', true, false );";
-s = s + "document.getElementById(tablecellid).dispatchEvent(evObj);";
-s = s + "} else if( document.createEventObject ) {";
-s = s + "document.getElementById(tablecellid).fireEvent('onclick');";
-s = s + "}";
-s = s + "}";
-eval(s);
-}
-</script>
  <%= render :partial => "layouts/adminheader" %>
 
 <DIV id=ou52 style="position:absolute; left:218px; top:271px; width:591px; height:369px;; overflow:visible">
@@ -254,9 +207,6 @@ src="/images/adminpage_files/u93.png" border="0" alt=""></span>
 <DIV id=u94_rtf><span style=" font-family:'Arial'; color:#333399; font-size:10pt;">Insert Staff</span></DIV></DIV>
 <DIV id=u94ann style="font-size:1px; position:absolute; left:101px; top:288px; width:1px; height:1px; overflow:visible"></DIV>
 
-<DIV id=u95 style="position:absolute; left:32px; top:359px; width:100px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u95_rtf><span style=" font-family:'Arial'; color:#333399; font-size:10pt;">Submit Ticket</span></DIV></DIV>
-<DIV id=u95ann style="font-size:1px; position:absolute; left:123px; top:355px; width:1px; height:1px; overflow:visible"></DIV>
 
 <DIV id=u96 style="position:absolute; left:33px; top:326px; width:70px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u96_rtf><span style=" font-family:'Arial'; color:#333399; font-size:10pt;"><%= link_to 'Insert FAQ', new_faq_path %></span></DIV></DIV>
@@ -276,4 +226,4 @@ src="/images/adminpage_files/u98.png" border="0" alt=""></span>
 
 <IMG id=u98 src="Resources/transparent.gif" style="position:absolute; left:7px; top:348.5px; width:170px; height:2px">
 <SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
-<SCRIPT src="/images/adminpage_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>
+

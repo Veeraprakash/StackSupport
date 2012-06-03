@@ -1,27 +1,4 @@
-<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="imagetoolbar" content="no"><link href="Resources/axurerppage.css" type="text/css" rel="stylesheet"></HEAD><BODY>
-<script type="text/javascript">
-function InitializeSubmenu(submenucontainerid, tablecellroid, tablecellid, fname) { 
-var s = "";
-s = s + "function " + fname + "() { ";
-s = s + "document.getElementById(submenucontainerid).style.visibility='';";
-s = s + "BringToFront(submenucontainerid);";
-s = s + "}";
-if ((index = navigator.userAgent.indexOf("MSIE")) >= 0)
-s = s + "document.getElementById('" + tablecellid + "').attachEvent(\"onmouseover\", " + fname + ");";
-else
-s = s + "document.getElementById('" + tablecellid + "').addEventListener(\"mouseover\", " + fname + ", true);";
-s = s + "document.getElementById(tablecellroid).onclick = function() {";
-s = s + "if( document.createEvent ) {";
-s = s + "var evObj = document.createEvent('MouseEvents');";
-s = s + "evObj.initEvent( 'click', true, false );";
-s = s + "document.getElementById(tablecellid).dispatchEvent(evObj);";
-s = s + "} else if( document.createEventObject ) {";
-s = s + "document.getElementById(tablecellid).fireEvent('onclick');";
-s = s + "}";
-s = s + "}";
-eval(s);
-}
-</script>
+
  <%= render :partial => "layouts/header" %>
 <DIV id=ou0 style="position:absolute; left:8px; top:138px; width:175px; height:36px;; overflow:visible">
 
@@ -36,16 +13,13 @@ src="/images/Client Area_files/u0.png" border="0" alt=""></span>
 <DIV id=u1 style="position:absolute; left:2px; top:9.5px; width:170px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u1_rtf>&nbsp;</DIV></DIV>
 </DIV>
-<IMG id=u0 src="Resources/transparent.gif" style="position:absolute; left:8px; top:138px; width:174px; height:35px"  >
+
 
 <DIV id=u2 style="position:absolute; left:21px; top:146px; width:109px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u2_rtf><span style=" font-family:'Verdana'; color:#FFFFFF; font-size:11pt;"><b>Template</b></span></DIV></DIV>
 <DIV id=ou3 style="position:absolute; left:8px; top:174px; width:175px; height:154px;; overflow:visible">
 
-<span style="position:absolute; left:-3px; top:-3px; width:183px; height:162px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Client Area_files/u3.png',sizingMethod='scale');
-"><img style="width:183px; height:162px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="/images/Client Area_files/u3.png" border="0" alt=""></span>
+
 
 </DIV>
 <DIV id=u3container style="position:absolute; left:8px; top:174px; width:175px; height:154px;; overflow:visible">
@@ -60,12 +34,12 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Client Ar
 "><img style="width:173px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
 src="/images/Client Area_files/u5.png" border="0" alt=""></span>
 
-<IMG id=u5 src="Resources/transparent.gif" style="position:absolute; left:10px; top:245.5px; width:170px; height:2px">
+
 
 <DIV id=u6 style="position:absolute; left:19px; top:259px; width:90px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u6_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to'Submit Ticket', new_ticket_path %></span></DIV></DIV>
 <DIV id=u7 style="position:absolute; left:20px; top:222px; width:80px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u7_rtf><span style=" color:#333399; font-size:10pt;">My details</span></DIV></DIV>
+<DIV id=u7_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'My details', edit_user_registration_path %></span></DIV></DIV>
 <span style="position:absolute; left:10px; top:210px; width:173px; height:5px; ;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Client Area_files/u8.png',sizingMethod='scale');
 "><img style="width:173px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
@@ -136,10 +110,6 @@ src="/images/Client Area_files/u16.png" border="0" alt=""></span>
 <DIV id=u23_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;"><b>Recent Tickets</b></span></DIV></DIV>
 <DIV id=ou24 style="position:absolute; left:249px; top:531px; width:81px; height:36px;; overflow:visible">
 
-<span style="position:absolute; left:-3px; top:-3px; width:89px; height:44px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Client Area_files/u24.png',sizingMethod='scale');
-"><img style="width:89px; height:44px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="/images/Client Area_files/u24.png" border="0" alt=""></span>
 
 </DIV>
 <DIV id=u24container style="position:absolute; left:249px; top:531px; width:81px; height:36px;; overflow:visible">
@@ -212,6 +182,6 @@ src="/images/Client Area_files/u85.png" border="0" alt=""></span>
 
 <DIV id=u86 style="position:absolute; left:200px; top:114px; width:220px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u86_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;"><b>Welcome <% if user_signed_in? %><%= current_user.fullname %><% end %></b></span></DIV></DIV><SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
-<SCRIPT src="/images/Client Area_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>
+
 
 
