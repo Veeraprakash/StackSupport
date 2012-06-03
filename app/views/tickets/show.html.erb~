@@ -73,11 +73,11 @@ src="View individual ticket_files/u58.png" border="0" alt=""></span>
 <DIV id=u60_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;"><b>Status:</b></span></DIV></DIV>
 <DIV id=u61 style="position:absolute; left:291px; top:484px; width:70px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u61_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;"><b>Priority:</b></span></DIV></DIV>
-<DIV style="position:absolute; left:142px; top:482px; width:132px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<DIV style="position:absolute; left:142px; top:482px;  background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
 <%= f.select :status, options_for_select(['Open', 'Pending', 'Closed']) %>
 </DIV>
 
-<DIV id=u63  style="position:absolute; left:352px; top:482px; width:119px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<DIV id=u63  style="position:absolute; left:352px; top:482px;  background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
 <%= f.select :priority, options_for_select(['Low', 'Medium', 'High', 'Emergency', 'Critical']) %>
 
 </DIV>
@@ -114,7 +114,7 @@ src="View individual ticket_files/u65.png" border="0" alt=""></span>
 <%end%>
 
 <% form_for [@ticket, @post] do |f| %>
-   <%= f.text_area :message, :size => '50x5' %>
+   <%= f.text_area :message, :size => "50x2" %>
    <%= f.submit "Reply" %>
 <% end %>
 

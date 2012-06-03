@@ -4,7 +4,7 @@ class NewsController < ApplicationController
     @news = News.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html 
       format.xml  { render :xml => @news }
     end
   end
@@ -14,7 +14,7 @@ class NewsController < ApplicationController
     @news = News.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html 
       format.xml  { render :xml => @news }
     end
   end
@@ -23,7 +23,7 @@ class NewsController < ApplicationController
     @news = News.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html 
       format.xml  { render :xml => @news }
     end
   end

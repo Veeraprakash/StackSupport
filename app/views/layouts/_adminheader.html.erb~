@@ -198,7 +198,7 @@ src="images/adminpage_files/u25.png" border="0" alt=""></span>
 <DIV id=u25container style="position:absolute; left:685px; top:98px; width:89px; height:26px;; overflow:visible">
 
 <DIV id=u26 style="position:absolute; left:2px; top:5px; width:84px; height:15px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
-<DIV id=u6_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#4096EE; font-size:10pt;">Configurations</span></div></DIV></DIV>
+<DIV id=u6_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#4096EE; font-size:10pt;"><%= link_to 'Configurations', contacts_contact_path %></span></div></DIV></DIV>
 </DIV>
 
 

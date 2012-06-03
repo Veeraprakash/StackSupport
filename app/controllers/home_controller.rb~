@@ -1,27 +1,35 @@
 class HomeController < ApplicationController
 before_filter :authenticate_user!, :only => [:login]
   def homepage
-    end
+       @news = News.all
+end
+
 def login
 @tickets = Ticket.find_all_by_user_id(current_user.id)
-  end
+end
+
 def contactus
-  end
+ @contact = Contact.find(params[:id])
+
+    
+ 
+ end
+
 def search
 end 
-def aftsearch
 
+def aftsearch
 end
 
 def news
  @news = News.all
- 
 end
+
 def newsview
    @news = News.find(params[:id])
 respond_to do |format|
       format.html
 end
 end
-
 end
+

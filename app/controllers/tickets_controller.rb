@@ -1,48 +1,40 @@
 class TicketsController < ApplicationController
 
-before_filter :authenticate_user!, :only => [:index, :show, :new, :create, :destroy]
-
-  # GET /tickets
-  # GET /tickets.xml
+before_filter :authenticate_user!, :unless => :admin_signed_in?
+before_filter :authenticate_admin!, :only => [:update, :show], :if => :admin_signed_in?
   def index
     @tickets = Ticket.find_all_by_user_id(current_user.id)
     #@tickets = Ticket.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html 
       format.xml  { render :xml => @tickets }
     end
   end
 
-  # GET /tickets/1
-  # GET /tickets/1.xml
   def show
     @ticket = Ticket.find(params[:id])
      @post = @ticket.posts.build
        respond_to do |format|
-      format.html # show.html.erb
+      format.html 
       format.xml  { render :xml => @ticket }
     end
   end
 
-  # GET /tickets/new
-  # GET /tickets/new.xml
   def new
     @ticket = Ticket.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html 
       format.xml  { render :xml => @ticket }
     end
   end
 
-  # GET /tickets/1/edit
+
   def edit
     @ticket = Ticket.find(params[:id])
   end
 
-  # POST /tickets
-  # POST /tickets.xml
   def create
     @ticket = Ticket.new(params[:ticket])
 
@@ -62,7 +54,11 @@ before_filter :authenticate_user!, :only => [:index, :show, :new, :create, :dest
     @ticket = Ticket.find(params[:id])
     respond_to do |format|
       if @ticket.update_attributes(params[:ticket])
+        if admin_signed_in?  
+       format.html { redirect_to(adminopentickets_show_path, :notice => 'Ticket was successfully updated.') }
+else
 	format.html { redirect_to(@ticket, :notice => 'Ticket was successfully updated.') }
+end
         format.xml  { head :ok }
 	else
         format.html { render :action => "edit" }
@@ -71,8 +67,6 @@ before_filter :authenticate_user!, :only => [:index, :show, :new, :create, :dest
     end
   end
 
-  # DELETE /tickets/1
-  # DELETE /tickets/1.xml
   def destroy
     @ticket = Ticket.find(params[:id])
     @ticket.destroy

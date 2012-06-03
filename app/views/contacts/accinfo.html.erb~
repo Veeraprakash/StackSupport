@@ -1,0 +1,241 @@
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="imagetoolbar" content="no"><link href="Resources/axurerppage.css" type="text/css" rel="stylesheet"></HEAD><BODY>
+<script type="text/javascript">
+function InitializeSubmenu(submenucontainerid, tablecellroid, tablecellid, fname) { 
+var s = "";
+s = s + "function " + fname + "() { ";
+s = s + "document.getElementById(submenucontainerid).style.visibility='';";
+s = s + "BringToFront(submenucontainerid);";
+s = s + "}";
+if ((index = navigator.userAgent.indexOf("MSIE")) >= 0)
+s = s + "document.getElementById('" + tablecellid + "').attachEvent(\"onmouseover\", " + fname + ");";
+else
+s = s + "document.getElementById('" + tablecellid + "').addEventListener(\"mouseover\", " + fname + ", true);";
+s = s + "document.getElementById(tablecellroid).onclick = function() {";
+s = s + "if( document.createEvent ) {";
+s = s + "var evObj = document.createEvent('MouseEvents');";
+s = s + "evObj.initEvent( 'click', true, false );";
+s = s + "document.getElementById(tablecellid).dispatchEvent(evObj);";
+s = s + "} else if( document.createEventObject ) {";
+s = s + "document.getElementById(tablecellid).fireEvent('onclick');";
+s = s + "}";
+s = s + "}";
+eval(s);
+}
+</script>
+<%= form_for :contact, :url => {:controller=>"contacts", :action=>"acc_update"} do |f| %>
+
+<IMG id=u52 src="Resources/transparent.gif" style="position:absolute; left:206px; top:190px; width:659px; height:93px"  >
+
+<DIV id=u54 style="position:absolute; left:217px; top:194px; width:641px; height:80px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u54_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Welcome to settings page. Here you can add or edit the company information and which will show in the web pages. Also please upload the logo image which size should not exceed 40MB. <br><br>Also you can add the latest news about your products and the announcements about the versions of&nbsp; your product...</span><span style=" font-family:'Arial'; font-size:10pt;">Thanks for your support...</span></DIV></DIV>
+<DIV id=ou55 style="position:absolute; left:206px; top:290px; width:665px; height:921px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:673px; height:929px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- Preferences_files/u55.png',sizingMethod='scale');
+"><img style="width:673px; height:929px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Admin -- Preferences_files/u55.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u55container style="position:absolute; left:206px; top:290px; width:665px; height:921px;; overflow:visible">
+
+<DIV id=u56 style="position:absolute; left:2px; top:452px; width:660px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u56_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u55 src="Resources/transparent.gif" style="position:absolute; left:206px; top:290px; width:664px; height:920px"  >
+
+<DIV id=ou57 style="position:absolute; left:208px; top:292px; width:661px; height:36px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:669px; height:44px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- Preferences_files/u57.png',sizingMethod='scale');
+"><img style="width:669px; height:44px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Admin -- Preferences_files/u57.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u57container style="position:absolute; left:208px; top:292px; width:661px; height:36px;; overflow:visible">
+
+<DIV id=u58 style="position:absolute; left:2px; top:8px; width:656px; height:19px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u58_rtf><span style=" color:#000000; font-size:12pt;"><b>Account Information of your company</b></span></DIV></DIV>
+</DIV>
+<IMG id=u57 src="Resources/transparent.gif" style="position:absolute; left:208px; top:292px; width:660px; height:35px"  >
+
+<DIV id=ou59 style="position:absolute; left:220px; top:386px; width:621px; height:425px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:629px; height:433px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- Preferences_files/u59.png',sizingMethod='scale');
+"><img style="width:629px; height:433px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Admin -- Preferences_files/u59.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u59container style="position:absolute; left:220px; top:386px; width:621px; height:425px;; overflow:visible">
+
+<DIV id=u60 style="position:absolute; left:2px; top:204px; width:616px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u60_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u59 src="Resources/transparent.gif" style="position:absolute; left:220px; top:386px; width:620px; height:424px"  >
+
+<DIV id=u61 style="position:absolute; left:220px; top:343px; width:600px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u61_rtf><span style=" font-family:'Verdana'; color:#808080; font-size:10pt;">Here is the basic account information of your company. Also you can add your logo image here....</span></DIV></DIV>
+<DIV id=u62 style="position:absolute; left:251px; top:408px; width:100px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u62_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Company Name</span></DIV></DIV>
+<DIV style="position:absolute; left:360px; top:403px; width:200px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :company_name %></DIV>
+
+<DIV id=u64 style="position:absolute; left:315px; top:482px; width:50px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u64_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Logo</span></DIV></DIV>
+<DIV style="position:absolute; left:360px; top:477px; width:180px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :logo %></DIV>
+
+<INPUT id=u66  type=submit value="Browse" style="position:absolute; left:703px; top:476px; width:70px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+
+<DIV id=u67 style="position:absolute; left:295px; top:524px; width:61px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u67_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Address</span></DIV></DIV>
+<DIV id=u68 style="position:absolute; left:250px; top:631px; width:100px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u68_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Zip / Postal code</span></DIV></DIV>
+<DIV id=u69 style="position:absolute; left:310px; top:669px; width:40px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u69_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Phone</span></DIV></DIV>
+<DIV id=u70 style="position:absolute; left:322px; top:704px; width:30px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u70_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Fax</span></DIV></DIV>
+<DIV id=u71 style="position:absolute; left:300px; top:740px; width:50px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u71_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Website</span></DIV></DIV>
+<DIV id=u72 style="position:absolute; left:251px; top:774px; width:100px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u72_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Account created</span></DIV></DIV>
+<INPUT id=u73 disabled type=text value="Fri 13 Dec 2007, 11:25:30 pm" style="position:absolute; left:360px; top:769px; width:200px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :sales_email %>
+
+<DIV style="position:absolute; left:360px; top:629px; width:200px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :zip %></DIV>
+
+<DIV style="position:absolute; left:360px; top:665px; width:200px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :phone %></DIV>
+
+<DIV style="position:absolute; left:360px; top:701px; width:200px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :fax %></DIV>
+
+<DIV style="position:absolute; left:360px; top:734px; width:200px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :web %></DIV>
+
+<DIV id=u78 style="position:absolute; left:216px; top:838px; width:600px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u78_rtf><span style=" font-family:'Verdana'; color:#808080; font-size:10pt;">You can set preferences i.e. the time zone and date format from here...</span></DIV></DIV>
+<DIV id=ou79 style="position:absolute; left:220px; top:866px; width:621px; height:105px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:629px; height:113px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- Preferences_files/u79.png',sizingMethod='scale');
+"><img style="width:629px; height:113px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Admin -- Preferences_files/u79.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u79container style="position:absolute; left:220px; top:866px; width:621px; height:105px;; overflow:visible">
+
+<DIV id=u80 style="position:absolute; left:2px; top:44px; width:616px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u80_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u79 src="Resources/transparent.gif" style="position:absolute; left:220px; top:866px; width:620px; height:104px"  >
+
+<DIV id=u81 style="position:absolute; left:281px; top:884px; width:70px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u81_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Time Zone</span></DIV></DIV>
+<DIV id=u82 style="position:absolute; left:280px; top:920px; width:90px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u82_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Date Format</span></DIV></DIV>
+<SELECT id=u83  style="position:absolute; left:365px; top:880px; width:175px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+</SELECT>
+
+<SELECT id=u84  style="position:absolute; left:365px; top:918px; width:175px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<OPTION selected value="-- Select --">-- Select --</OPTION>
+<OPTION  value="m/d/yyyy 12:00:00 AM (0.0)">m/d/yyyy 12:00:00 AM (0.0)</OPTION>
+<OPTION  value="dd/mm/yyyy 24:00:00 (0.0)">dd/mm/yyyy 24:00:00 (0.0)</OPTION>
+<OPTION  value="yyyy-mm--dd 24:00:00 (0.0)">yyyy-mm--dd 24:00:00 (0.0)</OPTION>
+<OPTION  value="yyyy/mm/dd 24:00:00 AM  (0.0)">yyyy/mm/dd 24:00:00 AM&nbsp; (0.0)</OPTION>
+</SELECT>
+
+<DIV id=u85 style="position:absolute; left:220px; top:990px; width:600px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u85_rtf><span style=" font-family:'Verdana'; color:#808080; font-size:10pt;">Contact details of the company</span></DIV></DIV>
+<DIV id=ou86 style="position:absolute; left:220px; top:1014px; width:621px; height:127px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:629px; height:135px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- Preferences_files/u86.png',sizingMethod='scale');
+"><img style="width:629px; height:135px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Admin -- Preferences_files/u86.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u86container style="position:absolute; left:220px; top:1014px; width:621px; height:127px;; overflow:visible">
+
+<DIV id=u87 style="position:absolute; left:2px; top:55px; width:616px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u87_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u86 src="Resources/transparent.gif" style="position:absolute; left:220px; top:1014px; width:620px; height:126px"  >
+
+<DIV id=u88 style="position:absolute; left:312px; top:1030px; width:70px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u88_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Name</span></DIV></DIV>
+<DIV style="position:absolute; left:360px; top:1025px; width:200px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :name %></DIV>
+
+<DIV id=u90 style="position:absolute; left:312px; top:1061px; width:70px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u90_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Email</span></DIV></DIV>
+<DIV style="position:absolute; left:360px; top:1060px; width:200px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :email %></DIV>
+
+<DIV id=u92 style="position:absolute; left:310px; top:1094px; width:50px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u92_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Phone </span></DIV></DIV>
+<DIV style="position:absolute; left:360px; top:1095px; width:200px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :company_phone %></DIV>
+
+<DIV value="Save Changes" style="position:absolute; left:575px; top:1162px; width:100px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" ><%= f.submit %></DIV>
+
+<DIV id=u95 style="position:absolute; left:689px; top:1166px; width:30px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u95_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Or</span></DIV></DIV>
+<DIV id=u96 style="position:absolute; left:713px; top:1166px; width:52px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u96_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><u>Cancel</u></span></DIV></DIV>
+<DIV id=ou97 style="position:absolute; left:8px; top:180px; width:175px; height:36px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:183px; height:44px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- Preferences_files/u97.png',sizingMethod='scale');
+"><img style="width:183px; height:44px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Admin -- Preferences_files/u97.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u97container style="position:absolute; left:8px; top:180px; width:175px; height:36px;; overflow:visible">
+
+<DIV id=u98 style="position:absolute; left:2px; top:9.5px; width:170px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u98_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u97 src="Resources/transparent.gif" style="position:absolute; left:8px; top:180px; width:174px; height:35px"  >
+
+<DIV id=u99 style="position:absolute; left:21px; top:188px; width:109px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u99_rtf><span style=" font-family:'Verdana'; color:#FFFFFF; font-size:11pt;"><b>Template</b></span></DIV></DIV>
+<DIV id=ou100 style="position:absolute; left:8px; top:216px; width:175px; height:115px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:183px; height:123px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- Preferences_files/u100.png',sizingMethod='scale');
+"><img style="width:183px; height:123px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Admin -- Preferences_files/u100.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u100container style="position:absolute; left:8px; top:216px; width:175px; height:115px;; overflow:visible">
+
+<DIV id=u101 style="position:absolute; left:2px; top:49px; width:170px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u101_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u100 src="Resources/transparent.gif" style="position:absolute; left:8px; top:216px; width:174px; height:114px"  >
+
+<span style="position:absolute; left:10px; top:247px; width:173px; height:5px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- Preferences_files/u102.png',sizingMethod='scale');
+"><img style="width:173px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Admin -- Preferences_files/u102.png" border="0" alt=""></span>
+
+<IMG id=u102 src="Resources/transparent.gif" style="position:absolute; left:10px; top:246.5px; width:170px; height:2px">
+
+<DIV id=u103 style="position:absolute; left:20px; top:260px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u103_rtf><span style=" color:#333399; font-size:10pt;">Edit Latest News</span></DIV></DIV>
+<DIV id=u104 style="position:absolute; left:22px; top:225px; width:110px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u104_rtf><span style=" color:#333399; font-size:10pt;">Account Info</span></DIV></DIV>
+<span style="position:absolute; left:10px; top:284px; width:173px; height:5px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- Preferences_files/u105.png',sizingMethod='scale');
+"><img style="width:173px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Admin -- Preferences_files/u105.png" border="0" alt=""></span>
+
+<IMG id=u105 src="Resources/transparent.gif" style="position:absolute; left:10px; top:283.5px; width:170px; height:2px">
+
+<DIV id=u106 style="position:absolute; left:17px; top:300px; width:160px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u106_rtf><span style=" color:#333399; font-size:10pt;">Edit Contact Us information </span></DIV></DIV>
+<DIV id=u106ann style="font-size:1px; position:absolute; left:168px; top:296px; width:1px; height:1px; overflow:visible"></DIV>
+
+<DIV style="position:absolute; left:360px; top:522px; width:180px; height:95px; ; ; text-align: left ; font-family:'Courier New'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"  ><%= f.text_field :address %></DIV>
+
+<DIV id=u108 style="position:absolute; left:296px; top:444px; width:50px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u108_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Tag line</span></DIV></DIV>
+<DIV style="position:absolute; left:360px; top:440px; width:200px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :tag_line %></DIV>
+
+<DIV id=u110 style="position:absolute; left:203px; top:148px; width:177px; height:22px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u110_rtf><span style=" font-family:'Arial'; color:#000000; font-size:14pt;"><b>Configurations</b></span></DIV></DIV><SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
+<SCRIPT src="Admin -- Preferences_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>
+
+<% end %>

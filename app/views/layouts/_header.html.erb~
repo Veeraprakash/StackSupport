@@ -1,3 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS Menu Maker Installation Instructions</title>
+
+<style type="text/css">
+   body{padding:20px; font-size:15px; color:#000000; font-family:Arial, Helvetica, sans-serif;}
+   h2 {font-weight:bold; color:#000099; margin:10px 0px; }
+   p span {color:#006600; font-weight:bold; }
+   a, a:link, a:visited {color:#0000FF;}
+   textarea {width: 100%; padding: 10px; margin: 10px 0 15px 0; font-size: 20px; font-family: Consolas,monospace;}
+   textarea.html {height: 300px;}
+   p {margin: 0 0 10px 0;}
+   code, pre {font-family: Consolas,monospace; color: green;}
+   ol li {margin: 0 0 15px 0;}
+</style>
+
+</head>
+
+<body background="/images/Fotosearch_Customer service1.jpg">
+
+
+
+</body>
+</html>
 <DIV id=ou62 style="position:absolute; left:10px; top:20px; width:91px; height:61px;; overflow:visible">
 
 <span style="position:absolute; left:-3px; top:-3px; width:99px; height:69px; ;
@@ -91,4 +116,5 @@ src="/images/Client Area_files/u77.png" border="0" alt=""></span>
 <DIV id=u78_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:9pt;"><%= link_to "Contact Us", home_contactus_path %></span></DIV></DIV>
 <DIV id=u78ann style="font-size:1px; position:absolute; left:805px; top:58px; width:1px; height:1px; overflow:visible"></DIV>	
 <DIV id=u78ann style="font-size:1px; position:absolute; left:805px; top:58px; width:1px; height:1px; overflow:visible"></DIV>
+
 

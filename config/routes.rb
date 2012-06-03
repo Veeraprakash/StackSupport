@@ -1,5 +1,19 @@
 Sample::Application.routes.draw do
 
+  get "adminclosedtickets/show"
+
+ match "adminclosedtickets/view/:id"  => "adminclosedtickets#view"
+
+  match "adminclosedtickets/assign/:id" => "adminclosedtickets#assign"
+
+match "adminclosedtickets/support/:id" => "adminclosedtickets#support"
+
+  match "contacts/accinfo" => "contacts#accinfo"
+  match "home/contactus/:id" => "home#contactus"
+  match "contacts/contact" => "contacts#contact"
+ match "contacts/contact_update" => "contacts#contact_update"
+ match "contacts/acc_update" => "contacts#acc_update"
+
   devise_for :admins
   devise_for :users
   resources :categories

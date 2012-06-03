@@ -72,7 +72,7 @@ src="images/loginpage_files/u4.png" border="0" alt=""></span>
 <DIV id=u4ann style="font-size:1px; position:absolute; left:702px; top:146px; width:1px; height:1px; overflow:visible"></DIV>
 
 <DIV id=u6 style="position:absolute; left:270px; top:220px; width:240px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u6_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:11pt;"><b>Sign in to [company name]</b></span></DIV></DIV>
+<DIV id=u6_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:11pt;"><b>Sign in to Support Stack</b></span></DIV></DIV>
 <DIV id=u7 style="position:absolute; left:284px; top:290px; width:80px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u7_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:11pt;">Username</span></DIV></DIV>
 <div style="position:absolute; left:366px; top:283px; width:206px; height:30px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.email_field :email %></div>
@@ -114,7 +114,7 @@ src="images/loginpage_files/u15.png" border="0" alt=""></span>
 <DIV id=u15container style="position:absolute; left:540px; top:438px; width:171px; height:26px;; overflow:visible">
 
 <DIV id=u16 style="position:absolute; left:2px; top:4.5px; width:166px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
-<DIV id=u16_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#0000FF; font-size:10pt;"><%= link_to 'Forgot your password ?', {:controller=>"devise/passwords", :action=>"new"} %></u></span></div></DIV></DIV>
+<DIV id=u16_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#0000FF; font-size:10pt;"><%= link_to 'Forgot your password ?', new_user_password_path %></u></span></div></DIV></DIV>
 </DIV>
 
 

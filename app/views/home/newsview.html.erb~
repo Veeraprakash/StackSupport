@@ -1,3 +1,7 @@
+ <%= render :partial => "layouts/header" %>
+
+<%= render :partial => "layouts/login" %>
+<DIV id=u55container style="position:absolute; left:50px; top:100px; width:375px; height:409px;; overflow:visible">
 <h1>News</h1>
 <p id="notice"><%= notice %></p>
 
@@ -12,11 +16,6 @@
 </p>
 
 <p>
-  <b>News type:</b>
-  <%= @news.news_type %>
-</p>
-
-<p>
   <b>Posted by:</b>
   <%= @news.posted_by %>
 </p>
@@ -25,4 +24,4 @@
   <b>Contents:</b>
   <%= @news.contents %>
 </p>
-
+</DIV>

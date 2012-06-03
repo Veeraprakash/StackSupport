@@ -1,4 +1,5 @@
 class AdminopenticketsController < ApplicationController
+before_filter :authenticate_admin!
   def show
 	@tickets = Ticket.find_all_by_status("Open")
   end
@@ -18,14 +19,7 @@ class AdminopenticketsController < ApplicationController
  @ticket = Ticket.find(params[:id])
   
   end
-def postreply
-@ticket = Ticket.find(params[:id])
-  
-   @post =@ticket.posts.build(params[:post])
-   @post.save
 
-   redirect_to :action=>'show', :controller=>"adminopentickets"
-end
 
  	
 end

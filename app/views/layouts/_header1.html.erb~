@@ -1,95 +1,100 @@
-<DIV id=ou62 style="position:absolute; left:10px; top:20px; width:91px; height:61px;; overflow:visible">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS Menu Maker Installation Instructions</title>
 
-<span style="position:absolute; left:-3px; top:-3px; width:99px; height:69px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/clientarea_files/u62.png',sizingMethod='scale');
-"><img style="width:99px; height:69px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/clientarea_files/u62.png" border="0" alt=""></span>
+<style type="text/css">
+   body{padding:20px; font-size:13px; color:#000000; font-family:Arial, Helvetica, sans-serif;}
+   h2 {font-weight:bold; color:#000099; margin:10px 0px; }
+   p span {color:#006600; font-weight:bold; }
+   a, a:link, a:visited {color:#0000FF;}
+   textarea {width: 100%; padding: 10px; margin: 10px 0 15px 0; font-size: 20px; font-family: Consolas,monospace;}
+   textarea.html {height: 300px;}
+   p {margin: 0 0 10px 0;}
+   code, pre {font-family: Consolas,monospace; color: green;}
+   ol li {margin: 0 0 15px 0;}
+</style>
 
-</DIV>
-<DIV id=u62container style="position:absolute; left:10px; top:20px; width:91px; height:61px;; overflow:visible">
+</head>
 
-<DIV id=u63 style="position:absolute; left:2px; top:22px; width:86px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
-<DIV id=u63_rtf>&nbsp;</DIV></DIV>
-</DIV>
-<IMG id=u62 src="Resources/transparent.gif" style="position:absolute; left:10px; top:20px; width:90px; height:60px"  >
+<body background="/images/Fotosearch_Customer service1.jpg">
 
-<DIV id=u64 style="position:absolute; left:121px; top:20px; width:189px; height:24px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u64_rtf><span style=" font-family:'Arial'; color:#000000; font-size:16pt;"><b>[ Company name ]</b></span></DIV></DIV>
-<DIV id=u65 style="position:absolute; left:31px; top:38px; width:60px; height:24px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u65_rtf><span style=" font-family:'Arial'; color:#000000; font-size:16pt;"><b>Logo</b></span></DIV></DIV>
-<DIV id=u66 style="position:absolute; left:122px; top:51px; width:98px; height:19px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u66_rtf><span style=" font-family:'Arial'; color:#000000; font-size:12pt;"><b>Support</b></span></DIV></DIV>
-<DIV id=ou67 style="position:absolute; left:10px; top:94px; width:841px; height:9px;; overflow:visible">
+<h2>Support Stack</h2>
 
-<span style="position:absolute; left:-3px; top:-3px; width:849px; height:17px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/clientarea_files/u67.png',sizingMethod='scale');
-"><img style="width:849px; height:17px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/clientarea_files/u67.png" border="0" alt=""></span>
+<style type="text/css">
+.cssmenu {
+	width: 78%;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	background: #000000 url(menu_assets/images/bg-bubplastic.gif) top left repeat-x;
+}
+.cssmenu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.cssmenu ul li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	background: transparent url(menu_assets/images/bg-bubplastic-button.gif) top left no-repeat;
+}
 
-</DIV>
-<DIV id=u67container style="position:absolute; left:10px; top:94px; width:841px; height:9px;; overflow:visible">
+.cssmenu ul li a {
+	display: block;
+	height: 30px;
+        padding-top: 10px;
+	padding-left: 35px;
+	float: left;
+	text-transform: uppercase;
+	font-family: 'Helvetica Neue',helvetica,'microsoft sans serif',arial,sans-serif;
+	font-size: 70%;
+	color: #FFFFFF;
+	text-decoration: none;
+}
 
-<DIV id=u68 style="position:absolute; left:2px; top:-4px; width:836px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
-<DIV id=u68_rtf>&nbsp;</DIV></DIV>
-</DIV>
-<IMG id=u67 src="Resources/transparent.gif" style="position:absolute; left:10px; top:94px; width:840px; height:8px"  >
+.cssmenu ul li a span {
+	display: block;
+	float: left;
+	height: 22px;
+	padding-top: 10px;
+	padding-right: 35px;
+	background: transparent url(menu_assets/images/bg-bubplastic-button.gif) top right no-repeat;
+	cursor: pointer;
+}
 
-<span style="position:absolute; left:471px; top:10px; width:45px; height:45px">
-<IMG id=ou69 src="images/clientarea_files/u69.gif" style="position:absolute;left:0px;top:0px;width:45px;height:45px">
-</span>
-<IMG id=u69 src="Resources/transparent.gif" style="position:absolute; left:471px; top:10px; width:45px; height:45px"   >
 
-<DIV id=u69ann style="font-size:1px; position:absolute; left:507px; top:6px; width:1px; height:1px; overflow:visible"></DIV>
+.cssmenu ul li a:hover,
+.cssmenu ul li.active a {
+	background: transparent url(menu_assets/images/bg-bubplastic-h-blue.gif) top left no-repeat;
+}
+.cssmenu ul li a:hover span,
+.cssmenu ul li.active a span {
+	background: transparent url(menu_assets/images/bg-bubplastic-h-blue.gif) top right no-repeat;
+}
 
-<DIV id=u70 style="position:absolute; left:476px; top:62px; width:50px; height:15px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u70_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:9pt;"><%= link_to'Home', home_homepage_path %></span></DIV></DIV>
-<DIV id=u70ann style="font-size:1px; position:absolute; left:517px; top:58px; width:1px; height:1px; overflow:visible"></DIV>
+</style>
+<div class='cssmenu'>
+<ul>
+   <li class='active '><span><%= link_to'Home', home_homepage_path %></span></a></li>
+   <li><a href='#'><span><%= link_to 'News', home_news_path %></span></a></li>
+   <li><a href='#'><span><%= link_to'Create Ticket', new_ticket_path %></span></a></li>
+   <li><a href='#'><span><%= link_to'Ticket History', tickets_path %></span></a></li>
+   <li><a href='#'><span><%= link_to "Contact Us", home_contactus_path %></span></a></li>
+</ul>
+</div>
+<div style="clear:both; margin: 0 0 30px 0;">&nbsp;</div>
 
-<span style="position:absolute; left:529px; top:10px; width:45px; height:45px">
-<IMG id=ou71 src="images/clientarea_files/u71.gif" style="position:absolute;left:0px;top:0px;width:45px;height:45px">
-</span>
-<IMG id=u71 src="Resources/transparent.gif" style="position:absolute; left:529px; top:10px; width:45px; height:45px"   >
 
-<DIV id=u71ann style="font-size:1px; position:absolute; left:565px; top:6px; width:1px; height:1px; overflow:visible"></DIV>
 
-<DIV id=u72 style="position:absolute; left:533px; top:62px; width:50px; height:15px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u72_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:9pt;"><%= link_to 'News', home_news_path %></span></DIV></DIV>
-<span style="position:absolute; left:599px; top:10px; width:45px; height:45px">
-<IMG id=ou73 src="images/clientarea_files/u73.jpg" style="position:absolute;left:0px;top:0px;width:45px;height:45px">
-</span>
-<IMG id=u73 src="Resources/transparent.gif" style="position:absolute; left:599px; top:10px; width:45px; height:45px"   >
+</body>
+</html>
 
-<DIV id=u73ann style="font-size:1px; position:absolute; left:635px; top:6px; width:1px; height:1px; overflow:visible"></DIV>
 
-<DIV id=u74 style="position:absolute; left:584px; top:63px; width:88px; height:15px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u74_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:9pt;"><%= link_to'Create Ticket', new_ticket_path %></span></DIV></DIV>
-<DIV id=u74ann style="font-size:1px; position:absolute; left:663px; top:59px; width:1px; height:1px; overflow:visible"></DIV>
 
-<span style="position:absolute; left:676px; top:10px; width:45px; height:45px">
-<IMG id=ou75 src="images/clientarea_files/u75.jpg" style="position:absolute;left:0px;top:0px;width:45px;height:45px">
-</span>
-<IMG id=u75 src="Resources/transparent.gif" style="position:absolute; left:676px; top:10px; width:45px; height:45px"   >
 
-<DIV id=u75ann style="font-size:1px; position:absolute; left:712px; top:6px; width:1px; height:1px; overflow:visible"></DIV>
-
-<DIV id=u76 style="position:absolute; left:667px; top:63px; width:98px; height:15px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u76_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:9pt;"><%= link_to'Ticket History', tickets_path %></span></DIV></DIV>
-<DIV id=u76ann style="font-size:1px; position:absolute; left:756px; top:59px; width:1px; height:1px; overflow:visible"></DIV>
-
-<span style="position:absolute; left:752px; top:10px; width:45px; height:45px">
-<span id=ou77 style="position:absolute;left:0px;top:0px;width:45px;height:45px;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/clientarea_files/u77.png',sizingMethod='scale');
-"><img style="width:45px; height:45px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="images/clientarea_files/u77.png" border="0" alt=""></span>
-</span>
-
-<IMG id=u77 src="Resources/transparent.gif" style="position:absolute; left:752px; top:10px; width:45px; height:45px"   >
-
-<DIV id=u77ann style="font-size:1px; position:absolute; left:788px; top:6px; width:1px; height:1px; overflow:visible"></DIV>
-
-<DIV id=u78 style="position:absolute; left:751px; top:62px; width:63px; height:15px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u78_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:9pt;"><%= link_to "Contact Us", home_contactus_path %></span></DIV></DIV>
-<DIV id=u78ann style="font-size:1px; position:absolute; left:805px; top:58px; width:1px; height:1px; overflow:visible"></DIV>	
 <DIV id=u78ann style="font-size:1px; position:absolute; left:805px; top:58px; width:1px; height:1px; overflow:visible"></DIV>
 <DIV id=u29 style="position:absolute; left:670px; top:175px; width:300px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u29_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>Welcome <% if user_signed_in? %><%= current_user.fullname %></b></span></DIV></DIV>

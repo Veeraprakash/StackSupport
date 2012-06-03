@@ -1,0 +1,253 @@
+<HTML><HEAD><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta http-equiv="imagetoolbar" content="no"><link href="Resources/axurerppage.css" type="text/css" rel="stylesheet"></HEAD><BODY>
+<script type="text/javascript">
+function InitializeSubmenu(submenucontainerid, tablecellroid, tablecellid, fname) { 
+var s = "";
+s = s + "function " + fname + "() { ";
+s = s + "document.getElementById(submenucontainerid).style.visibility='';";
+s = s + "BringToFront(submenucontainerid);";
+s = s + "}";
+if ((index = navigator.userAgent.indexOf("MSIE")) >= 0)
+s = s + "document.getElementById('" + tablecellid + "').attachEvent(\"onmouseover\", " + fname + ");";
+else
+s = s + "document.getElementById('" + tablecellid + "').addEventListener(\"mouseover\", " + fname + ", true);";
+s = s + "document.getElementById(tablecellroid).onclick = function() {";
+s = s + "if( document.createEvent ) {";
+s = s + "var evObj = document.createEvent('MouseEvents');";
+s = s + "evObj.initEvent( 'click', true, false );";
+s = s + "document.getElementById(tablecellid).dispatchEvent(evObj);";
+s = s + "} else if( document.createEventObject ) {";
+s = s + "document.getElementById(tablecellid).fireEvent('onclick');";
+s = s + "}";
+s = s + "}";
+eval(s);
+}
+</script>
+
+<%= form_for :contact,:url=>{:controller=>"admin", :action=>"home"} do |f| %>
+<IMG id=u52 src="Resources/transparent.gif" style="position:absolute; left:8px; top:180px; width:174px; height:35px"  >
+
+<DIV id=u54 style="position:absolute; left:21px; top:188px; width:109px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u54_rtf><span style=" font-family:'Verdana'; color:#FFFFFF; font-size:11pt;"><b>Template</b></span></DIV></DIV>
+<DIV id=ou55 style="position:absolute; left:8px; top:216px; width:175px; height:115px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:183px; height:123px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- Contact page_files/u55.png',sizingMethod='scale');
+"><img style="width:183px; height:123px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Admin -- Contact page_files/u55.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u55container style="position:absolute; left:8px; top:216px; width:175px; height:115px;; overflow:visible">
+
+<DIV id=u56 style="position:absolute; left:2px; top:49px; width:170px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u56_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u55 src="Resources/transparent.gif" style="position:absolute; left:8px; top:216px; width:174px; height:114px"  >
+
+<span style="position:absolute; left:10px; top:247px; width:173px; height:5px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- Contact page_files/u57.png',sizingMethod='scale');
+"><img style="width:173px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Admin -- Contact page_files/u57.png" border="0" alt=""></span>
+
+<IMG id=u57 src="Resources/transparent.gif" style="position:absolute; left:10px; top:246.5px; width:170px; height:2px">
+
+<DIV id=u58 style="position:absolute; left:20px; top:260px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u58_rtf><span style=" color:#333399; font-size:10pt;">Edit Latest News</span></DIV></DIV>
+<DIV id=u59 style="position:absolute; left:22px; top:225px; width:110px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u59_rtf><span style=" color:#333399; font-size:10pt;">Account Info</span></DIV></DIV>
+<span style="position:absolute; left:10px; top:284px; width:173px; height:5px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- Contact page_files/u60.png',sizingMethod='scale');
+"><img style="width:173px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Admin -- Contact page_files/u60.png" border="0" alt=""></span>
+
+<IMG id=u60 src="Resources/transparent.gif" style="position:absolute; left:10px; top:283.5px; width:170px; height:2px">
+
+<DIV id=u61 style="position:absolute; left:17px; top:300px; width:160px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u61_rtf><span style=" color:#333399; font-size:10pt;">Edit Contact Us information </span></DIV></DIV>
+<DIV id=u61ann style="font-size:1px; position:absolute; left:168px; top:296px; width:1px; height:1px; overflow:visible"></DIV>
+
+<DIV id=ou62 style="position:absolute; left:209px; top:231px; width:652px; height:69px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:660px; height:77px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- Contact page_files/u62.png',sizingMethod='scale');
+"><img style="width:660px; height:77px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Admin -- Contact page_files/u62.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u62container style="position:absolute; left:209px; top:231px; width:652px; height:69px;; overflow:visible">
+
+<DIV id=u63 style="position:absolute; left:2px; top:26px; width:647px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u63_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u62 src="Resources/transparent.gif" style="position:absolute; left:209px; top:231px; width:651px; height:68px"  >
+
+<DIV id=u64 style="position:absolute; left:224px; top:250px; width:641px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u64_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Welcome to Contact page section. Here you can edit the contact information which will be displayed in the contact us page.... Please add valid entries inorder to prevent any loss in your reputation</span></DIV></DIV>
+<DIV id=ou65 style="position:absolute; left:210px; top:317px; width:651px; height:924px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:659px; height:932px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- Contact page_files/u65.png',sizingMethod='scale');
+"><img style="width:659px; height:932px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Admin -- Contact page_files/u65.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u65container style="position:absolute; left:210px; top:317px; width:651px; height:924px;; overflow:visible">
+
+<DIV id=u66 style="position:absolute; left:2px; top:453.5px; width:646px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u66_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u65 src="Resources/transparent.gif" style="position:absolute; left:210px; top:317px; width:650px; height:923px"  >
+
+<DIV id=ou67 style="position:absolute; left:231px; top:425px; width:585px; height:105px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:593px; height:113px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- Contact page_files/u67.png',sizingMethod='scale');
+"><img style="width:593px; height:113px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Admin -- Contact page_files/u67.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u67container style="position:absolute; left:231px; top:425px; width:585px; height:105px;; overflow:visible">
+
+<DIV id=u68 style="position:absolute; left:2px; top:44px; width:580px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u68_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u67 src="Resources/transparent.gif" style="position:absolute; left:231px; top:425px; width:584px; height:104px"  >
+
+<DIV id=ou69 style="position:absolute; left:212px; top:319px; width:646px; height:36px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:654px; height:44px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- Contact page_files/u69.png',sizingMethod='scale');
+"><img style="width:654px; height:44px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Admin -- Contact page_files/u69.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u69container style="position:absolute; left:212px; top:319px; width:646px; height:36px;; overflow:visible">
+
+<DIV id=u70 style="position:absolute; left:2px; top:8px; width:641px; height:19px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u70_rtf><span style=" color:#000000; font-size:12pt;"><b>&nbsp;&nbsp; Edit Contact Information</b></span></DIV></DIV>
+</DIV>
+<IMG id=u69 src="Resources/transparent.gif" style="position:absolute; left:212px; top:319px; width:645px; height:35px"  >
+
+<DIV id=u71 style="position:absolute; left:234px; top:372px; width:600px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u71_rtf><span style=" font-family:'Verdana'; color:#808080; font-size:10pt;">Give your phone numbers for general enquiries purpose in the boxes...if you have no numbers just lmake the box empty......</span></DIV></DIV>
+<DIV id=u72 style="position:absolute; left:250px; top:466px; width:280px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u72_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>Phone numbers for General Enquiries</b></span></DIV></DIV>
+<DIV style="position:absolute; left:543px; top:445px; width:205px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :general_phone1 %></DIV>
+
+<DIV style="position:absolute; left:543px; top:480px; width:205px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :general_phone2 %></DIV>
+
+<DIV id=ou75 style="position:absolute; left:231px; top:594px; width:585px; height:105px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:593px; height:113px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- Contact page_files/u75.png',sizingMethod='scale');
+"><img style="width:593px; height:113px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Admin -- Contact page_files/u75.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u75container style="position:absolute; left:231px; top:594px; width:585px; height:105px;; overflow:visible">
+
+<DIV id=u76 style="position:absolute; left:2px; top:44px; width:580px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u76_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u75 src="Resources/transparent.gif" style="position:absolute; left:231px; top:594px; width:584px; height:104px"  >
+
+<DIV id=u77 style="position:absolute; left:240px; top:547px; width:580px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u77_rtf><span style=" font-family:'Verdana'; color:#808080; font-size:10pt;">Give your mailing address in the box below.. So that the customers can contact through the mail address you provide.......</span></DIV></DIV>
+<DIV id=u78 style="position:absolute; left:260px; top:629px; width:130px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u78_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>Mailing Address</b></span></DIV></DIV>
+<DIV style="position:absolute; left:400px; top:609px; width:350px; height:75px; ; ; text-align: left ; font-family:'Courier New'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"  ><%= f.text_area :mailing_address, :size => "50x5" %></DIV>
+
+<DIV id=ou80 style="position:absolute; left:237px; top:766px; width:585px; height:185px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:593px; height:193px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- Contact page_files/u80.png',sizingMethod='scale');
+"><img style="width:593px; height:193px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Admin -- Contact page_files/u80.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u80container style="position:absolute; left:237px; top:766px; width:585px; height:185px;; overflow:visible">
+
+<DIV id=u81 style="position:absolute; left:2px; top:84px; width:580px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u81_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u80 src="Resources/transparent.gif" style="position:absolute; left:237px; top:766px; width:584px; height:184px"  >
+
+<DIV id=u82 style="position:absolute; left:240px; top:721px; width:600px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u82_rtf><span style=" font-family:'Verdana'; color:#808080; font-size:10pt;">Give your phone numbers for Technical support queries...please verify the phone number and E-mail Id of Technical support....</span></DIV></DIV>
+<DIV id=u83 style="position:absolute; left:265px; top:828px; width:280px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u83_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>Phone number for Technical support</b></span></DIV></DIV>
+<DIV style="position:absolute; left:549px; top:782px; width:211px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :tech_phone %></DIV>
+
+<DIV id=u85 style="position:absolute; left:300px; top:784px; width:240px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u85_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>E-mail ID for Technical support</b></span></DIV></DIV>
+<DIV style="position:absolute; left:550px; top:822px; width:110px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :tech_email %></DIV>
+
+<DIV id=ou87 style="position:absolute; left:237px; top:997px; width:585px; height:173px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:593px; height:181px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- Contact page_files/u87.png',sizingMethod='scale');
+"><img style="width:593px; height:181px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Admin -- Contact page_files/u87.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u87container style="position:absolute; left:237px; top:997px; width:585px; height:173px;; overflow:visible">
+
+<DIV id=u88 style="position:absolute; left:2px; top:78px; width:580px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u88_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u87 src="Resources/transparent.gif" style="position:absolute; left:237px; top:997px; width:584px; height:172px"  >
+
+<DIV id=u89 style="position:absolute; left:240px; top:958px; width:600px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u89_rtf><span style=" font-family:'Verdana'; color:#808080; font-size:10pt;">Give your phone numbers for Sales support queries...please verify the phone number and E-mail Id of Technical support....</span></DIV></DIV>
+<DIV id=u90 style="position:absolute; left:299px; top:1058px; width:240px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u90_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>Phone number for Sales support</b></span></DIV></DIV>
+<DIV style="position:absolute; left:549px; top:1012px; width:205px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :sales_phone %></DIV>
+
+<DIV id=u92 style="position:absolute; left:332px; top:1016px; width:198px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u92_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>E-mail ID for Sales support</b></span></DIV></DIV>
+<DIV style="position:absolute; left:550px; top:1052px; width:130px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :sales_email %></DIV>
+
+<DIV value="Save Changes" style="position:absolute; left:447px; top:1190px; width:100px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" ><%= f.submit 'ok' %></DIV>
+
+<DIV id=u95 style="position:absolute; left:580px; top:1194px; width:50px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u95_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><%= link_to 'Cancel', admin_home_path %></u></span></DIV></DIV>
+<DIV id=u96 style="position:absolute; left:557px; top:1194px; width:20px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u96_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Or</span></DIV></DIV>
+<DIV id=u97 style="visibility:hidden; position:absolute; left:300px; top:177px; width:391px; height:48px;; overflow:hidden">
+<DIV id=pd0u97 style="position:absolute; left:0px; top:0px; width:1px; height:1px; visibility:hidden;">
+<DIV id=ou98 style="position:absolute; left:6px; top:7px; width:368px; height:34px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:376px; height:42px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- Contact page_files/u98.png',sizingMethod='scale');
+"><img style="width:376px; height:42px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Admin -- Contact page_files/u98.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u98container style="position:absolute; left:6px; top:7px; width:368px; height:34px;; overflow:visible">
+
+<DIV id=u99 style="position:absolute; left:2px; top:10px; width:363px; height:13px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u99_rtf><div style="text-align:center"><span style=" font-family:'Verdana'; color:#000000; font-size:8pt;">Contact information details are successfully updated</span></div></DIV></DIV>
+</DIV>
+<IMG id=u98 src="Resources/transparent.gif" style="position:absolute; left:6px; top:7px; width:367px; height:33px"  >
+
+</DIV>
+</DIV>
+
+<DIV id=u101 style="position:absolute; left:319px; top:1099px; width:220px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u101_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>Fax number for Sales support</b></span></DIV></DIV>
+
+<DIV style="position:absolute; left:550px; top:1092px; width:130px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :sales_fax %></DIV>
+
+<DIV id=u104 style="position:absolute; left:286px; top:871px; width:249px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u104_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>Fax number for Technical support</b></span></DIV></DIV>
+<DIV style="position:absolute; left:550px; top:865px; width:130px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :tech_fax %></DIV>
+
+<DIV id=u106 style="position:absolute; left:281px; top:910px; width:129px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u106_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>Add description</b></span></DIV></DIV>
+<DIV style="position:absolute; left:420px; top:905px; width:260px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :tech_desc %></DIV>
+
+<DIV id=u108 style="position:absolute; left:321px; top:1134px; width:129px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u108_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>Add description</b></span></DIV></DIV>
+<DIV style="position:absolute; left:460px; top:1129px; width:260px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :sales_desc %></DIV>
+<SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
+<SCRIPT src="Admin -- Contact page_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>
+<% end %>

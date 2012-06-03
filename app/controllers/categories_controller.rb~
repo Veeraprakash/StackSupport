@@ -5,7 +5,7 @@ before_filter :authenticate_admin!
     @categories = Category.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html
       format.xml  { render :xml => @categories }
     end
   end
@@ -14,7 +14,7 @@ before_filter :authenticate_admin!
     @category = Category.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html 
       format.xml  { render :xml => @category }
     end
   end
@@ -23,7 +23,7 @@ before_filter :authenticate_admin!
     @category = Category.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html 
       format.xml  { render :xml => @category }
     end
   end
