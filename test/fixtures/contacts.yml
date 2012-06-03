@@ -1,33 +1,53 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
+  general_phone: MyString
+  mailing_address: MyString
+  tech_email: MyString
+  tech_phone: MyString
+  tech_fax: MyString
+  tech_desc: MyString
+  sales_email: MyString
+  sales_phone: MyString
+  sales_fax: MyString
+  sales_desc: MyString
   company_name: MyString
   tag_line: MyString
   logo: MyString
   address: MyString
-  zip_code: 1
-  phone: 1
-  fax: 1
-  website: MyString
-  account_created: 2012-05-28
-  time_zone: MyString
-  date_format: 2012-05-28
+  zip: 1
+  phone: MyString
+  fax: MyString
+  web: MyString
+  created_date: 2012-06-02
+  time: 2012-06-02 13:42:01
+  date_format: MyString
   name: MyString
   email: MyString
-  phone: 1
+  company_phone: MyString
 
 two:
+  general_phone: MyString
+  mailing_address: MyString
+  tech_email: MyString
+  tech_phone: MyString
+  tech_fax: MyString
+  tech_desc: MyString
+  sales_email: MyString
+  sales_phone: MyString
+  sales_fax: MyString
+  sales_desc: MyString
   company_name: MyString
   tag_line: MyString
   logo: MyString
   address: MyString
-  zip_code: 1
-  phone: 1
-  fax: 1
-  website: MyString
-  account_created: 2012-05-28
-  time_zone: MyString
-  date_format: 2012-05-28
+  zip: 1
+  phone: MyString
+  fax: MyString
+  web: MyString
+  created_date: 2012-06-02
+  time: 2012-06-02 13:42:01
+  date_format: MyString
   name: MyString
   email: MyString
-  phone: 1
+  company_phone: MyString
