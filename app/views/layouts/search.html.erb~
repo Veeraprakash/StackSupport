@@ -1,0 +1,23 @@
+
+<%= form_tag(:controller => "home", :action => "search", :params => params) do %>
+<DIV id=u37container style="position:absolute; left:664px; top:370px; width:196px; height:37px;; overflow:visible">
+
+<DIV id=u38 style="position:absolute; left:2px; top:10px; width:191px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u38_rtf><span style=" color:#000000; font-size:10pt;"><b>&nbsp;&nbsp; Search</b></span></DIV></DIV>
+</DIV>
+<IMG id=u37 src="Resources/transparent.gif" style="position:absolute; left:664px; top:370px; width:195px; height:36px"  >
+
+<DIV id=u39 style="position:absolute; left:668px; top:420px; width:170px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u39_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Search by entering keywords</span></DIV></DIV>
+<DIV style="position:absolute; left:668px; top:448px; width:170px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%=text_field_tag :name%></DIV>
+
+<DIV style="position:absolute; left:758px; top:485px; width:70px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" ><%= submit_tag "Search" %></DIV>
+
+<DIV id=ou42 style="position:absolute; left:95px; top:128px; width:81px; height:31px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:89px; height:39px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Read an news item_files/u42.png',sizingMethod='scale');
+"><img style="width:89px; height:39px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="Read an news item_files/u42.png" border="0" alt=""></span>
+<% end %>
+</DIV>
