@@ -87,7 +87,7 @@ src="/images/Admin -- FAQ_files/u60.png" border="0" alt=""></span>
 <IMG id=u60 src="Resources/transparent.gif" style="position:absolute; left:10px; top:252.5px; width:170px; height:2px">
 
 <DIV id=u61 style="position:absolute; left:22px; top:228px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u61_rtf><span style=" color:#333399; font-size:10pt;">Knowledge base</span></DIV></DIV>
+<DIV id=u61_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'Knowledge base', categories_path %></span></DIV></DIV>
 <span style="position:absolute; left:10px; top:334px; width:173px; height:5px; ;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Admin -- FAQ_files/u62.png',sizingMethod='scale');
 "><img style="width:173px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
@@ -96,7 +96,7 @@ src="/images/Admin -- FAQ_files/u62.png" border="0" alt=""></span>
 <IMG id=u62 src="Resources/transparent.gif" style="position:absolute; left:10px; top:333.5px; width:170px; height:2px">
 
 <DIV id=u63 style="position:absolute; left:19px; top:343px; width:100px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u63_rtf><span style=" color:#333399; font-size:10pt;">Create Category</span></DIV></DIV>
+<DIV id=u63_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'Create Category', new_category_path %></span></DIV></DIV>
 <span style="position:absolute; left:10px; top:367px; width:173px; height:5px; ;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Admin -- FAQ_files/u64.png',sizingMethod='scale');
 "><img style="width:173px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
@@ -105,7 +105,7 @@ src="/images/Admin -- FAQ_files/u64.png" border="0" alt=""></span>
 <IMG id=u64 src="Resources/transparent.gif" style="position:absolute; left:10px; top:366.5px; width:170px; height:2px">
 
 <DIV id=u65 style="position:absolute; left:20px; top:380px; width:120px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u65_rtf><span style=" color:#333399; font-size:10pt;">Manage Category</span></DIV></DIV>
+<DIV id=u65_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'Manage Category', categories_path %></span></DIV></DIV>
 <DIV id=ou66 style="position:absolute; left:209px; top:229px; width:660px; height:51px;; overflow:visible">
 
 <span style="position:absolute; left:-3px; top:-3px; width:668px; height:59px; ;
@@ -182,7 +182,7 @@ src="/images/Admin -- FAQ_files/u73.png" border="0" alt=""></span>
 
 <DIV id=u80 style="position:absolute; left:247px; top:428px; width:60px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u80_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Category:</span></DIV></DIV>
-<div id=u81  style="position:absolute; left:311px; top:425px; width:175px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<div id=u81  style="position:absolute; left:311px; top:425px; width:25px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
 <%= f.select :category, options_for_select(Category.all.collect {|p| [p.category_name]}, {:prompt => 'select category'}) %>
 </div>
 
@@ -210,7 +210,7 @@ src="/images/Admin -- FAQ_files/u85.png" border="0" alt=""></span>
 
 <DIV id=u87 style="position:absolute; left:243px; top:610px; width:62px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u87_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;"><%= f.label :contents %></span></DIV></DIV>
-<div id=u88  style="position:absolute; left:307px; top:606px; width:340px; height:110px; ; ; text-align: left ; font-family:'Courier New'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"  ><%= f.text_area :contents , :size => "50x5"%></div>
+<div id=u88  style="position:absolute; left:307px; top:606px; width:340px; height:110px; ; ; text-align: left ; font-family:'Courier New'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"  ><%= f.text_area :contents , :size => "50x2"%></div>
 
 <DIV id=u89 style="position:absolute; left:307px; top:582px; width:343px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u89_rtf><span style=" font-family:'Arial'; color:#FF0000; font-size:10pt;">Here the toolbox should appear with bold, Italic buttons ...</span></DIV></DIV>

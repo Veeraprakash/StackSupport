@@ -1,4 +1,4 @@
-
+<script src="/javascripts/livevalidation_standalone.js"></script>
 <%= form_for(@news) do |f| %>
   <% if @news.errors.any? %>
     <div id="error_explanation">
@@ -35,6 +35,18 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+
+ <script>
+var f1 = new LiveValidation('news_subject');
+f1.add( Validate.Presence ); </script>
+
+ <script>
+var f2 = new LiveValidation('news_contents');
+f2.add( Validate.Presence ); </script>
+
+<script>
+var f2 = new LiveValidation('news_posted_by');
+f2.add( Validate.Presence ); </script>
 <% end %>
 
 

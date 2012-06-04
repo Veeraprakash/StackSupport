@@ -43,10 +43,7 @@ src="/images/Admin -- All Tickets_files/u61.png" border="0" alt=""></span>
 
 <DIV id=u62 style="position:absolute; left:17px; top:325px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u62_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'Completed tickets', adminclosedtickets_show_path %></span></DIV></DIV>
-<DIV id=u63 style="position:absolute; left:17px; top:362px; width:120px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u63_rtf><span style=" color:#333399; font-size:10pt;">Denied Tickets</span></DIV></DIV>
-<DIV id=u64 style="position:absolute; left:17px; top:395px; width:100px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u64_rtf><span style=" font-family:'Arial'; color:#333399; font-size:10pt;">Submit Ticket</span></DIV></DIV>
+
 <DIV id=u64ann style="font-size:1px; position:absolute; left:108px; top:391px; width:1px; height:1px; overflow:visible"></DIV>
 <DIV style="position:absolute; left:200px; top:140px;; overflow:visible">
 
