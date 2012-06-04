@@ -1,9 +1,11 @@
 class HomeController < ApplicationController
-before_filter :authenticate_user!, :only => [:login]
+before_filter :authenticate_user!, :only => [:login, :help]
   def homepage
        @news = News.all
 end
-
+def help
+ 
+end
 def login
 @tickets = Ticket.find_all_by_user_id(current_user.id)
 end
@@ -11,8 +13,6 @@ end
 def contactus
  @contact = Contact.find(params[:id])
 
-    
- 
  end
 
 def search

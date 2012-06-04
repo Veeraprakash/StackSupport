@@ -165,7 +165,7 @@ src="/images/Client Area_files/u80.png" border="0" alt=""></span>
 <IMG id=u81 src="Resources/transparent.gif" style="position:absolute; left:690px; top:115px; width:19px; height:19px"   >
 
 <DIV id=u82 style="position:absolute; left:715px; top:115px; width:31px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u82_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><u>Help</u></span></DIV></DIV>
+<DIV id=u82_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><u><%= link_to 'Help', home_help_path %></u></span></DIV></DIV>
 <span style="position:absolute; left:757px; top:116px; width:15px; height:15px">
 <IMG id=ou83 src="/images/Client Area_files/u83.gif" style="position:absolute;left:0px;top:0px;width:15px;height:15px">
 </span>

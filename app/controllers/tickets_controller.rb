@@ -54,13 +54,15 @@ before_filter :authenticate_user!, :unless => :admin_signed_in?
     @ticket = Ticket.find(params[:id])
     respond_to do |format|
       if @ticket.update_attributes(params[:ticket])
-	@ticket.update_attributes(:status => "Pending")
+	 @ticket.update_attributes(:status => "Pending") 
+
         if admin_signed_in?  
        format.html { redirect_to(admin_ticket_path, :notice => 'Ticket was successfully updated.') }
 else
 	format.html { redirect_to(@ticket, :notice => 'Ticket was successfully updated.') }
 end
         format.xml  { head :ok }
+
 	else
         format.html { render :action => "edit" }
         format.xml  { render :xml => @ticket.errors, :status => :unprocessable_entity }
