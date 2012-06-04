@@ -55,7 +55,7 @@ src="/images/Admin -- detail view of the FAQ_files/u64.png" border="0" alt=""></
 <DIV id=u65 style="position:absolute; left:20px; top:380px; width:120px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u65_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'Manage Category', categories_path %></span></DIV></DIV>
 <DIV id=ou66 style="position:absolute; left:209px; top:188px; width:613px; height:483px;; overflow:visible"></DIV>
-<DIV style="position:absolute; left:200px; top:200px;; overflow:visible">
+<DIV style="position:absolute; left:200px; top:200px;width:613px; height:483px; overflow:visible">
 
 <%= form_for(@category) do |f| %>
   <% if @category.errors.any? %>
@@ -85,8 +85,8 @@ src="/images/Admin -- detail view of the FAQ_files/u64.png" border="0" alt=""></
 var f1 = new LiveValidation('category_category');
 f1.add( Validate.Presence ); </script>
 <script>
-var f1 = new LiveValidation('category_description');
-f1.add( Validate.Presence ); </script>
+var f2 = new LiveValidation('category_description');
+f2.add( Validate.Presence ); </script>
 <% end %>
 </DIV>
 
