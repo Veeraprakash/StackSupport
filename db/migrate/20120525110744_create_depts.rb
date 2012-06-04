@@ -4,9 +4,9 @@ class CreateDepts < ActiveRecord::Migration
       t.string :department_name
       t.string :description
       t.string :email
-      t.integer :phone1
+      t.string :phone1
       t.string :phone2
-      t.integer :fax
+      t.string :fax
 
       t.timestamps
     end

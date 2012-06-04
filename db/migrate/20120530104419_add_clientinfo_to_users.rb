@@ -7,9 +7,9 @@ class AddClientinfoToUsers < ActiveRecord::Migration
     add_column :users, :city, :string
     add_column :users, :state, :string
     add_column :users, :country, :string
-    add_column :users, :phone1, :integer
-    add_column :users, :phone2, :integer
-    add_column :users, :fax, :integer
+    add_column :users, :phone1, :string
+    add_column :users, :phone2, :string
+    add_column :users, :fax, :string
     add_column :users, :web, :string
     add_column :users, :username, :string
     add_column :users, :admin_id, :integer
