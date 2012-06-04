@@ -1,0 +1,75 @@
+<DIV id=u54 style="position:absolute; left:18px; top:184px; width:102px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u54_rtf><span style=" font-family:'Verdana'; color:#FFFFFF; font-size:11pt;"><b>Template</b></span></DIV></DIV>
+<DIV id=ou55 style="position:absolute; left:5px; top:212px; width:175px; height:209px;; overflow:visible">
+
+<span style="position:absolute; left:-3px; top:-3px; width:183px; height:217px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Admin -- All Tickets_files/u55.png',sizingMethod='scale');
+"><img style="width:183px; height:217px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="/images/Admin -- All Tickets_files/u55.png" border="0" alt=""></span>
+
+</DIV>
+<DIV id=u55container style="position:absolute; left:5px; top:212px; width:175px; height:209px;; overflow:visible">
+
+<DIV id=u56 style="position:absolute; left:2px; top:96px; width:170px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u56_rtf>&nbsp;</DIV></DIV>
+</DIV>
+<IMG id=u55 src="Resources/transparent.gif" style="position:absolute; left:5px; top:212px; width:174px; height:208px"  >
+
+<span style="position:absolute; left:7px; top:285px; width:173px; height:5px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Admin -- All Tickets_files/u57.png',sizingMethod='scale');
+"><img style="width:173px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="/images/Admin -- All Tickets_files/u57.png" border="0" alt=""></span>
+
+
+
+<DIV id=u58 style="position:absolute; left:17px; top:260px; width:120px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u58_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'Open tickets', adminopentickets_show_path %></span></DIV></DIV>
+<DIV id=u58ann style="font-size:1px; position:absolute; left:128px; top:256px; width:1px; height:1px; overflow:visible"></DIV>
+
+<span style="position:absolute; left:7px; top:317px; width:173px; height:5px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Admin -- All Tickets_files/u59.png',sizingMethod='scale');
+"><img style="width:173px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="/images/Admin -- All Tickets_files/u59.png" border="0" alt=""></span>
+
+
+
+<DIV id=u60 style="position:absolute; left:17px; top:293px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u60_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'Pending tickets', adminpendingtickets_show_path %></span></DIV></DIV>
+<span style="position:absolute; left:7px; top:349px; width:173px; height:5px; ;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Admin -- All Tickets_files/u61.png',sizingMethod='scale');
+"><img style="width:173px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
+src="/images/Admin -- All Tickets_files/u61.png" border="0" alt=""></span>
+
+
+<DIV id=u62 style="position:absolute; left:17px; top:325px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u62_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'Completed tickets', adminclosedtickets_show_path %></span></DIV></DIV>
+
+<DIV id=u55container style="position:absolute; left:200px; top:212px; width:375px; height:209px;; overflow:visible">
+<h1>Tickets --> Closed Tickets</h1>
+<table border ="1">
+  <tr>
+    <th>Client name</th>
+    <th>Ticket ID</th>
+    <th>Date</th>
+    <th>Ticket</th>
+    <th>Priority</th>
+    <th>Status</th>
+    <th>Department</th>
+    <th></th>
+       </tr>
+
+<% @tickets.each do |ticket| %>
+  <tr>
+    <td><%= ticket.customer_name %></td>
+    <td><%= ticket.id %></td>
+    <td><%= ticket.created_at %></td>
+    <td><%= link_to ticket.subject, "/adminclosedtickets/view/#{ticket.id}"%></td>
+    <td><%= ticket.priority %></td>
+    <td><%= ticket.status %></td>
+    <td><%= ticket.to %></td>
+  
+       <td><%= link_to 'Delete', ticket, :confirm => 'Are you sure?', :method => :delete %></td>
+        </tr>
+<% end %>
+</table>
+</DIV>
