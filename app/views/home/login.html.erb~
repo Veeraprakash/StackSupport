@@ -159,9 +159,7 @@ src="/images/Client Area_files/u80.png" border="0" alt=""></span>
 
 <IMG id=u80 src="Resources/transparent.gif" style="position:absolute; left:196px; top:136.5px; width:664px; height:2px">
 
-<span style="position:absolute; left:690px; top:115px; width:19px; height:19px">
-<IMG id=ou81 src="/images/Client Area_files/u81.gif" style="position:absolute;left:0px;top:0px;width:19px;height:19px">
-</span>
+
 <IMG id=u81 src="Resources/transparent.gif" style="position:absolute; left:690px; top:115px; width:19px; height:19px"   >
 
 <DIV id=u82 style="position:absolute; left:715px; top:115px; width:31px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
@@ -178,7 +176,7 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Client Ar
 "><img style="width:7px; height:23px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
 src="/images/Client Area_files/u85.png" border="0" alt=""></span>
 
-<IMG id=u85 src="Resources/transparent.gif" style="position:absolute; left:746.5px; top:113px; width:4px; height:20px">
+
 
 <DIV id=u86 style="position:absolute; left:200px; top:114px; width:220px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u86_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;"><b>Welcome <% if user_signed_in? %><%= current_user.fullname %><% end %></b></span></DIV></DIV><SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
