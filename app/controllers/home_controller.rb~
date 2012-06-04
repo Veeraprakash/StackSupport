@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-before_filter :authenticate_user!, :only => [:login, :help, :search]
+before_filter :authenticate_user!, :only => [:login]
   def homepage
        @news = News.all
 end
@@ -15,7 +15,7 @@ def contactus
 
 def search
   if @category=Category.find_by_category_name(params[:search])
-            @tem=@category.category_name
+        @tem=@category.category_name
          
   end
 
