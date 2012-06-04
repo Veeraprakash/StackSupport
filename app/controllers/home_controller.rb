@@ -14,11 +14,8 @@ def contactus
  end
 
 def search
-  if @category=Category.find_by_category_name(params[:search])
-        @tem=@category.category_name
-         
-  end
-
+   @faq=Faq.find_all_by_category(params[:name])
+ 	
 end 
 
 

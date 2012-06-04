@@ -1,15 +1,14 @@
-<% if @category_name.present? %>
+<% if @faq.present? %>
+
      <table border="1">
+        
         <tr>
-            <th>Category Name</th>
-            
-        </tr>
-        <tr>
-            <%  @category.each do |f| %>
-            <td><%= f.category_name %></td>
-            
+            <%  @faq.each do |f| %>
+            <td><%= link_to f.subject, "/knowlwedgebase/detail/#{f.id}" %></td>
            
+           <% end %>           
         </tr>
+ 	
         </table>
     <% else %>
         <p> NOT AVAILABLE </p>

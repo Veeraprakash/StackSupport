@@ -26,7 +26,7 @@ eval(s);
 <script src="/javascripts/livevalidation_standalone.js"></script>
 
 
-
+<%= render :partial => "layouts/search" %>
  <%= render :partial => "layouts/header1" %>
 <%= form_for @ticket,:html => { :multipart => true } do |f| %>
   <% if @ticket.errors.any? %>
