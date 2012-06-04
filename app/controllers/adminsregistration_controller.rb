@@ -34,14 +34,15 @@ prepend_before_filter :require_no_authentication, :only => [ :new, :create ]
        if admin_signed_in? and current_admin.privilege == true
       redirect_to after_sign_in_path_for(self.resource)
     else
-    if admin_signed_in? and current_admin.privilege == false
+    admin_signed_in? and current_admin.privilege == false
 	return'/admin/staffhome'
+end
     else
       clean_up_passwords(resource)
       render_with_scope :edit
     end
   end
-end
+
   # DELETE /resource
   def destroy
     resource.destroy
