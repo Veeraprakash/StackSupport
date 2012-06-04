@@ -22,6 +22,7 @@ s = s + "}";
 eval(s);
 }
 </script>
+<script src="/javascripts/livevalidation_standalone.js"></script>
  <%= render :partial => "layouts/header" %>
 <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
 <span style="position:absolute; left:215px; top:121px; width:509px; height:15px">
@@ -75,9 +76,9 @@ src="images/loginpage_files/u4.png" border="0" alt=""></span>
 <DIV id=u6_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:11pt;"><b>Sign in to Support Stack</b></span></DIV></DIV>
 <DIV id=u7 style="position:absolute; left:284px; top:290px; width:80px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u7_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:11pt;">Username</span></DIV></DIV>
-<div style="position:absolute; left:366px; top:283px; width:206px; height:30px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.email_field :email %></div>
+<div style="position:absolute; left:366px; top:283px; width:506px; height:30px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.email_field :email %></div>
 
-<div style="position:absolute; left:367px; top:326px; width:206px; height:30px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.password_field :password %></div>
+<div style="position:absolute; left:367px; top:326px; width:506px; height:30px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.password_field :password %></div>
 
 <DIV id=u10 style="position:absolute; left:287px; top:332px; width:80px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u10_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:11pt;">Password</span></DIV></DIV>
@@ -234,6 +235,14 @@ src="images/loginpage_files/u37.png" border="0" alt=""></span>
 <IMG id=u37 src="Resources/transparent.gif" style="position:absolute; left:10px; top:20px; width:90px; height:60px"  >
 
 <DIV id=u39 style="position:absolute; left:121px; top:20px; width:189px; height:24px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+ <script>
+var f1 = new LiveValidation('user_email');
+f1.add( Validate.Presence ); </script>
+
+ <script>
+var f1 = new LiveValidation('user_password');
+f1.add( Validate.Presence ); </script>
+
 
 <% end %>
 <SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
