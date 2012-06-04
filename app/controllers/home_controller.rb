@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-before_filter :authenticate_user!, :only => [:login, :help]
+before_filter :authenticate_user!, :only => [:login, :help, :search]
   def homepage
        @news = News.all
 end
