@@ -14,10 +14,13 @@ def contactus
  end
 
 def search
+  if @category=Category.find_by_category_name(params[:search])
+            @tem=@category.category_name
+         
+  end
+
 end 
 
-def aftsearch
-end
 
 def news
  @news = News.all

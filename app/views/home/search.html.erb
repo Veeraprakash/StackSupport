@@ -1,1 +1,16 @@
-<%= form_tag(:controller => "home", :action => "search", :params => params) do %>
+<% if @location.present? %>
+     <table border="1">
+        <tr>
+            <th>Category Name</th>
+            
+        </tr>
+        <tr>
+            <%  @category.each do |f| %>
+            <td><%= f.category_name %></td>
+            
+           
+        </tr>
+        </table>
+    <% else %>
+        <p> NOT AVAILABLE </p>
+    <% end %>
