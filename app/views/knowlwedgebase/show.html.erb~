@@ -1,5 +1,5 @@
  <%= render :partial => "layouts/header" %>
-<%= render :partial => "layouts/search" %>
+
 
 <DIV id=ou0 style="position:absolute; left:5px; top:118px; width:646px; height:31px;; overflow:visible">
 

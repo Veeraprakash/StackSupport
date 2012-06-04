@@ -1,4 +1,4 @@
-<%= render :partial => "layouts/search" %>
+
 <%= render :partial => "layouts/header" %>
 <DIV id=u53container style="position:absolute; left:100px; top:219px; width:641px; height:31px;; overflow:visible">
 <p id="notice"><%= notice %></p>
