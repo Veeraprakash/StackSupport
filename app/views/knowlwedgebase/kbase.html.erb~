@@ -1,4 +1,5 @@
 <%= render :partial => "layouts/header" %>
+<%= render :partial => "layouts/search" %>
 <DIV id=u53container style="position:absolute; left:100px; top:319px; width:641px; height:31px;; overflow:visible">
 <table cellspacing=30>
   <tr>
@@ -61,7 +62,7 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Knowledge Base_fi
 src="Knowledge Base_files/u61.png" border="0" alt=""></span>
 
 </DIV>
-<%= render :partial => "layouts/search" %>
+
 <DIV id=u67container style="position:absolute; left:-10px; top:616px; width:891px; height:76px;; overflow:visible">
 
 <DIV id=u68 style="position:absolute; left:2px; top:29.5px; width:886px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >

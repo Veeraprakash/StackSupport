@@ -1,4 +1,5 @@
  <%= render :partial => "layouts/header" %>
+<%= render :partial => "layouts/search" %>
 
 <DIV id=ou0 style="position:absolute; left:5px; top:118px; width:646px; height:31px;; overflow:visible">
 
@@ -53,7 +54,7 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Details page_file
 src="Details page_files/u9.png" border="0" alt=""></span>
 
 </DIV>
-<%= render :partial => "layouts/search" %>
+
 <DIV id=u26 style="position:absolute; left:18px; top:213px; width:600px; height:32px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u26_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">The information in this section will help you if you have a specific problem or a technical question about using ProjectX. You can search our knowledge base for answers.</span></DIV></DIV>
 
