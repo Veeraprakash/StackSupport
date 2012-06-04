@@ -3,9 +3,7 @@ before_filter :authenticate_user!, :only => [:login, :help]
   def homepage
        @news = News.all
 end
-def help
- 
-end
+
 def login
 @tickets = Ticket.find_all_by_user_id(current_user.id)
 end

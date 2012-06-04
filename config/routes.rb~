@@ -25,7 +25,7 @@ match "adminclosedtickets/support/:id" => "adminclosedtickets#support"
   resources :posts
   end
   resources :contacts
-  get "home/help"
+  
   get "admin/createstaff"
   get "home/news"
   get "admin/createstaff"
