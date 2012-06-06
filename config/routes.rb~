@@ -1,18 +1,20 @@
 Sample::Application.routes.draw do
 
   get "adminclosedtickets/show"
-
- match "adminclosedtickets/view/:id"  => "adminclosedtickets#view"
-
+  match "staff/view/:id"  => "staff#view"
+  match "staff/time/:id"  => "staff#time"
+  match "staff/tracksheet/:id"  => "staff#tracksheet"
+  match "adminclosedtickets/view/:id"  => "adminclosedtickets#view"
+  match "staff/view/:id"  => "staff#view"
   match "adminclosedtickets/assign/:id" => "adminclosedtickets#assign"
 
-match "adminclosedtickets/support/:id" => "adminclosedtickets#support"
+ match "adminclosedtickets/support/:id" => "adminclosedtickets#support"
 
   match "contacts/accinfo" => "contacts#accinfo"
   match "home/contactus/:id" => "home#contactus"
   match "contacts/contact" => "contacts#contact"
- match "contacts/contact_update" => "contacts#contact_update"
- match "contacts/acc_update" => "contacts#acc_update"
+  match "contacts/contact_update" => "contacts#contact_update"
+  match "contacts/acc_update" => "contacts#acc_update"
 
   devise_for :admins
   devise_for :users
@@ -26,9 +28,9 @@ match "adminclosedtickets/support/:id" => "adminclosedtickets#support"
   end
   resources :contacts
   match 'home/search' => 'home#search'
-  get "admin/createstaff"
+
   get "home/news"
-  get "admin/createstaff"
+  get "admin/addstaff"
   get "admin/staffhome"
   get "knowlwedgebase/kbase"
   get "admin/home"

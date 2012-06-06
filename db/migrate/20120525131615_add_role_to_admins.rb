@@ -1,6 +1,6 @@
 class AddRoleToAdmins < ActiveRecord::Migration
   def self.up
-    add_column :admins, :role, :string, :default => "admin"
+    add_column :admins, :role, :string, :default => "staff"
   end
 
   def self.down

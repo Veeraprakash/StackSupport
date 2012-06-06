@@ -15,8 +15,7 @@ def contactus
 
 def search
    @faq=Faq.find_all_by_category(params[:name])
- 	
-end 
+ end 
 
 
 def news

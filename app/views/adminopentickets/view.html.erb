@@ -96,20 +96,12 @@ src="Admin -- Open Tickets_files/u93.png" border="0" alt=""></span>
 <DIV id=u104_rtf><span style=" font-family:'Arial'; color:#000000; font-size:9pt;"><%= @ticket.customer_name %></span></DIV></DIV>
 <DIV id=u105 style="position:absolute; left:30px; top:38px; width:80px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u105_rtf><span style=" font-family:'Arial'; color:#000000; font-size:11pt;"><b>Details:</b></span></DIV></DIV>
-<DIV id=ou106 style="position:absolute; left:26px; top:192px; width:565px; height:39px;; overflow:visible">
 
-<span style="position:absolute; left:-3px; top:-3px; width:573px; height:47px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- Open Tickets_files/u106.png',sizingMethod='scale');
-"><img style="width:573px; height:47px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="Admin -- Open Tickets_files/u106.png" border="0" alt=""></span>
-
-</DIV>
 <DIV id=u106container style="position:absolute; left:26px; top:192px; width:565px; height:39px;; overflow:visible">
 
-<DIV id=u107 style="position:absolute; left:2px; top:11px; width:560px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
-<DIV id=u107_rtf>&nbsp;</DIV></DIV>
+
 </DIV>
-<IMG id=u106 src="Resources/transparent.gif" style="position:absolute; left:26px; top:192px; width:564px; height:38px"  >
+
 
 <DIV id=u108 style="position:absolute; left:40px; top:202px; width:240px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u108_rtf><span style=" font-family:'Arial'; color:#000000; font-size:11pt;">&nbsp;&nbsp; <%= @ticket.subject %></span></DIV></DIV>
@@ -117,6 +109,22 @@ src="Admin -- Open Tickets_files/u106.png" border="0" alt=""></span>
 <DIV id=u109_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;"><b>Message:</b></span></DIV></DIV>
 <DIV id=u110 style="position:absolute; left:190px; top:364px; width:90px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u110_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><%= image_tag @ticket.avatar.url(:thumb) %></span></DIV></DIV>
+<h3>Conversations<h3>
+<table border = "1">
+<tr>
+    <th>Author</th>
+    <th></th>
+    <th>Message</th>
+
+<% @ticket.posts.each do |post| %>
+<tr>
+    <td><%= post.author %></td>
+    <td></td>
+    <td><%= post.message %></td>
+
+  </tr>
+<% end %>
+</table>
 <DIV id=u111 style="position:absolute; left:456px; top:16px; width:100px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u111_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><%= link_to 'Assign Ticket', "/adminopentickets/assign/#{@ticket.id}" %></u></span></DIV></DIV>
 <DIV id=u111ann style="font-size:1px; position:absolute; left:547px; top:12px; width:1px; height:1px; overflow:visible"></DIV>

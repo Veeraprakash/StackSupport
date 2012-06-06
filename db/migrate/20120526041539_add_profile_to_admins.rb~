@@ -6,7 +6,7 @@ class AddProfileToAdmins < ActiveRecord::Migration
     add_column :admins, :mobile, :integer
     add_column :admins, :department, :string
     add_column :admins, :ticket_notifier, :boolean
-    add_column :admins, :privilege, :boolean, :default =>true 
+    add_column :admins, :privilege, :boolean, :default =>false
     add_column :admins, :find_your_attachment, :string
   end
 

@@ -109,6 +109,7 @@ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Create a ticket_f
 src="Create a ticket_files/u44.png" border="0" alt=""></span>
 
 </DIV>
+
 <DIV id=u44container style="position:absolute; left:28px; top:476px; width:585px; height:221px;; overflow:visible">
 
 <DIV id=u45 style="position:absolute; left:2px; top:102px; width:580px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
@@ -166,7 +167,20 @@ src="Create a ticket_files/u44.png" border="0" alt=""></span>
 <DIV id=u82_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><%= link_to 'Cancel', tickets_path %></span></DIV></DIV>
 <DIV id=u83 style="position:absolute; left:370px; top:700px; width:20px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u83_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">or</span></DIV></DIV>
+<%= form_tag(:controller => "home", :action => "search", :params => params) do %>
+<DIV id=u44container style="position:absolute; left:624px; top:370px; width:196px; height:37px;; overflow:visible">
 
+<DIV id=u45 style="position:absolute; left:2px; top:10px; width:191px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u45_rtf><span style=" color:#000000; font-size:10pt;"><b>&nbsp;&nbsp; Search</b></span></DIV></DIV>
+</DIV>
+
+
+<DIV id=u46 style="position:absolute; left:648px; top:420px; width:170px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u46_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Search FAQS by entering keywords</span></DIV></DIV>
+<DIV style="position:absolute; left:648px; top:468px; width:170px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%=text_field_tag :name%></DIV>
+
+<DIV style="position:absolute; left:758px; top:505px; width:70px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" ><%= submit_tag "Search" %>
+  <% end %><DIV>
 
  <script>
 var f1 = new LiveValidation('ticket_subject');

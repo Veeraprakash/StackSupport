@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120602081201) do
+ActiveRecord::Schema.define(:version => 20120605123400) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                                 :default => "",      :null => false
@@ -26,14 +26,14 @@ ActiveRecord::Schema.define(:version => 20120602081201) do
     t.string   "password_salt"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "role",                                  :default => "admin"
+    t.string   "role",                                  :default => "staff"
     t.string   "full_name"
     t.string   "username"
     t.integer  "phone"
     t.integer  "mobile"
     t.string   "department"
     t.boolean  "ticket_notifier"
-    t.boolean  "privilege",                             :default => true
+    t.boolean  "privilege",                             :default => false
     t.string   "find_your_attachment"
   end
 
@@ -81,9 +81,9 @@ ActiveRecord::Schema.define(:version => 20120602081201) do
     t.string   "department_name"
     t.string   "description"
     t.string   "email"
-    t.integer  "phone1"
+    t.string   "phone1"
     t.string   "phone2"
-    t.integer  "fax"
+    t.string   "fax"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -115,6 +115,7 @@ ActiveRecord::Schema.define(:version => 20120602081201) do
     t.integer  "ticket_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "author"
   end
 
   create_table "tickets", :force => true do |t|
@@ -135,6 +136,9 @@ ActiveRecord::Schema.define(:version => 20120602081201) do
     t.date     "avatar_file_updatedat"
     t.string   "staff_email"
     t.string   "client_email"
+    t.date     "date"
+    t.integer  "hours"
+    t.string   "description"
   end
 
   create_table "users", :force => true do |t|
@@ -162,9 +166,9 @@ ActiveRecord::Schema.define(:version => 20120602081201) do
     t.string   "city"
     t.string   "state"
     t.string   "country"
-    t.integer  "phone1"
-    t.integer  "phone2"
-    t.integer  "fax"
+    t.string   "phone1"
+    t.string   "phone2"
+    t.string   "fax"
     t.string   "web"
     t.string   "username"
     t.integer  "admin_id"

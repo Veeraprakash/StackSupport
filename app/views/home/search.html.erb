@@ -1,6 +1,23 @@
+ <%= render :partial => "layouts/header" %>
+ <%= render :partial => "layouts/login" %>
+<%= form_tag(:controller => "home", :action => "search", :params => params) do %>
+
+<DIV id=u0 style="position:absolute; left:120px; top:139px; width:140px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u0_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:12pt;">You search for:</span></DIV></DIV>
+
+<DIV style="position:absolute; left:250px; top:130px; width:190px; height:35px; ; ; text-align: left ; font-family:'Verdana'; font-size: 11pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%=text_field_tag :name%></DIV>
+
+<DIV style="position:absolute; left:520px; top:130px; width:77px; height:25px; ; ; text-align: center ; font-family:'Verdana'; font-size: 9pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" ><%= submit_tag "Search" %></DIV>
+<% end %>
+
+
+<DIV id=u7 style="position:absolute; left:14px; top:245px; width:280px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u7_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:11pt;"><b>List of results :</b></span></DIV></DIV>
+<DIV id=ou8 style="position:absolute; left:100px; top:286px; width:700px; height:18px;; overflow:visible">
+ 
 <% if @faq.present? %>
 
-     <table border="1">
+     <table >
         
         <tr>
             <%  @faq.each do |f| %>
@@ -11,5 +28,5 @@
  	
         </table>
     <% else %>
-        <p> NOT AVAILABLE </p>
+        <h1> Search not found ! Please try again !!!</h1>
     <% end %>

@@ -82,7 +82,7 @@ src="images/clientarea/u10.png" border="0" alt=""></span>
 
 
 <div><%= f.label :country %>
-  <%= f.text_field :country %></div>
+  <%= f.country_select :country %></div>
 
 <div><%= f.label :phone1 %>
   <%= f.text_field :phone1 %></div>

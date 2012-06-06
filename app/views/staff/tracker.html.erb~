@@ -1,0 +1,22 @@
+<DIV id=u4container style="position:absolute; left:220px; top:360px; width:609px; height:36px;; overflow:visible">
+<table border ="1">
+  <tr>
+    <th>Date</th>
+    <th>Name<th>
+    <th>Hours</th>
+    <th>Description</th>
+    
+    <th></th>
+       </tr>
+
+<% @tickets.each do |ticket| %>
+  <tr>
+    <td><%= ticket.date %></td>
+    <td><%= ticket.customer_name %></td>
+    <td><%= ticket.hours %></td>
+    <td><%= ticket.description %></td>
+    
+        </tr>
+<% end %>
+</table>
+</DIV>

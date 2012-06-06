@@ -4,8 +4,7 @@ before_filter :authenticate_user!, :unless => :admin_signed_in?
 
   def index
     @tickets = Ticket.find_all_by_user_id(current_user.id)
-    #@tickets = Ticket.all
-
+    
     respond_to do |format|
       format.html 
       format.xml  { render :xml => @tickets }
@@ -54,14 +53,20 @@ before_filter :authenticate_user!, :unless => :admin_signed_in?
     @ticket = Ticket.find(params[:id])
     respond_to do |format|
       if @ticket.update_attributes(params[:ticket])
-	 @ticket.update_attributes(:status => "Pending") 
 
-        if admin_signed_in?  
-       format.html { redirect_to(admin_ticket_path, :notice => 'Ticket was successfully updated.') }
-else
-	format.html { redirect_to(@ticket, :notice => 'Ticket was successfully updated.') }
-end
-        format.xml  { head :ok }
+        if admin_signed_in? and current_admin.privilege == true
+	 @ticket.update_attributes(:status => "Pending") 
+               format.html { redirect_to(admin_ticket_path) }
+	end
+
+	if admin_signed_in? and current_admin.privilege == false
+		format.html { redirect_to(staff_ticket_path) }
+	end
+
+	if user_signed_in?
+	format.html { redirect_to(@ticket) }
+	format.xml  { head :ok }
+	end
 
 	else
         format.html { render :action => "edit" }
