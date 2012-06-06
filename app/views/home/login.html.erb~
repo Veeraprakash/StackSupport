@@ -1,39 +1,9 @@
-
+<html>
  <%= render :partial => "layouts/header" %>
-<DIV id=ou0 style="position:absolute; left:8px; top:138px; width:175px; height:36px;; overflow:visible">
-
-<span style="position:absolute; left:-3px; top:-3px; width:183px; height:44px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Client Area_files/u0.png',sizingMethod='scale');
-"><img style="width:183px; height:44px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="/images/Client Area_files/u0.png" border="0" alt=""></span>
-
-</DIV>
-<DIV id=u0container style="position:absolute; left:8px; top:138px; width:175px; height:36px;; overflow:visible">
-
-<DIV id=u1 style="position:absolute; left:2px; top:9.5px; width:170px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
-<DIV id=u1_rtf>&nbsp;</DIV></DIV>
-</DIV>
 
 
 <DIV id=u2 style="position:absolute; left:21px; top:146px; width:109px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u2_rtf><span style=" font-family:'Verdana'; color:#FFFFFF; font-size:11pt;"><b>Template</b></span></DIV></DIV>
-<DIV id=ou3 style="position:absolute; left:8px; top:174px; width:175px; height:154px;; overflow:visible">
-
-
-
-</DIV>
-<DIV id=u3container style="position:absolute; left:8px; top:174px; width:175px; height:154px;; overflow:visible">
-
-<DIV id=u4 style="position:absolute; left:2px; top:68.5px; width:170px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
-<DIV id=u4_rtf>&nbsp;</DIV></DIV>
-</DIV>
-<IMG id=u3 src="Resources/transparent.gif" style="position:absolute; left:8px; top:174px; width:174px; height:153px"  >
-
-<span style="position:absolute; left:10px; top:246px; width:173px; height:5px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Client Area_files/u5.png',sizingMethod='scale');
-"><img style="width:173px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="/images/Client Area_files/u5.png" border="0" alt=""></span>
-
 
 
 <DIV id=u6 style="position:absolute; left:19px; top:259px; width:90px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
@@ -171,11 +141,6 @@ src="/images/Client Area_files/u80.png" border="0" alt=""></span>
 
 <DIV id=u84 style="position:absolute; left:775px; top:115px; width:57px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u84_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></span></DIV></DIV>
-<span style="position:absolute; left:747px; top:113px; width:7px; height:23px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Client Area_files/u85.png',sizingMethod='scale');
-"><img style="width:7px; height:23px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="/images/Client Area_files/u85.png" border="0" alt=""></span>
-
 
 
 <DIV id=u86 style="position:absolute; left:200px; top:114px; width:220px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
