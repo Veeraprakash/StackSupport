@@ -108,7 +108,7 @@ src="/images/home_files/u436.png" border="0" alt=""></span>
 <DIV id=u400ann style="font-size:1px; position:absolute; left:550px; top:300px; width:1px; height:1px; overflow:visible"></DIV>
 
 <DIV id=u401 style="position:absolute; left:395px; top:405px; width:112px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u401_rtf><span style=" font-family:'Arial'; color:#3366FF; font-size:10pt;"><u>Contact Support</u></span></DIV></DIV>
+<DIV id=u401_rtf><span style=" font-family:'Arial'; color:#3366FF; font-size:10pt;"><u><%= link_to 'Contact Support', "/home/contactus/#{1}" %></u></span></DIV></DIV>
 <DIV id=u401ann style="font-size:1px; position:absolute; left:498px; top:401px; width:1px; height:1px; overflow:visible"></DIV>
 
 <span style="position:absolute; left:48px; top:400px; width:63px; height:56px">

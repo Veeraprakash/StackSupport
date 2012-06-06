@@ -89,7 +89,7 @@ src="Read an news item_files/u42.png" border="0" alt=""></span>
 <DIV style="position:absolute; left:648px; top:468px; width:170px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%=text_field_tag :name%></DIV>
 
 <DIV style="position:absolute; left:758px; top:505px; width:70px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" ><%= submit_tag "Search" %>
-  <% end %><DIV>
+  <% end %></DIV>
 
 
 <DIV id=u49 style="position:absolute; left:31px; top:229px; width:600px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
