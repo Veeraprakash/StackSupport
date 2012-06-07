@@ -1,5 +1,5 @@
 
-<script src="/javascripts/livevalidation_standalone.js"></script>
+
  <%= render :partial => "layouts/header" %>
 <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
 
@@ -50,17 +50,6 @@
 
 <DIV id=u36 style="position:absolute; left:251px; top:160px; width:60px; height:24px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u36_rtf><span style=" font-family:'Arial'; color:#000000; font-size:16pt;"><b>Logo</b></span></DIV></DIV>
-
-
-
-<DIV id=u39 style="position:absolute; left:121px; top:20px; width:189px; height:24px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
- <script>
-var f1 = new LiveValidation('user_email');
-f1.add( Validate.Presence ); </script>
-
- <script>
-var f1 = new LiveValidation('user_password');
-f1.add( Validate.Presence ); </script>
 
 
 <% end %>

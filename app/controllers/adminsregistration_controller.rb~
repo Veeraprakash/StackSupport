@@ -1,7 +1,7 @@
 class AdminsregistrationController < Devise::RegistrationsController
-#prepend_before_filter :require_no_authentication, :only => [ :new, :create ]
-  #prepend_before_filter :authenticate_scope!, :only => [:edit, :update, :destroy]
-  include Devise::Controllers::InternalHelpers
+prepend_before_filter :require_no_authentication, :only => [ :new, :create ]
+  prepend_before_filter :authenticate_scope!, :only => [:edit, :update, :destroy,:new, :create]
+   include Devise::Controllers::InternalHelpers
 
   # GET /resource/sign_up
   def new
@@ -14,9 +14,7 @@ class AdminsregistrationController < Devise::RegistrationsController
     build_resource
 
     if resource.save
-	 password=session[:password].to_s
-      Sendmail.sendpassword(resource.email,password).deliver
-      set_flash_message :notice, :signed_up
+	 set_flash_message :notice, :signed_up
       sign_in_and_redirect(resource_name, resource)
     else
       clean_up_passwords(resource)
@@ -33,11 +31,8 @@ class AdminsregistrationController < Devise::RegistrationsController
   def update
     if resource.update_with_password(params[resource_name])
       set_flash_message :notice, :updated
-       if admin_signed_in? and current_admin.privilege == true
-      redirect_to "admin_home_path"
-    else
-    	return"admin_staffhome_path"
-end
+          redirect_to(admin_home_path)
+    
     else
       clean_up_passwords(resource)
       render_with_scope :edit

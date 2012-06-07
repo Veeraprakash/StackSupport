@@ -5,8 +5,8 @@
 
 <%session[:password]=(rand.*100000000.to_i).floor%>
 
- <div><%= f.label :full_name %><br />
-  <%= f.text_field :full_name %></div>
+ <div><%= f.label :fullname %><br />
+  <%= f.text_field :fullname %></div>
 
  <div><%= f.label :username %><br />
   <%= f.text_field :username %></div>
@@ -23,12 +23,14 @@
  <div><%= f.label :department %><br />
   <%= f.select :to, options_for_select(Dept.all.collect {|p| [p.department_name]}, {:prompt => 'select department'}) %>
 
- <div><%= f.label :privilege %><br />
-  <%= f.check_box :privilege %></div>
+<div><%= f.label :ticket_notifier %>
+  <%= f.check_box :ticket_notifier %><%= f.label :Receive_email_alert %>
+
+<%= f.label :privilege %>
+  <%= f.check_box :privilege %><%= f.label :Admin_privilege %></div>
  
 
- <div><%= f.label :ticket_notifier %><br />
-  <%= f.check_box :ticket_notifier %></div>
+ 
   
   
 <%=f.hidden_field :password, :value=>session[:password]%>

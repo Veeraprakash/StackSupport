@@ -8,5 +8,10 @@ before_filter :authenticate_admin!
   end
  def staffhome
   end
+def addstaff
+@staff = Admin.new
+end
+def staffindex
 
+end
 end

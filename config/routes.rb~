@@ -2,7 +2,7 @@ Sample::Application.routes.draw do
 
   get "home/contactus"
   get "home/news"
-
+  get "admin/staffindex"
   get "adminclosedtickets/show"
   match "staff/view/:id"  => "staff#view"
   match "staff/time/:id"  => "staff#time"
@@ -18,8 +18,13 @@ Sample::Application.routes.draw do
   match "contacts/contact" => "contacts#contact"
   match "contacts/contact_update" => "contacts#contact_update"
   match "contacts/acc_update" => "contacts#acc_update"
-  
+
+
+
   devise_for :admins, :controllers => { :registrations => "adminsregistration" }
+	
+
+
   devise_for :users
   resources :categories
   resources :news

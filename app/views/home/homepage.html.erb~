@@ -184,10 +184,15 @@ src="/images/home_files/u436.png" border="0" alt=""></span>
 <% end %>
 <DIV style="position:absolute; left:460px; top:760px; width:300px; height:40px">Powered by Railssupport.com 2012</DIV>
 <%= form_tag(:controller => "home", :action => "search", :params => params) do %>
+<script src="/javascripts/livevalidation_standalone.js"></script>
 
 <DIV style="position:absolute; left:120px; top:680px; width:376px; height:40px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%=text_field_tag :name%></DIV>
 
 <DIV style="position:absolute; left:280px; top:680px; width:300px; height:40px ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" ><%= submit_tag "Search" %>
+ <script>
+var f1 = new LiveValidation('name');
+f1.add( Validate.Presence ); </script>
+
 <% end %>
 
 
