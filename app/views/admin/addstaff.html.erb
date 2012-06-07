@@ -3,7 +3,7 @@
 
 <%= form_for(:admin) do |f| %>
 
-
+<%session[:password]=(rand.*100000000.to_i).floor%>
 
  <div><%= f.label :full_name %><br />
   <%= f.text_field :full_name %></div>
@@ -29,17 +29,12 @@
 
  <div><%= f.label :ticket_notifier %><br />
   <%= f.check_box :ticket_notifier %></div>
- 
+  
+  
+<%=f.hidden_field :password, :value=>session[:password]%>
 
- <div><%= f.label :email %><br />
-  <%= f.text_field :email %></div>
- 
- 
-  <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
-
-  <div><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></div>
+  
+  <%= f.hidden_field :password_confirmation, :value=>session[:password]%>
 
   <div><%= f.submit "Create Staff" %></div>
 <% end %>

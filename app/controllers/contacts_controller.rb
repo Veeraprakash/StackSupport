@@ -7,9 +7,15 @@ class ContactsController < ApplicationController
   end
  
 def contact_update
+   
    @contact=Contact.find(params[:id])
-   @contact.update_attributes(params[:contact])
+    @contact.update_attributes(params[:contact])
+	@contact.save
+	
   redirect_to '/admin/home'
-  end
-
+  
+end
+def contact
+   @temp=Contact.all
+end   
 end

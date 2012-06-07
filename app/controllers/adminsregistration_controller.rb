@@ -1,6 +1,6 @@
 class AdminsregistrationController < Devise::RegistrationsController
-prepend_before_filter :require_no_authentication, :only => [ :new, :create ]
-  prepend_before_filter :authenticate_scope!, :only => [:edit, :update, :destroy]
+#prepend_before_filter :require_no_authentication, :only => [ :new, :create ]
+  #prepend_before_filter :authenticate_scope!, :only => [:edit, :update, :destroy]
   include Devise::Controllers::InternalHelpers
 
   # GET /resource/sign_up
@@ -14,6 +14,8 @@ prepend_before_filter :require_no_authentication, :only => [ :new, :create ]
     build_resource
 
     if resource.save
+	 password=session[:password].to_s
+      Sendmail.sendpassword(resource.email,password).deliver
       set_flash_message :notice, :signed_up
       sign_in_and_redirect(resource_name, resource)
     else

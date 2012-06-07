@@ -46,19 +46,19 @@ eval(s);
 
 
 <DIV id=u61 style="position:absolute; left:22px; top:228px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u61_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'Knowledge base', category_create_path %></span></DIV></DIV>
+<DIV id=u61_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'Knowledge base', categories_path %></span></DIV></DIV>
 
 
 
 
 <DIV id=u63 style="position:absolute; left:19px; top:343px; width:100px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u63_rtf><span style=" color:#333399; font-size:10pt;">Create Category</span></DIV></DIV>
+<DIV id=u63_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'Create Category', category_create_path %></span></DIV></DIV>
 
 
 
 
 <DIV id=u65 style="position:absolute; left:20px; top:380px; width:120px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u65_rtf><span style=" color:#333399; font-size:10pt;">Manage Category</span></DIV></DIV>
+<DIV id=u65_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'Manage Category', categories_path %></span></DIV></DIV>
 
 
 
@@ -93,15 +93,10 @@ eval(s);
 <DIV id=u84 style="position:absolute; left:490px; top:588px; width:50px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u84_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;"><%= @faq.votes_up %>/<%= @faq.votes_down %></span></DIV></DIV>
 <DIV id=u85container style="position:absolute; left:486px; top:551px; width:100px; height:16px; ; ; text-align: left " >
-<DIV id=u86 style="position:absolute; left:16px; top:0px; width:82px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u86_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;"> Public</span></DIV></DIV>
+<DIV id=u86 style="position:absolute; left:10px; top:0px; width:82px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u86_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;"><%= @faq.private ? 'Private' : 'Public' %></span></DIV></DIV>
 </DIV>
-<DIV style="position:absolute; left:486px; top:551px; width:100px; height:16px; ; ; text-align: left " ><INPUT id=u85 name="Status of FAQ" style="position:absolute; left:-3px; top:-2px;" type=radio value=radio checked ></DIV>
-<DIV id=u87container style="position:absolute; left:554px; top:551px; width:100px; height:16px; ; ; text-align: left " >
-<DIV id=u88 style="position:absolute; left:16px; top:0px; width:82px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u88_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Private</span></DIV></DIV>
-</DIV>
-<DIV style="position:absolute; left:554px; top:551px; width:100px; height:16px; ; ; text-align: left " ><INPUT id=u87 name="Status of FAQ" style="position:absolute; left:-3px; top:-2px;" type=radio value=radio  ></DIV>
+
 <DIV id=u89 style="position:absolute; left:235px; top:235px; width:125px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u89_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><%= link_to 'Knowledge base', category_create_path %></span></DIV></DIV>
 <TEXTAREA id=u90 disabled style="position:absolute; left:370px; top:272px; width:380px; height:37px; ; ; text-align: left ; font-family:'Courier New'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"  ></TEXTAREA>

@@ -1,5 +1,8 @@
 Sample::Application.routes.draw do
 
+  get "home/contactus"
+  get "home/news"
+
   get "adminclosedtickets/show"
   match "staff/view/:id"  => "staff#view"
   match "staff/time/:id"  => "staff#time"
@@ -11,12 +14,12 @@ Sample::Application.routes.draw do
  match "adminclosedtickets/support/:id" => "adminclosedtickets#support"
 
   match "contacts/accinfo" => "contacts#accinfo"
-  match "home/contactus/:id" => "home#contactus"
+  
   match "contacts/contact" => "contacts#contact"
   match "contacts/contact_update" => "contacts#contact_update"
   match "contacts/acc_update" => "contacts#acc_update"
-
-  devise_for :admins
+  
+  devise_for :admins, :controllers => { :registrations => "adminsregistration" }
   devise_for :users
   resources :categories
   resources :news
@@ -26,11 +29,11 @@ Sample::Application.routes.draw do
   resources :tickets do
   resources :posts
   end
-  resources :contacts
-  match 'home/search' => 'home#search'
 
-  get "home/news"
-  get "admin/addstaff"
+  match 'contacts/contact_update/:id' => 'contacts#contact_update'
+  match 'home/search' => 'home#search'
+  
+  match "admin/addstaff" => "admin#addstaff"
   get "admin/staffhome"
   get "knowlwedgebase/kbase"
   get "admin/home"

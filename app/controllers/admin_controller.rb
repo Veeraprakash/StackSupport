@@ -8,7 +8,5 @@ before_filter :authenticate_admin!
   end
  def staffhome
   end
-def addstaff
-end
 
 end

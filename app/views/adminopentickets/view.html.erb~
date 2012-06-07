@@ -97,10 +97,14 @@ src="Admin -- Open Tickets_files/u93.png" border="0" alt=""></span>
 <DIV id=u105 style="position:absolute; left:30px; top:38px; width:80px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u105_rtf><span style=" font-family:'Arial'; color:#000000; font-size:11pt;"><b>Details:</b></span></DIV></DIV>
 
-<DIV id=u106container style="position:absolute; left:26px; top:192px; width:565px; height:39px;; overflow:visible">
+<DIV id=u111 style="position:absolute; left:456px; top:16px; width:100px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u111_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><%= link_to 'Assign Ticket', "/adminopentickets/assign/#{@ticket.id}" %></u></span></DIV></DIV>
+<DIV id=u111ann style="font-size:1px; position:absolute; left:547px; top:12px; width:1px; height:1px; overflow:visible"></DIV>
+
+<DIV id=u112 style="position:absolute; left:554px; top:16px; width:100px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u112_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><%= link_to 'Support Ticket', "/adminopentickets/support/#{@ticket.id}" %></span></DIV></DIV>
 
 
-</DIV>
 
 
 <DIV id=u108 style="position:absolute; left:40px; top:202px; width:240px; height:17px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
@@ -109,6 +113,8 @@ src="Admin -- Open Tickets_files/u93.png" border="0" alt=""></span>
 <DIV id=u109_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;"><b>Message:</b></span></DIV></DIV>
 <DIV id=u110 style="position:absolute; left:190px; top:364px; width:90px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u110_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><%= image_tag @ticket.avatar.url(:thumb) %></span></DIV></DIV>
+<DIV id=u106container style="position:absolute; left:26px; top:392px; width:565px; height:39px;; overflow:visible">
+
 <h3>Conversations<h3>
 <table border = "1">
 <tr>
@@ -125,13 +131,8 @@ src="Admin -- Open Tickets_files/u93.png" border="0" alt=""></span>
   </tr>
 <% end %>
 </table>
-<DIV id=u111 style="position:absolute; left:456px; top:16px; width:100px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u111_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><%= link_to 'Assign Ticket', "/adminopentickets/assign/#{@ticket.id}" %></u></span></DIV></DIV>
-<DIV id=u111ann style="font-size:1px; position:absolute; left:547px; top:12px; width:1px; height:1px; overflow:visible"></DIV>
 
-<DIV id=u112 style="position:absolute; left:554px; top:16px; width:100px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u112_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><%= link_to 'Support Ticket', "/adminopentickets/support/#{@ticket.id}" %></span></DIV></DIV>
-
+</DIV>
 </DIV>
 
 </DIV>

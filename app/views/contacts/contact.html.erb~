@@ -130,9 +130,12 @@ src="Admin -- Contact page_files/u69.png" border="0" alt=""></span>
 <DIV id=u71_rtf><span style=" font-family:'Verdana'; color:#808080; font-size:10pt;">Give your phone numbers for general enquiries purpose in the boxes...if you have no numbers just lmake the box empty......</span></DIV></DIV>
 <DIV id=u72 style="position:absolute; left:250px; top:466px; width:280px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u72_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>Phone numbers for General Enquiries</b></span></DIV></DIV>
-<DIV style="position:absolute; left:543px; top:445px; width:205px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :general_phone1 %></DIV>
 
-<DIV style="position:absolute; left:543px; top:480px; width:205px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :general_phone2 %></DIV>
+<% @temp.each do |t| %>
+
+<DIV style="position:absolute; left:543px; top:445px; width:205px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :general_phone1, :value=>"#{t.general_phone1}" %></DIV>
+
+<DIV style="position:absolute; left:543px; top:480px; width:205px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :general_phone2, :value=>"#{t.general_phone2}" %></DIV>
 
 <DIV id=ou75 style="position:absolute; left:231px; top:594px; width:585px; height:105px;; overflow:visible">
 
@@ -153,7 +156,7 @@ src="Admin -- Contact page_files/u75.png" border="0" alt=""></span>
 <DIV id=u77_rtf><span style=" font-family:'Verdana'; color:#808080; font-size:10pt;">Give your mailing address in the box below.. So that the customers can contact through the mail address you provide.......</span></DIV></DIV>
 <DIV id=u78 style="position:absolute; left:260px; top:629px; width:130px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u78_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>Mailing Address</b></span></DIV></DIV>
-<DIV style="position:absolute; left:400px; top:609px; width:350px; height:75px; ; ; text-align: left ; font-family:'Courier New'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"  ><%= f.text_area :mailing_address, :size => "50x5" %></DIV>
+<DIV style="position:absolute; left:400px; top:609px; width:350px; height:75px; ; ; text-align: left ; font-family:'Courier New'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"  ><%= f.text_area :mailing_address, :size => "30x2", :value=>"#{t.mailing_address}" %></DIV>
 
 <DIV id=ou80 style="position:absolute; left:237px; top:766px; width:585px; height:185px;; overflow:visible">
 
@@ -178,7 +181,7 @@ src="Admin -- Contact page_files/u80.png" border="0" alt=""></span>
 
 <DIV id=u85 style="position:absolute; left:300px; top:784px; width:240px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u85_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>E-mail ID for Technical support</b></span></DIV></DIV>
-<DIV style="position:absolute; left:550px; top:822px; width:110px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :tech_email %></DIV>
+<DIV style="position:absolute; left:550px; top:822px; width:110px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :tech_email, :value=>"#{t.tech_email}" %></DIV>
 
 <DIV id=ou87 style="position:absolute; left:237px; top:997px; width:585px; height:173px;; overflow:visible">
 
@@ -199,13 +202,13 @@ src="Admin -- Contact page_files/u87.png" border="0" alt=""></span>
 <DIV id=u89_rtf><span style=" font-family:'Verdana'; color:#808080; font-size:10pt;">Give your phone numbers for Sales support queries...please verify the phone number and E-mail Id of Technical support....</span></DIV></DIV>
 <DIV id=u90 style="position:absolute; left:299px; top:1058px; width:240px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u90_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>Phone number for Sales support</b></span></DIV></DIV>
-<DIV style="position:absolute; left:549px; top:1012px; width:205px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :sales_phone %></DIV>
+<DIV style="position:absolute; left:549px; top:1012px; width:205px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :sales_phone, :value=>"#{t.sales_phone}" %></DIV>
 
 <DIV id=u92 style="position:absolute; left:332px; top:1016px; width:198px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u92_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>E-mail ID for Sales support</b></span></DIV></DIV>
-<DIV style="position:absolute; left:550px; top:1052px; width:130px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :sales_email %></DIV>
+<DIV style="position:absolute; left:550px; top:1052px; width:130px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :sales_email, :value=>"#{t.sales_email}" %></DIV>
 
-<DIV value="Save Changes" style="position:absolute; left:447px; top:1190px; width:100px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" ><%= f.submit %></DIV>
+<DIV value="Save Changes" style="position:absolute; left:447px; top:1190px; width:100px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" ><%= link_to 'Save changes',"/contacts/contact_update/#{t.id}" %></DIV>
 
 <DIV id=u95 style="position:absolute; left:580px; top:1194px; width:50px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u95_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><%= link_to 'Cancel', admin_home_path %></u></span></DIV></DIV>
@@ -234,19 +237,20 @@ src="Admin -- Contact page_files/u98.png" border="0" alt=""></span>
 <DIV id=u101 style="position:absolute; left:319px; top:1099px; width:220px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u101_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>Fax number for Sales support</b></span></DIV></DIV>
 
-<DIV style="position:absolute; left:550px; top:1092px; width:130px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :sales_fax %></DIV>
+<DIV style="position:absolute; left:550px; top:1092px; width:130px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :sales_fax, :value=>"#{t.sales_fax}" %></DIV>
 
 <DIV id=u104 style="position:absolute; left:286px; top:871px; width:249px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u104_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>Fax number for Technical support</b></span></DIV></DIV>
-<DIV style="position:absolute; left:550px; top:865px; width:130px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :tech_fax %></DIV>
+<DIV style="position:absolute; left:550px; top:865px; width:130px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :tech_fax, :value=>"#{t.tech_fax}"%></DIV>
 
 <DIV id=u106 style="position:absolute; left:281px; top:910px; width:129px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u106_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>Add description</b></span></DIV></DIV>
-<DIV style="position:absolute; left:420px; top:905px; width:260px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :tech_desc %></DIV>
+<DIV style="position:absolute; left:420px; top:905px; width:260px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :tech_desc, :value=>"#{t.tech_desc}" %></DIV>
 
 <DIV id=u108 style="position:absolute; left:321px; top:1134px; width:129px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u108_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>Add description</b></span></DIV></DIV>
-<DIV style="position:absolute; left:460px; top:1129px; width:260px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :sales_desc %></DIV>
+<DIV style="position:absolute; left:460px; top:1129px; width:260px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.text_field :sales_desc, :value=>"#{t.sales_desc}" %></DIV>
+<% end %>
 <SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
 <SCRIPT src="Admin -- Contact page_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>
 <% end %>

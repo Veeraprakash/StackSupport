@@ -148,7 +148,7 @@ src="Admin -- Open Tickets_files/u115.png" border="0" alt=""></span>
 </DIV>
 <IMG id=u115 src="Resources/transparent.gif" style="position:absolute; left:10px; top:35px; width:558px; height:100px"  >
 
-<div id=u117  style="position:absolute; left:114px; top:57px; width:133px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<div id=u117  style="position:absolute; left:114px; top:57px; width:33px; height:22px; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
 <%= f.select :to, options_for_select(Dept.all.collect {|p| [p.department_name]}, {:prompt => 'select department'}) %>
 </div>
 	
@@ -158,7 +158,7 @@ src="Admin -- Open Tickets_files/u115.png" border="0" alt=""></span>
 <DIV id=u118_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Department:</span></DIV></DIV>
 <DIV id=u119 style="position:absolute; left:63px; top:99px; width:50px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u119_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Staff:</span></DIV></DIV>
-<div id=u120  style="position:absolute; left:114px; top:98px; width:133px; height:22px; ; background-color:#FFFFFF; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
+<div id=u120  style="position:absolute; left:114px; top:98px; width:133px; height:22px; ;  text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
 <%= f.select :staff_email, options_for_select(@staff.collect {|p| [p.email]}, {:prompt => 'select staff'}) %>
 
 </div>

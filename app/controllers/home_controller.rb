@@ -9,7 +9,7 @@ def login
 end
 
 def contactus
- @contact = Contact.find(params[:id])
+ @contact = Contact.all
 
  end
 

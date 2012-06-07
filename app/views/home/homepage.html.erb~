@@ -84,8 +84,8 @@
 <DIV id=u431_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Welcome to Support stack customer Support. Our goal is to provide you with support services that protect and enhance your investment in our technology. To meet your unique support needs, Support stack has a variety of support options available.<br><br>Please select your type from the options below to learn more about the support options available to you and how to contact us.</span></DIV></DIV>
 <DIV id=ou432 style="position:absolute; left:15px; top:20px; width:91px; height:61px;; overflow:visible">
 
-<IMG id=u0 src="/images/LiveSupportLogo.gif" style="position:absolute; left:10px; top:0px; width:200px; height:100px"  >
 
+<%= link_to image_tag('/images/LiveSupportLogo.gif',:height => '100', :width => '200'), home_homepage_path %>
 <DIV id=u64 style="position:absolute; left:225px; top:15px; width:200px; height:30px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u64_rtf><span style=" font-family:'Arial'; color:#000000; font-size:16pt;"><b>Support Stack</b></span></DIV></DIV>
 <DIV id=u66 style="position:absolute; left:225px; top:50px; width:300px; height:19px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
@@ -108,7 +108,7 @@ src="/images/home_files/u436.png" border="0" alt=""></span>
 <DIV id=u400ann style="font-size:1px; position:absolute; left:550px; top:300px; width:1px; height:1px; overflow:visible"></DIV>
 
 <DIV id=u401 style="position:absolute; left:395px; top:405px; width:112px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u401_rtf><span style=" font-family:'Arial'; color:#3366FF; font-size:10pt;"><u><%= link_to 'Contact Support', "/home/contactus/#{1}" %></u></span></DIV></DIV>
+<DIV id=u401_rtf><span style=" font-family:'Arial'; color:#3366FF; font-size:10pt;"><u><%= link_to 'Contact Support', home_contactus_path %></u></span></DIV></DIV>
 <DIV id=u401ann style="font-size:1px; position:absolute; left:498px; top:401px; width:1px; height:1px; overflow:visible"></DIV>
 
 <span style="position:absolute; left:48px; top:400px; width:63px; height:56px">

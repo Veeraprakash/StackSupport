@@ -69,7 +69,7 @@ src="/images/adminpage_files/u91.png" border="0" alt=""></span>
 <IMG id=u91 src="Resources/transparent.gif" style="position:absolute; left:7px; top:245.5px; width:170px; height:2px">
 
 <DIV id=u92 style="position:absolute; left:31px; top:256px; width:90px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u92_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'My Account', edit_admin_registration_path %></span></DIV></DIV>
+<DIV id=u92_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'My Account', {:controller=>"adminsregistration", :action=>"edit"} %></span></DIV></DIV>
 <DIV id=u92ann style="font-size:1px; position:absolute; left:112px; top:252px; width:1px; height:1px; overflow:visible"></DIV>
 
 <span style="position:absolute; left:7px; top:282px; width:173px; height:5px; ;

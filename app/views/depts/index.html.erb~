@@ -15,10 +15,10 @@ src="Admin -- List View of Department_files/u8.png" border="0" alt=""></span>
 <DIV id=u9 style="position:absolute; left:20px; top:229px; width:140px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u9_rtf><span style=" color:#333399; font-size:10pt;">Dashboard</span></DIV></DIV>
 
-<DIV id=u52container style="position:absolute; left:200px; top:181px; width:175px; height:36px;; overflow:visible">
+<DIV id=u52container style="position:absolute; left:200px; top:181px; width:375px; height:36px;; overflow:visible">
 
 
-<h1>Listing depts</h1>
+<h2>Departments</h2>
 
 <table cellspacing = 30>
   <tr>
