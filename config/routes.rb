@@ -4,6 +4,8 @@ Sample::Application.routes.draw do
   get "home/news"
   get "admin/staffindex"
   get "adminclosedtickets/show"
+  match "knowlwedgebase/votesup/:id" => "knowlwedgebase#votesup"
+  match "knowlwedgebase/votesdown/:id" => "knowlwedgebase#votesdown"
   match "staff/view/:id"  => "staff#view"
   match "staff/time/:id"  => "staff#time"
   match "staff/tracksheet/:id"  => "staff#tracksheet"

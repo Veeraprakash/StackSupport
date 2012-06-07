@@ -140,7 +140,7 @@ src="Create a ticket_files/u44.png" border="0" alt=""></span>
 <INPUT id=u53  type=text value="" style="position:absolute; left:6px; top:17px; width:184px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   >
 
 <div style="position:absolute; left:199px; top:18px; width:70px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" ><%= f.submit %></div>
-
+<%end%>
 <DIV id=u55 style="position:absolute; left:275px; top:22px; width:50px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u55_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><u>remove</u></span></DIV></DIV>
 </DIV>
@@ -189,7 +189,12 @@ f1.add( Validate.Presence ); </script>
  <script>
 var f2 = new LiveValidation('ticket_message');
 f2.add( Validate.Presence ); </script>
-<%end%>
+
+<script>
+var f3 = new LiveValidation('name');
+f3.add( Validate.Presence ); </script>
+
+
 <SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
 <SCRIPT src="Create a ticket_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>
 </DIV>

@@ -1,5 +1,5 @@
 class FaqsController < ApplicationController
-before_filter :authenticate_admin!
+before_filter :authenticate_admin!, :except => [:update]
 
   def index
     @faqs = Faq.all

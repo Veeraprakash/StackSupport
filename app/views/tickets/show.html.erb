@@ -1,4 +1,10 @@
  <%= render :partial => "layouts/header1" %>
+
+<script src="/javascripts/livevalidation_standalone.js"></script>
+
+
+
+
 <DIV id=u3container style="position:absolute; left:17px; top:-100px; width:181px; height:37px;; overflow:visible">
 <DIV id=u14container style="position:absolute; left:4px; top:126px; width:81px; height:31px;; overflow:visible">
 <DIV id=u15 style="position:absolute; left:2px; top:8px; width:76px; height:14px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
@@ -143,5 +149,8 @@ src="View individual ticket_files/u65.png" border="0" alt=""></span>
 <DIV style="position:absolute; left:648px; top:468px; width:170px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%=text_field_tag :name%></DIV>
 
 <DIV style="position:absolute; left:758px; top:505px; width:70px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" ><%= submit_tag "Search" %>
+ <script>
+var f1 = new LiveValidation('name');
+f1.add( Validate.Presence ); </script>
   <% end %><DIV>
 <DIV>

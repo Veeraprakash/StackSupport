@@ -1,4 +1,6 @@
 class Ticket < ActiveRecord::Base
+validates :message, :presence => true
+validates :subject, :presence => true
 has_many :posts
 belongs_to :admin
 has_one :dept
