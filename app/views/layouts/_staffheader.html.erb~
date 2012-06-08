@@ -1,33 +1,46 @@
 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CSS Menu Maker Installation Instructions</title>
+
+<style type="text/css">
+   body{padding:20px; font-size:15px; color:#000000; font-family:Arial, Helvetica, sans-serif;}
+   h2 {font-weight:bold; color:#000099; margin:10px 0px; }
+   p span {color:#006600; font-weight:bold; }
+   a, a:link, a:visited {color:#FFFFFF;}
+   textarea {width: 100%; padding: 10px; margin: 10px 0 15px 0; font-size: 20px; font-family: Consolas,monospace;}
+   textarea.html {height: 300px;}
+   p {margin: 0 0 10px 0;}
+   code, pre {font-family: Consolas,monospace; color: green;}
+   ol li {margin: 0 0 15px 0;}
+</style>
+
+</head>
+
+<body background="/images/light6.png">
 
 
-<span style="position:absolute; left:194px; top:100px; width:5px; height:503px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Admin user --  page_files/u0.png',sizingMethod='scale');
-"><img style="width:5px; height:503px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="/images/Admin user --  page_files/u0.png" border="0" alt=""></span>
 
-<IMG id=u0 src="Resources/transparent.gif" style="position:absolute; left:193.5px; top:100px; width:2px; height:500px">
+</body>
+</html>
 
-<span style="position:absolute; left:200px; top:136px; width:683px; height:5px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Admin user --  page_files/u1.png',sizingMethod='scale');
-"><img style="width:683px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="/images/Admin user --  page_files/u1.png" border="0" alt=""></span>
 
-<IMG id=u1 src="Resources/transparent.gif" style="position:absolute; left:200px; top:135.5px; width:680px; height:2px">
 
-<span style="position:absolute; left:784px; top:111px; width:19px; height:19px">
-<IMG id=ou2 src="/images/Admin user --  page_files/u2.gif" style="position:absolute;left:0px;top:0px;width:19px;height:19px">
-</span>
-<IMG id=u2 src="Resources/transparent.gif" style="position:absolute; left:784px; top:111px; width:19px; height:19px"   >
+
+
+
+
+
+
+
+
 
 <DIV id=u3 style="position:absolute; left:810px; top:111px; width:31px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u3_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><u>Help</u></span></DIV></DIV>
 <DIV id=ou4 style="position:absolute; left:0px; top:0px; width:881px; height:101px;; overflow:visible">
 
-<span style="position:absolute; left:-3px; top:-3px; width:889px; height:109px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Admin user --  page_files/u4.png',sizingMethod='scale');
-"><img style="width:889px; height:109px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="/images/Admin user --  page_files/u4.png" border="0" alt=""></span>
+
 
 </DIV>
 <DIV id=u4container style="position:absolute; left:0px; top:0px; width:881px; height:101px;; overflow:visible">
@@ -35,18 +48,14 @@ src="/images/Admin user --  page_files/u4.png" border="0" alt=""></span>
 <DIV id=u5 style="position:absolute; left:2px; top:42px; width:876px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u5_rtf>&nbsp;</DIV></DIV>
 </DIV>
-<IMG id=u4 src="Resources/transparent.gif" style="position:absolute; left:0px; top:0px; width:880px; height:100px"  >
+
 
 <DIV id=u6 style="position:absolute; left:796px; top:8px; width:60px; height:14px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u6_rtf><span style=" font-family:'Arial'; color:#FFFFFF; font-size:8pt;"><u><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></u></span></DIV></DIV>
 <DIV id=u7 style="position:absolute; left:585px; top:9px; width:203px; height:13px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u7_rtf><span style=" font-family:'Verdana'; color:#FFFFFF; font-size:8pt;"><b>Welcome [admin_user name]</b></span></DIV></DIV>
+<DIV id=u7_rtf><span style=" font-family:'Verdana'; color:#FFFFFF; font-size:8pt;"><b>Welcome <% if admin_signed_in? %><%= current_admin.email %></b></span></DIV></DIV>
 <DIV id=ou8 style="position:absolute; left:170px; top:60px; width:92px; height:41px;; overflow:visible">
 
-<span style="position:absolute; left:-3px; top:-3px; width:100px; height:49px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Admin user --  page_files/u8.png',sizingMethod='scale');
-"><img style="width:100px; height:49px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="/images/Admin user --  page_files/u8.png" border="0" alt=""></span>
 
 </DIV>
 <DIV id=u8container style="position:absolute; left:170px; top:60px; width:92px; height:41px;; overflow:visible">
@@ -54,14 +63,10 @@ src="/images/Admin user --  page_files/u8.png" border="0" alt=""></span>
 <DIV id=u9 style="position:absolute; left:2px; top:12px; width:87px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u9_rtf>&nbsp;</DIV></DIV>
 </DIV>
-<IMG id=u8 src="Resources/transparent.gif" style="position:absolute; left:170px; top:60px; width:91px; height:40px"  >
+
 
 <DIV id=ou10 style="position:absolute; left:174px; top:68px; width:86px; height:26px;; overflow:visible">
 
-<span style="position:absolute; left:-3px; top:-3px; width:94px; height:34px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Admin user --  page_files/u10.png',sizingMethod='scale');
-"><img style="width:94px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="/images/Admin user --  page_files/u10.png" border="0" alt=""></span>
 
 </DIV>
 <DIV id=u10container style="position:absolute; left:174px; top:68px; width:86px; height:26px;; overflow:visible">
@@ -69,16 +74,13 @@ src="/images/Admin user --  page_files/u10.png" border="0" alt=""></span>
 <DIV id=u11 style="position:absolute; left:2px; top:4.5px; width:81px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u11_rtf><div style="text-align:center"><span style=" color:#FFFFFF; font-size:10pt;"><b>Dashboard</b></span></div></DIV></DIV>
 </DIV>
-<IMG id=u10 src="Resources/transparent.gif" style="position:absolute; left:174px; top:68px; width:85px; height:25px"  >
+
 
 <DIV id=u10ann style="font-size:1px; position:absolute; left:250px; top:64px; width:1px; height:1px; overflow:visible"></DIV>
 
 <DIV id=ou12 style="position:absolute; left:268px; top:60px; width:91px; height:41px;; overflow:visible">
 
-<span style="position:absolute; left:-3px; top:-3px; width:99px; height:49px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Admin user --  page_files/u12.png',sizingMethod='scale');
-"><img style="width:99px; height:49px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="/images/Admin user --  page_files/u12.png" border="0" alt=""></span>
+
 
 </DIV>
 <DIV id=u12container style="position:absolute; left:268px; top:60px; width:91px; height:41px;; overflow:visible">
@@ -90,10 +92,7 @@ src="/images/Admin user --  page_files/u12.png" border="0" alt=""></span>
 
 <DIV id=ou14 style="position:absolute; left:281px; top:68px; width:59px; height:26px;; overflow:visible">
 
-<span style="position:absolute; left:-3px; top:-3px; width:67px; height:34px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Admin user --  page_files/u14.png',sizingMethod='scale');
-"><img style="width:67px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="/images/Admin user --  page_files/u14.png" border="0" alt=""></span>
+
 
 </DIV>
 <DIV id=u14container style="position:absolute; left:281px; top:68px; width:59px; height:26px;; overflow:visible">
@@ -107,10 +106,7 @@ src="/images/Admin user --  page_files/u14.png" border="0" alt=""></span>
 
 <DIV id=ou16 style="position:absolute; left:361px; top:60px; width:81px; height:41px;; overflow:visible">
 
-<span style="position:absolute; left:-3px; top:-3px; width:89px; height:49px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Admin user --  page_files/u16.png',sizingMethod='scale');
-"><img style="width:89px; height:49px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="/images/Admin user --  page_files/u16.png" border="0" alt=""></span>
+
 
 </DIV>
 <DIV id=u16container style="position:absolute; left:361px; top:60px; width:81px; height:41px;; overflow:visible">
@@ -118,14 +114,11 @@ src="/images/Admin user --  page_files/u16.png" border="0" alt=""></span>
 <DIV id=u17 style="position:absolute; left:2px; top:12px; width:76px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u17_rtf>&nbsp;</DIV></DIV>
 </DIV>
-<IMG id=u16 src="Resources/transparent.gif" style="position:absolute; left:361px; top:60px; width:80px; height:40px"  >
+
 
 <DIV id=ou18 style="position:absolute; left:371px; top:68px; width:59px; height:26px;; overflow:visible">
 
-<span style="position:absolute; left:-3px; top:-3px; width:67px; height:34px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Admin user --  page_files/u18.png',sizingMethod='scale');
-"><img style="width:67px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="/images/Admin user --  page_files/u18.png" border="0" alt=""></span>
+
 
 </DIV>
 <DIV id=u18container style="position:absolute; left:371px; top:68px; width:59px; height:26px;; overflow:visible">
@@ -133,16 +126,13 @@ src="/images/Admin user --  page_files/u18.png" border="0" alt=""></span>
 <DIV id=u19 style="position:absolute; left:2px; top:4.5px; width:54px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u19_rtf><div style="text-align:center"><span style=" color:#FFFFFF; font-size:10pt;"><b>Time</b></span></div></DIV></DIV>
 </DIV>
-<IMG id=u18 src="Resources/transparent.gif" style="position:absolute; left:371px; top:68px; width:58px; height:25px"  >
+
 
 <DIV id=u18ann style="font-size:1px; position:absolute; left:420px; top:64px; width:1px; height:1px; overflow:visible"></DIV>
 
 <DIV id=ou20 style="position:absolute; left:767px; top:60px; width:81px; height:41px;; overflow:visible">
 
-<span style="position:absolute; left:-3px; top:-3px; width:89px; height:49px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Admin user --  page_files/u20.png',sizingMethod='scale');
-"><img style="width:89px; height:49px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="/images/Admin user --  page_files/u20.png" border="0" alt=""></span>
+
 
 </DIV>
 <DIV id=u20container style="position:absolute; left:767px; top:60px; width:81px; height:41px;; overflow:visible">
@@ -150,14 +140,10 @@ src="/images/Admin user --  page_files/u20.png" border="0" alt=""></span>
 <DIV id=u21 style="position:absolute; left:2px; top:12px; width:76px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u21_rtf>&nbsp;</DIV></DIV>
 </DIV>
-<IMG id=u20 src="Resources/transparent.gif" style="position:absolute; left:767px; top:60px; width:80px; height:40px"  >
+
 
 <DIV id=ou22 style="position:absolute; left:777px; top:68px; width:59px; height:26px;; overflow:visible">
 
-<span style="position:absolute; left:-3px; top:-3px; width:67px; height:34px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Admin user --  page_files/u22.png',sizingMethod='scale');
-"><img style="width:67px; height:34px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="/images/Admin user --  page_files/u22.png" border="0" alt=""></span>
 
 </DIV>
 <DIV id=u22container style="position:absolute; left:777px; top:68px; width:59px; height:26px;; overflow:visible">
@@ -165,17 +151,14 @@ src="/images/Admin user --  page_files/u22.png" border="0" alt=""></span>
 <DIV id=u23 style="position:absolute; left:2px; top:4.5px; width:54px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u23_rtf><div style="text-align:center"><span style=" color:#FFFFFF; font-size:10pt;"><b>Search</b></span></div></DIV></DIV>
 </DIV>
-<IMG id=u22 src="Resources/transparent.gif" style="position:absolute; left:777px; top:68px; width:58px; height:25px"  >
+
 
 <DIV id=u22ann style="font-size:1px; position:absolute; left:826px; top:64px; width:1px; height:1px; overflow:visible"></DIV>
 
 <DIV id=u24 style="position:absolute; left:10px; top:28px; width:150px; height:22px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u24_rtf><span style=" font-family:'Arial'; color:#FFFFFF; font-size:14pt;">[ Company name]</span></DIV></DIV>
+<DIV id=u24_rtf><span style=" font-family:'Arial'; color:#FFFFFF; font-size:14pt;">Support Stack</span></DIV></DIV>
 <DIV id=ou25 style="position:absolute; left:218px; top:179px; width:543px; height:182px;; overflow:visible">
 
-<span style="position:absolute; left:-3px; top:-3px; width:551px; height:190px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/Admin user --  page_files/u25.png',sizingMethod='scale');
-"><img style="width:551px; height:190px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="/images/Admin user --  page_files/u25.png" border="0" alt=""></span>
+
 
 </DIV>
