@@ -2,14 +2,13 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>CSS Menu Maker Installation Instructions</title>
+
 
 <style type="text/css">
    body{padding:20px; font-size:15px; color:#000000; font-family:Arial, Helvetica, sans-serif;}
    h2 {font-weight:bold; color:#000099; margin:10px 0px; }
    p span {color:#006600; font-weight:bold; }
-   a, a:link, a:visited {color:#0000FF;}
+   a, a:link, a:visited {color:#FFFFFF;}
    textarea {width: 100%; padding: 10px; margin: 10px 0 15px 0; font-size: 20px; font-family: Consolas,monospace;}
    textarea.html {height: 300px;}
    p {margin: 0 0 10px 0;}
@@ -28,9 +27,9 @@
 
 <DIV id=u2 style="position:absolute; left:10px; top:54px; width:160px; height:22px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u2_rtf><span style=" font-family:'Arial'; color:#FFFFFF; font-size:14pt;">Support Stack</span></DIV></DIV>
-<IMG id=u31 src="/images/LiveSupportLogo.gif" style="position:absolute; left:10px; top:30px; width:183px; height:70px"  >
+<IMG id=u31 src="/images/Live-Support.jpg" style="position:absolute; left:10px; top:30px; width:183px; height:70px"  >
 
-<DIV id=u5container style="position:absolute; left:170px; top:98px; width:67px; height:26px;; overflow:visible">
+<DIV id=u5container style="position:absolute; left:150px; top:98px; width:67px; height:26px;; overflow:visible">
 <DIV id=u6 style="position:absolute; left:2px; top:5px; width:62px; height:15px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u6_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#4096EE; font-size:10pt;"><%= link_to'Home', admin_home_path %></span></div></DIV></DIV>
 
@@ -47,7 +46,7 @@
 <DIV id=u13container style="position:absolute; left:318px; top:98px; width:68px; height:26px;; overflow:visible">
 
 <DIV id=u14 style="position:absolute; left:2px; top:5px; width:63px; height:15px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
-<DIV id=u14_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#4096EE; font-size:10pt;">Staffs</span></div></DIV></DIV>
+<DIV id=u14_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#4096EE; font-size:10pt;"><%= link_to'Staffs', admin_staff_path %></span></div></DIV></DIV>
 </DIV>
 
 <DIV id=u17container style="position:absolute; left:411px; top:98px; width:47px; height:26px;; overflow:visible">
@@ -55,15 +54,6 @@
 <DIV id=u18 style="position:absolute; left:2px; top:5px; width:42px; height:15px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u18_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#4096EE; font-size:10pt;"><%= link_to'FAQ', faqs_path %></span></div></DIV></DIV>
 </DIV>
-
-
-
-<DIV id=u21container style="position:absolute; left:800px; top:98px; width:49px; height:26px;; overflow:visible">
-
-<DIV id=u22 style="position:absolute; left:2px; top:5px; width:44px; height:15px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
-<DIV id=u6_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#4096EE; font-size:10pt;"><%= link_to 'News', news_index_path %></span></div></DIV></DIV>
-</DIV>
-
 
 
 <DIV id=u25container style="position:absolute; left:685px; top:98px; width:89px; height:26px;; overflow:visible">
@@ -76,11 +66,11 @@
 
 
 <DIV id=u29 style="position:absolute; left:17px; top:8px; width:150px; height:14px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u29_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:9pt;">Welcome back <b>Admin</b></span></DIV></DIV>
+<DIV id=u29_rtf><span style=" font-family:'Verdana'; color:#FFFFFF; font-size:9pt;">Welcome back <b>Admin</b></span></DIV></DIV>
 <DIV id=u30 style="position:absolute; left:160px; top:6px; width:20px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u30_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;"><b>[</b></span></DIV></DIV>
+<DIV id=u30_rtf><span style=" font-family:'Arial'; color:#FFFFFF; font-size:10pt;"><b>[</b></span></DIV></DIV>
 <DIV id=u31 style="position:absolute; left:168px; top:7px; width:80px; height:14px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u31_rtf><span style=" font-family:'Verdana'; color:#0000FF; font-size:9pt;"><u>My Account</u></span></DIV></DIV>
+<DIV id=u31_rtf><span style=" font-family:'Verdana'; color:#FFFFFF; font-size:9pt;"><u>My Account</u></span></DIV></DIV>
 <DIV id=u31ann style="font-size:1px; position:absolute; left:239px; top:3px; width:1px; height:1px; overflow:visible"></DIV>
 
 
@@ -89,30 +79,30 @@
 <DIV id=u33ann style="font-size:1px; position:absolute; left:326px; top:3px; width:1px; height:1px; overflow:visible"></DIV>
 
 <DIV id=u34 style="position:absolute; left:314px; top:6px; width:20px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u34_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;"><b>]</b></span></DIV></DIV>
+<DIV id=u34_rtf><span style=" font-family:'Arial'; color:#FFFFFF; font-size:10pt;"><b>]</b></span></DIV></DIV>
 <DIV id=u35 style="position:absolute; left:610px; top:8px; width:60px; height:13px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u35_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:8pt;"><%= Time.now.strftime("%A") %></span></DIV></DIV>
+<DIV id=u35_rtf><span style=" font-family:'Verdana'; color:#FFFFFF; font-size:10pt;"><%= Time.now.strftime("%A") %></span></DIV></DIV>
 <DIV id=u36 style="position:absolute; left:814px; top:8px; width:70px; height:13px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u36_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:8pt;"><%= Time.now.strftime("%I:%M%p") %></span></DIV></DIV>
+<DIV id=u36_rtf><span style=" font-family:'Verdana'; color:#FFFFFF; font-size:10pt;"><%= Time.now.strftime("%I:%M%p") %></span></DIV></DIV>
 
 
 
-<DIV id=u38 style="position:absolute; left:679px; top:8px; width:134px; height:13px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u38_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:8pt;"><%=Time.now.strftime("%eth %B %Y")%>
+<DIV id=u38 style="position:absolute; left:690px; top:8px; width:134px; height:13px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u38_rtf><span style=" font-family:'Verdana'; color:#FFFFFF; font-size:10pt;"><%=Time.now.strftime("%eth %B %Y")%>
 
 </span></DIV></DIV>
 
 <DIV id=u42container style="position:absolute; left:466px; top:98px; width:86px; height:26px;; overflow:visible">
 
-<DIV id=u43 style="position:absolute; left:2px; top:5px; width:81px; height:15px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u43 style="position:absolute; left:12px; top:5px; width:81px; height:15px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u43_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#4096EE; font-size:10pt;"><%= link_to 'Department',depts_path %></span></div></DIV></DIV>
 </DIV>
 
 
 <DIV id=u48container style="position:absolute; left:562px; top:98px; width:86px; height:26px;; overflow:visible">
 
-<DIV id=u49 style="position:absolute; left:2px; top:5px; width:81px; height:15px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
-<DIV id=u49_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#4096EE; font-size:10pt;">Client Area</span></div></DIV></DIV>
+<DIV id=u49 style="position:absolute; left:15px; top:5px; width:81px; height:15px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u49_rtf><div style="text-align:center"><span style=" font-family:'Arial'; color:#4096EE; font-size:10pt;"><%= link_to 'News', news_index_path %></span></div></DIV></DIV>
 </DIV>
 
 

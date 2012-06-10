@@ -6,12 +6,12 @@ before_filter :authenticate_admin!
 
   def ticket
   end
+
  def staffhome
   end
-def addstaff
-@staff = Admin.new
-end
-def staffindex
 
-end
+
+	def staff
+
+	end
 end

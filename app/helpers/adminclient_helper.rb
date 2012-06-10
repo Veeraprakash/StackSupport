@@ -1,0 +1,2 @@
+module AdminclientHelper
+end

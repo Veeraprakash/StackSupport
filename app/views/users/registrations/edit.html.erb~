@@ -27,7 +27,7 @@ src="images/clientarea/u5.png" border="0" alt=""></span>
 <DIV id=u6 style="position:absolute; left:19px; top:259px; width:90px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u6_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to'Submit Ticket', new_ticket_path %></span></DIV></DIV>
 <DIV id=u7 style="position:absolute; left:20px; top:222px; width:80px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u7_rtf><span style=" color:#333399; font-size:10pt;">My details</span></DIV></DIV>
+<DIV id=u7_rtf><span style=" color:#FFFFFF; font-size:10pt;">My details</span></DIV></DIV>
 <span style="position:absolute; left:10px; top:210px; width:173px; height:5px; ;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/clientarea/u8.png',sizingMethod='scale');
 "><img style="width:173px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
@@ -138,10 +138,7 @@ f7.add( Validate.Presence );
  </script>
 
 
-<p> <%#= link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete %></p>
+
 </style>
 <%= link_to "Back", :back %>
-<h3>Cancel my account</h3>
 
-<p>Unhappy? <%= link_to "Cancel my account", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete %>.</p>
-</DIV>

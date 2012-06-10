@@ -4,7 +4,7 @@
 <title>CSS Menu Maker Installation Instructions</title>
 
 <style type="text/css">
-   body{padding:20px; font-size:15px; color:#000000; font-family:Arial, Helvetica, sans-serif;}
+   body{padding:20px; font-size:14px; color:#000000; font-family:Arial, Helvetica, sans-serif;}
    h2 {font-weight:bold; color:#000099; margin:10px 0px; }
    p span {color:#006600; font-weight:bold; }
    a, a:link, a:visited {color:#FFFFFF;}
@@ -24,9 +24,9 @@
 </body>
 </html>
 
-<DIV id=u62container style="position:absolute; left:10px; top:10px; width:91px; height:61px;; overflow:visible">
+<DIV id=u62container style="position:absolute; left:10px; top:4px; width:91px; height:61px;; overflow:visible">
 
-<%= link_to image_tag('/images/LiveSupportLogo.gif',:height => '85', :width => '200'), home_homepage_path %>
+<%= link_to image_tag('/images/Live-Support.jpg',:height => '85', :width => '200'), home_homepage_path %>
 </DIV>
 <DIV id=u64 style="position:absolute; left:225px; top:15px; width:200px; height:30px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u64_rtf><span style=" font-family:'Arial'; color:#FFFFFF; font-size:16pt;"><b>Support Stack</b></span></DIV></DIV>

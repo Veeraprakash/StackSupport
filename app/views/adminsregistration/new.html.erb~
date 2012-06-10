@@ -1,47 +1,5 @@
+<h2>If ur Admin, </h2><%= link_to 'Login', new_admin_session_path%>
 
-
-<DIV id=ou52 style="position:absolute; left:213px; top:236px; width:613px; height:755px;; overflow:visible">
-
-
-<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
-
-<%session[:password]=(rand.*100000000.to_i).floor%>
-
- <div><%= f.label :full_name %><br />
-  <%= f.text_field :full_name %></div>
-
- <div><%= f.label :username %><br />
-  <%= f.text_field :username %></div>
-
- <div><%= f.label :email %><br />
-  <%= f.email_field :email %></div>
-
- <div><%= f.label :phone %><br />
-  <%= f.text_field :phone %></div>
-
- <div><%= f.label :mobile %><br />
-  <%= f.text_field :mobile %></div>
-
- <div><%= f.label :department %><br />
-  <%= f.select :department, options_for_select(Dept.all.collect {|p| [p.department_name]}, {:prompt => 'select department'}) %>
-
- <div><%= f.label :privilege %><br />
-  <%= f.check_box :privilege %></div>
- 
-
- <div><%= f.label :ticket_notifier %><br />
-  <%= f.check_box :ticket_notifier %></div>
-  
-  
-<%=f.hidden_field :password, :value=>session[:password]%>
-
-  
-  <%= f.hidden_field :password_confirmation, :value=>session[:password]%>
-
-  <div><%= f.submit "Create Staff" %></div>
-<% end %>
-
-</DIV>
 
 
 

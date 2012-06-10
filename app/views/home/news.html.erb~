@@ -97,7 +97,7 @@ src="Read an news item_files/u42.png" border="0" alt=""></span>
 
 <DIV id=u52container style="position:absolute; left:35px; top:300px; width:576px; height:91px;; overflow:visible">
 
-<table >
+<table border = "5">
   <tr>
     <th>News</th>
     <th>Posted by</th>

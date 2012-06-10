@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+has_many :tickets
 validates :email, :uniqueness => true
 validates :email, :presence => true
 validates :password, :length => { :in => 6..20 }

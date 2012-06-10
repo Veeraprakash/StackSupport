@@ -59,17 +59,16 @@ before_filter :authenticate_user!, :unless => :admin_signed_in?
         if admin_signed_in? and current_admin.privilege == true
 	 @ticket.update_attributes(:status => "Pending") 
                format.html { redirect_to(admin_ticket_path) }
-	end
-
-	if admin_signed_in? and current_admin.privilege == false
+	elsif
+	 admin_signed_in? and current_admin.privilege == false
+	@ticket.update_attributes(:status => "Pending") 
 		format.html { redirect_to(staff_ticket_path) }
-	end
-
-	if user_signed_in?
+	else
+	#if user_signed_in?
 	format.html { redirect_to(@ticket) }
 	format.xml  { head :ok }
 	end
-
+    
 	else
         format.html { render :action => "edit" }
         format.xml  { render :xml => @ticket.errors, :status => :unprocessable_entity }

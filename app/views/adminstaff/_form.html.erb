@@ -1,0 +1,49 @@
+<DIV id=u59 style="position:absolute; left:21px; top:189px; width:109px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u59_rtf><span style=" font-family:'Verdana'; color:#FFFFFF; font-size:11pt;"><b>Template</b></span></DIV></DIV>
+
+<DIV id=u63 style="position:absolute; left:20px; top:222px; width:80px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u63_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'Dashboard', admin_staff_path %></span></DIV></DIV>
+
+<DIV id=u65 style="position:absolute; left:20px; top:290px; width:80px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u65_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'Manage Staff', adminstaff_index_path %></span></DIV></DIV>
+<DIV id=u66 style="position:absolute; left:20px; top:254px; width:80px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u66_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'Insert Staff', adminstaff_new_path %></span></DIV></DIV>
+<DIV id=ou67 style="position:absolute; left:211px; top:188px; width:613px; height:755px;; overflow:visible">
+<DIV id=ou52 style="position:absolute; left:113px; top:36px; width:613px; height:755px;; overflow:visible">
+
+<%= form_for(:admin, :url =>{:controller => "adminstaff", :action => "create"} ) do |f| %>
+<%= f.hidden_field :admin_id, :value => current_admin.id %>
+ <div><%= f.label :fullname %><br />
+  <%= f.text_field :full_name %></div>
+
+ <div><%= f.label :username %><br />
+  <%= f.text_field :username %></div>
+
+ <div><%= f.label :email %><br />
+  <%= f.email_field :email %></div>
+
+ <div><%= f.label :phone %><br />
+  <%= f.text_field :phone %></div>
+
+ <div><%= f.label :mobile %><br />
+  <%= f.text_field :mobile %></div>
+
+ <div><%= f.label :department %><br />
+  <%= f.select :department, options_for_select(Dept.all.collect {|p| [p.department_name]}, {:prompt => 'select department'}) %>
+
+<div><%= f.label :ticket_notifier %>
+  <%= f.check_box :ticket_notifier %><%= f.label :Receive_email_alert %>
+
+<%= f.label :privilege %>
+  <%= f.check_box :privilege %><%= f.label :Admin_privilege %></div>
+
+<div ><%= f.label :password %><br /></div>
+  <div><%= f.password_field :password %></div>
+
+ <div><%= f.label :password_confirmation %><br /></div>
+  <div><%= f.password_field :password_confirmation %></div>
+
+  <div><%= f.submit "Create Staff" %></div>
+<% end %>
+
+</DIV>

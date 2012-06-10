@@ -1,3 +1,5 @@
 class Dept < ActiveRecord::Base
-	has_many :tickets
+validates :department_name, :presence => true
+validates :email, :presence => true
+has_many :tickets
 end

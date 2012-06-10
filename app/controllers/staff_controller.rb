@@ -34,9 +34,14 @@ end
 
   def time
       @ticket = Ticket.find(params[:id])
-   
+	if @ticket.update_attributes(params[:ticket])
+	redirect_to(staff_tracksheet_path)
+   end
 end
 def tracksheet
-	@ticket = Ticket.find(params[:id])
+	@tickets = Ticket.find_all_by_staff_email(current_admin.email)
+	
+	
+	
 end
 end

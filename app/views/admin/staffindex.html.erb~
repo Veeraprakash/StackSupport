@@ -1,0 +1,37 @@
+
+<DIV id=u59 style="position:absolute; left:21px; top:189px; width:109px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u59_rtf><span style=" font-family:'Verdana'; color:#FFFFFF; font-size:11pt;"><b>Template</b></span></DIV></DIV>
+
+<DIV id=u63 style="position:absolute; left:20px; top:222px; width:80px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u63_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'Dashboard', admin_staff_path %></span></DIV></DIV>
+
+<DIV id=u65 style="position:absolute; left:20px; top:290px; width:80px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u65_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'Manage Staff', admin_staffindex_path %></span></DIV></DIV>
+<DIV id=u66 style="position:absolute; left:20px; top:254px; width:80px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u66_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'Insert Staff', admin_addstaff_path %></span></DIV></DIV>
+<DIV id=ou67 style="position:absolute; left:211px; top:188px; width:613px; height:755px;; overflow:visible">
+<DIV id=ou52 style="position:absolute; left:113px; top:36px; width:613px; height:755px;; overflow:visible">
+<h2>Staff List</h2>
+
+<table border = "1">
+  <tr>
+	<th>Username</th>
+    <th>Email</th>
+    
+	<th>Department</th>
+	<th>Options</th>
+  </tr>
+
+  <% @admin.each do |staff| %>
+    <tr>
+	<td><%= link_to staff.username, "/admin/staffshow/#{staff.id}" %></td>
+      <td><%=  staff.email %></td>
+      <td><%= staff.department %></td>
+	
+  
+    </tr>
+  <% end %>
+</table>
+
+<br />
+</DIV>

@@ -97,33 +97,27 @@ src="View individual ticket_files/u58.png" border="0" alt=""></span>
   
 </p>
 </DIV>
-<DIV id=ou65 style="position:absolute; left:164px; top:609px; width:427px; height:32px;; overflow:visible">
 
-<span style="position:absolute; left:-3px; top:-3px; width:435px; height:40px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='View individual ticket_files/u65.png',sizingMethod='scale');
-"><img style="width:435px; height:40px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="View individual ticket_files/u65.png" border="0" alt=""></span>
-</DIV>
 <% end %>
 
 
-<DIV id=u72 style="position:absolute; left:80px; top:695px; width:160px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u72_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:10pt;"><b>Conversation</b></span></DIV>
+<DIV id=u72 style="position:absolute; left:80px; top:695px; width:560px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u72_rtf><span style=" font-family:'Verdana'; color:#FFFFFF; font-size:10pt;"><b>Post Reply</b></span></DIV>
 
 
-<h3>Post Reply<h3>
-<table border = "1">
+<h3>Conversation<h3>
+<table border = "5">
 <tr>
     <th>Author</th>
     <th></th>
     <th>Message</th>
-
+	<th>Posted on</th>
 <% @ticket.posts.each do |post| %>
 <tr>
     <td><%= post.author %></td>
     <td></td>
     <td><%= post.message %></td>
-
+	<td><%= post.created_at %></td>
   </tr>
 <% end %>
 </table>

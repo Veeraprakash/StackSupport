@@ -1,7 +1,7 @@
 <%= render :partial => "layouts/header" %>
 
 <DIV id=u53container style="position:absolute; left:100px; top:319px; width:641px; height:31px;; overflow:visible">
-<table cellspacing=30>
+<table cellspacing = 30>
   <tr>
     <th>Category List</th>
      <th></th>

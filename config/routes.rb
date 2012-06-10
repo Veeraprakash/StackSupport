@@ -1,13 +1,47 @@
 Sample::Application.routes.draw do
 
+
+  get "adminclient/new"
+
+  match "adminclient/create" => "adminclient#create"
+
+  get "adminclient/index"
+
+  get "adminclient/edit"
+
+  get "adminclient/update"
+
+  get "adminclient/destroy"
+
+  get "adminstaff/new"
+
+  match "adminstaff/create" => "adminstaff#create"
+
+  get "adminstaff/index"
+  match "adminstaff/show/:id" => "adminstaff#show"
+  match "adminstaff/edit/:id" =>  "adminstaff#edit"
+  get "adminstaff/edit"
+
+  get "adminstaff/update"
+
+  get "adminstaff/destroy"
+
+  get "admin/staffindex"
+  get "admin/staff"
+  match "admin/createstaff" =>  "admin#createstaff"
+  match "admin/editstaff/:id" =>  "admin#editstaff"
+  match "/admin/staffshow/:id" => "admin#staffshow"
   get "home/contactus"
   get "home/news"
   get "admin/staffindex"
   get "adminclosedtickets/show"
   match "knowlwedgebase/votesup/:id" => "knowlwedgebase#votesup"
   match "knowlwedgebase/votesdown/:id" => "knowlwedgebase#votesdown"
+  match "staff/pending" => "staff#pending"
+  match "staff/closed" => "staff#closed"
   match "staff/view/:id"  => "staff#view"
   match "staff/time/:id"  => "staff#time"
+  match "staff/tracksheet" => "staff#tracksheet"
   match "staff/tracksheet/:id"  => "staff#tracksheet"
   match "adminclosedtickets/view/:id"  => "adminclosedtickets#view"
   match "staff/view/:id"  => "staff#view"
