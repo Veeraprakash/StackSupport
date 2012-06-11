@@ -57,7 +57,7 @@ Sample::Application.routes.draw do
 
 
 
-  devise_for :admins, :controllers => { :registrations => "adminsregistration" }
+  devise_for :admins
 	
 
 
