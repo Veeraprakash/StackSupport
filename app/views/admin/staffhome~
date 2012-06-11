@@ -57,7 +57,7 @@ src="images/adminuserpage_filesu40.png" border="0" alt=""></span>
 
 
 <DIV id=u42 style="position:absolute; left:20px; top:210px; width:80px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u42_rtf><span style=" color:#333399; font-size:10pt;">Dashboard</span></DIV></DIV>
+<DIV id=u42_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'Dashboard', admin_staffhome_path %></span></DIV></DIV>
 <span style="position:absolute; left:10px; top:231px; width:173px; height:5px; ;
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/adminuserpage_filesu43.png',sizingMethod='scale');
 "><img style="width:173px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 

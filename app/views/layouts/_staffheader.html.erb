@@ -28,19 +28,16 @@
 <IMG id=u31 src="/images/Live-Support.jpg" style="position:absolute; left:10px; top:10px; width:183px; height:70px"  >
 
 
-<DIV id=u3 style="position:absolute; left:810px; top:111px; width:31px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u3_rtf><span style=" font-family:'Arial'; color:#0000FF; font-size:10pt;"><u>Help</u></span></DIV></DIV>
-
 
 <DIV id=u6 style="position:absolute; left:796px; top:8px; width:60px; height:14px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u6_rtf><span style=" font-family:'Arial'; color:#FFFFFF; font-size:8pt;"><u><%= link_to "Sign out", destroy_user_session_path, :method => :delete %></u></span></DIV></DIV>
 <DIV id=u7 style="position:absolute; left:585px; top:9px; width:203px; height:13px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u7_rtf><span style=" font-family:'Verdana'; color:#FFFFFF; font-size:8pt;"><b>Welcome [admin_user name]</b></span></DIV></DIV>
-
+<DIV id=u7_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:8pt;"><b>Welcome <% if admin_signed_in? %><%= current_admin.full_name %></b></span></DIV></DIV>
+<%end%>
 <DIV id=u10container style="position:absolute; left:174px; top:68px; width:86px; height:26px;; overflow:visible">
 
 <DIV id=u11 style="position:absolute; left:10px; top:4.5px; width:81px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
-<DIV id=u11_rtf><div style="text-align:center"><span style=" color:#FFFFFF; font-size:10pt;"><b>Dashboard</b></span></div></DIV></DIV>
+<DIV id=u11_rtf><div style="text-align:center"><span style=" color:#FFFFFF; font-size:10pt;"><b><%= link_to "Dashboard", admin_staffhome_path %></b></span></div></DIV></DIV>
 </DIV>
 
 
@@ -58,12 +55,6 @@
 <DIV id=u18container style="position:absolute; left:371px; top:68px; width:59px; height:26px;; overflow:visible">
 
 <DIV id=u19 style="position:absolute; left:2px; top:4.5px; width:54px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
-<DIV id=u19_rtf><div style="text-align:center"><span style=" color:#FFFFFF; font-size:10pt;"><b>Time</b></span></div></DIV></DIV>
-</DIV>
-
-<DIV id=u22container style="position:absolute; left:777px; top:68px; width:59px; height:26px;; overflow:visible">
-
-<DIV id=u23 style="position:absolute; left:2px; top:4.5px; width:54px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
-<DIV id=u23_rtf><div style="text-align:center"><span style=" color:#FFFFFF; font-size:10pt;"><b>Search</b></span></div></DIV></DIV>
+<DIV id=u19_rtf><div style="text-align:center"><span style=" color:#FFFFFF; font-size:10pt;"><b><%= link_to 'Time', staff_tracksheet_path %></b></span></div></DIV></DIV>
 </DIV>
 
