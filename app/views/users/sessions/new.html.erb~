@@ -14,8 +14,8 @@
 
 <DIV id=u6 style="position:absolute; left:270px; top:220px; width:240px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u6_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:11pt;"><b>Sign in to Support Stack</b></span></DIV></DIV>
-<DIV id=u7 style="position:absolute; left:284px; top:290px; width:80px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u7_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:11pt;">Username</span></DIV></DIV>
+<DIV id=u7 style="position:absolute; left:294px; top:290px; width:80px; height:18px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u7_rtf><span style=" font-family:'Verdana'; color:#000000; font-size:11pt;">E-mail</span></DIV></DIV>
 <div style="position:absolute; left:366px; top:283px; width:506px; height:30px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.email_field :email %></div>
 
 <div style="position:absolute; left:367px; top:326px; width:506px; height:30px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   ><%= f.password_field :password %></div>
