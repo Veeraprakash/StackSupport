@@ -9,7 +9,7 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: sample_development
+  database: sample_dev
   pool: 5
   username: root
   password: root
@@ -32,7 +32,7 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: sample_production
+  database: sample_prod
   pool: 5
   username: root
   password: root
