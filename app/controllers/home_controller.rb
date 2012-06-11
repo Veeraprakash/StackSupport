@@ -20,6 +20,10 @@ def search
 
 def news
  @news = News.all
+	respond_to do |format|
+      format.html 
+      format.xml  { render :xml => @news }
+    end
 end
 
 def newsview
