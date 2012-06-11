@@ -22,7 +22,7 @@ s = s + "}";
 eval(s);
 }
 </script>
-<%= render :partial => "layouts/adminheader" %>
+
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
   <%= devise_error_messages! %>
 
@@ -189,7 +189,7 @@ src="Admin -- My Account_files/u87.png" border="0" alt=""></span>
 <IMG id=u87 src="Resources/transparent.gif" style="position:absolute; left:7px; top:245.5px; width:170px; height:2px">
 
 <DIV id=u88 style="position:absolute; left:31px; top:256px; width:90px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u88_rtf><span style=" color:#333399; font-size:10pt;">My Account</span></DIV></DIV>
+<DIV id=u88_rtf><span style=" color:#333399; font-size:10pt;"><%= link_to 'Insert FAQ', new_faq_path %></span></DIV></DIV>
 <DIV id=u88ann style="font-size:1px; position:absolute; left:112px; top:252px; width:1px; height:1px; overflow:visible"></DIV>
 
 <span style="position:absolute; left:7px; top:282px; width:173px; height:5px; ;
@@ -200,30 +200,11 @@ src="Admin -- My Account_files/u89.png" border="0" alt=""></span>
 <IMG id=u89 src="Resources/transparent.gif" style="position:absolute; left:7px; top:281.5px; width:170px; height:2px">
 
 <DIV id=u90 style="position:absolute; left:33px; top:292px; width:77px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u90_rtf><span style=" font-family:'Arial'; color:#333399; font-size:10pt;">Insert Staff</span></DIV></DIV>
+<DIV id=u90_rtf><span style=" font-family:'Arial'; color:#333399; font-size:10pt;"><%= link_to 'Insert Staff', adminstaff_new_path %></span></DIV></DIV>
 <DIV id=u90ann style="font-size:1px; position:absolute; left:101px; top:288px; width:1px; height:1px; overflow:visible"></DIV>
 
-<DIV id=u91 style="position:absolute; left:32px; top:359px; width:100px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u91_rtf><span style=" font-family:'Arial'; color:#333399; font-size:10pt;">Submit Ticket</span></DIV></DIV>
-<DIV id=u91ann style="font-size:1px; position:absolute; left:123px; top:355px; width:1px; height:1px; overflow:visible"></DIV>
 
-<DIV id=u92 style="position:absolute; left:33px; top:326px; width:70px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u92_rtf><span style=" font-family:'Arial'; color:#333399; font-size:10pt;">Insert FAQ</span></DIV></DIV>
-<DIV id=u92ann style="font-size:1px; position:absolute; left:94px; top:322px; width:1px; height:1px; overflow:visible"></DIV>
 
-<span style="position:absolute; left:7px; top:315px; width:173px; height:5px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- My Account_files/u93.png',sizingMethod='scale');
-"><img style="width:173px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="Admin -- My Account_files/u93.png" border="0" alt=""></span>
-
-<IMG id=u93 src="Resources/transparent.gif" style="position:absolute; left:7px; top:314.5px; width:170px; height:2px">
-
-<span style="position:absolute; left:7px; top:349px; width:173px; height:5px; ;
-filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Admin -- My Account_files/u94.png',sizingMethod='scale');
-"><img style="width:173px; height:5px; filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);" 
-src="Admin -- My Account_files/u94.png" border="0" alt=""></span>
-
-<IMG id=u94 src="Resources/transparent.gif" style="position:absolute; left:7px; top:348.5px; width:170px; height:2px">
 
 <DIV id=u95 style="position:absolute; left:207px; top:148px; width:213px; height:22px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
 <DIV id=u95_rtf><span style=" font-family:'Arial'; color:#000000; font-size:14pt;"><b>Home --&gt; My Account</b></span></DIV></DIV>
@@ -264,13 +245,7 @@ src="Admin -- My Account_files/u106.png" border="0" alt=""></span>
 </DIV>
 <IMG id=u106 src="Resources/transparent.gif" style="position:absolute; left:230px; top:821px; width:566px; height:93px"  >
 
-<DIV id=u108 style="position:absolute; left:246px; top:833px; width:129px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u108_rtf><span style=" font-family:'Verdana'; color:#808080; font-size:10pt;">Image Upload</span></DIV></DIV>
-<DIV id=u109 style="position:absolute; left:258px; top:864px; width:125px; height:16px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u109_rtf><span style=" font-family:'Arial'; color:#000000; font-size:10pt;">Find your attachment</span></DIV></DIV>
-<%#= f.text_field :attachment, :id=>"110", :style=>"position:absolute; left:405px; top:859px; width:230px; height:25px; ; ; text-align: left ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none"   %>
 
-<INPUT id=u111  type=submit value="Browse" style="position:absolute; left:642px; top:859px; width:90px; height:25px; ; ; text-align: center ; font-family:'Arial'; font-size: 10pt; color:#000000; font-style:normal; font-weight:normal; text-decoration:none" >
 <% end %>
 <SCRIPT src="Resources/axurerp_pagescript.js"></SCRIPT>
 <SCRIPT src="Admin -- My Account_files/axurerp_pagespecificscript.js"></SCRIPT></BODY></HTML>
