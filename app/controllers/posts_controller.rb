@@ -1,6 +1,4 @@
 class PostsController < ApplicationController
-#before_filter :authenticate_user! 
-#before_filter :authenticate_admin!
  def create
    
    @ticket = Ticket.find(params[:ticket_id])

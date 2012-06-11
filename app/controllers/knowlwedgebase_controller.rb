@@ -1,4 +1,5 @@
 class KnowlwedgebaseController < ApplicationController
+
 	def kbase
         @categories = Category.all
         end

@@ -10,8 +10,4 @@ before_filter :authenticate_admin!
  def staffhome
   end
 
-
-	def staff
-
-	end
 end

@@ -64,7 +64,7 @@ before_filter :authenticate_user!, :unless => :admin_signed_in?
 	@ticket.update_attributes(:status => "Pending") 
 		format.html { redirect_to(staff_ticket_path) }
 	else
-	#if user_signed_in?
+	
 	format.html { redirect_to(@ticket) }
 	format.xml  { head :ok }
 	end

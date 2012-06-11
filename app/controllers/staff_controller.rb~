@@ -1,4 +1,5 @@
 class StaffController < ApplicationController
+before_filter :authenticate_admin!
   def ticket
    @tickets = Ticket.find_all_by_staff_email(current_admin.email)
    respond_to do |format|

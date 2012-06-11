@@ -75,11 +75,11 @@ src="/images/Admin -- detail view of the FAQ_files/u66.png" border="0" alt=""></
 <DIV id=u67_rtf>&nbsp;</DIV></DIV>
 </DIV>
 
-<DIV style="position:absolute; left:200px; top:200px;; overflow:visible">
+<DIV style="position:absolute; left:200px; top:400px;; overflow:visible">
 <h1>FAQs</h1>
 <h3>List of FAQs</h3>
 
-<dd><table border = "5", style="width:75px; height:25px">
+<dd><table border = "5">
   <tr>
 
    <th>Title</th>

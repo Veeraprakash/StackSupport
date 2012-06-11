@@ -1,4 +1,5 @@
 class AdminstaffController < ApplicationController
+before_filter :authenticate_admin!
   def new
 	@admin = Admin.new
 	respond_to do |format|
@@ -9,9 +10,7 @@ end
 
   def create
 	@admin = Admin.new(params[:admin])
-p 11111111111
-p params[:admin][:password]
-p 11111111111
+
     respond_to do |format|
       if @admin.save
       format.html { redirect_to "/adminstaff/index" }

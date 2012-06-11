@@ -1,5 +1,5 @@
 class ContactsController < ApplicationController
-
+before_filter :authenticate_admin!
  def acc_update
    @acc=Contact.all
    @acc.update_attributes(params[:contact])
