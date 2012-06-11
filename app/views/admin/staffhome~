@@ -32,10 +32,9 @@ eval(s);
 </DIV>
 
 
-<DIV id=u27 style="position:absolute; left:283px; top:197px; width:78px; height:22px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u27_rtf><span style=" font-family:'Arial'; color:#000000; font-size:14pt;">Tickets</span></DIV></DIV>
-<DIV id=u28 style="position:absolute; left:593px; top:201px; width:97px; height:22px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
-<DIV id=u28_rtf><span style=" font-family:'Arial'; color:#000000; font-size:14pt;">Statistics</span></DIV></DIV>
+<DIV id=u27 style="position:absolute; left:283px; top:197px; width:278px; height:22px; ; ; text-align: left ; font-family:Arial; text-align:left;" >
+<DIV id=u27_rtf><span style=" font-family:'Arial'; color:#000000; font-size:14pt;">Welcome to Staff Section</span></DIV></DIV>
+
 
 
 
