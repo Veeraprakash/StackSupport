@@ -7,7 +7,7 @@ gem 'rails', '3.0.3'
 
 gem 'mysql2', '<0.3'
 gem 'devise'
-gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
+gem "paperclip", "~> 2.7"
 gem 'heroku'
 gem 'pg'
 gem 'aws-sdk'

@@ -17,7 +17,7 @@
     <th>Status</th>
     <th>Department</th>
     <th>Action</th>
-    <th></th>
+    
        </tr>
 
 <% @tickets.each do |ticket| %>
@@ -28,11 +28,8 @@
     <td><%= ticket.priority %></td>
     <td><%= ticket.status %></td>
     <td><%= ticket.to %></td>
-    
     <td><%= link_to 'Delete', ticket, :confirm => 'Are you sure?', :method => :delete %></td>
    
-    
-    <td></td>
   </tr>
 <% end %>
 

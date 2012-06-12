@@ -109,13 +109,11 @@ src="View individual ticket_files/u58.png" border="0" alt=""></span>
 <table border = "5">
 <tr>
     <th>Author</th>
-    <th></th>
-    <th>Message</th>
+     <th>Message</th>
 	<th>Posted on</th>
 <% @ticket.posts.each do |post| %>
 <tr>
     <td><%= post.author %></td>
-    <td></td>
     <td><%= post.message %></td>
 	<td><%= post.created_at %></td>
   </tr>
