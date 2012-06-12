@@ -2,7 +2,7 @@
 
 <%= render :partial => "layouts/login" %>
 <DIV id=u55container style="position:absolute; left:50px; top:130px; width:375px; height:409px;; overflow:visible">
-<span style=" font-family:'Arial'; color:#000000; font-size:10pt;">
+<span style=" font-family:'Arial'; color:#FFFFFF; font-size:10pt;">
 <h1>News</h1>
 <p id="notice"><%= notice %></p>
 
