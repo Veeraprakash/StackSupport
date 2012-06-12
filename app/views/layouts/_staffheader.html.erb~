@@ -7,7 +7,7 @@
    body{padding:20px; font-size:15px; color:#000000; font-family:Arial, Helvetica, sans-serif;}
    h2 {font-weight:bold; color:#000099; margin:10px 0px; }
    p span {color:#006600; font-weight:bold; }
-   a, a:link, a:visited {color:#000000;}
+   a, a:link, a:visited {color:#FFFFFF;}
    textarea {width: 100%; padding: 10px; margin: 10px 0 15px 0; font-size: 20px; font-family: Consolas,monospace;}
    textarea.html {height: 300px;}
    p {margin: 0 0 10px 0;}
@@ -17,7 +17,7 @@
 
 </head>
 
-<body background="/images/blue-abstract-composition.jpg">
+<body background="/images/light6.png">
 
 
 
@@ -36,7 +36,7 @@
 <%end%>
 <DIV id=u10container style="position:absolute; left:174px; top:68px; width:86px; height:26px;; overflow:visible">
 
-<DIV id=u11 style="position:absolute; left:10px; top:4.5px; width:81px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u11 style="position:absolute; left:10px; top:30px; width:81px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u11_rtf><div style="text-align:center"><span style=" color:#FFFFFF; font-size:10pt;"><b><%= link_to "Dashboard", admin_staffhome_path %></b></span></div></DIV></DIV>
 </DIV>
 
@@ -46,7 +46,7 @@
 
 <DIV id=u14container style="position:absolute; left:281px; top:68px; width:59px; height:26px;; overflow:visible">
 
-<DIV id=u15 style="position:absolute; left:2px; top:4.5px; width:54px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u15 style="position:absolute; left:10px; top:30px; width:54px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u15_rtf><div style="text-align:center"><span style=" color:#FFFFFF; font-size:10pt;"><b><%= link_to 'Tickets', staff_ticket_path %></b></span></div></DIV></DIV>
 </DIV>
 
@@ -54,7 +54,7 @@
 
 <DIV id=u18container style="position:absolute; left:371px; top:68px; width:59px; height:26px;; overflow:visible">
 
-<DIV id=u19 style="position:absolute; left:2px; top:4.5px; width:54px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
+<DIV id=u19 style="position:absolute; left:2px; top:30px; width:54px; height:16px; ; ; text-align: center ; font-family:Arial; text-align:left;" >
 <DIV id=u19_rtf><div style="text-align:center"><span style=" color:#FFFFFF; font-size:10pt;"><b><%= link_to 'Time', staff_tracksheet_path %></b></span></div></DIV></DIV>
 </DIV>
 
