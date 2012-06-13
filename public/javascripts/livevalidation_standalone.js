@@ -12,7 +12,7 @@
  *
  *	optionsObj properties:
  *							validMessage {String} 	- the message to show when the field passes validation
- *													  (DEFAULT: "")
+ *													  (DEFAULT: "Thankyou!")
  *							onValid {Function} 		- function to execute when field passes validation
  *													  (DEFAULT: function(){ this.insertMessage(this.createMessageSpan()); this.addFieldClass(); } )	
  *							onInvalid {Function} 	- function to execute when field fails validation
@@ -84,7 +84,7 @@ LiveValidation.prototype = {
       this.form = this.element.form;
       // options
     	var options = optionsObj || {};
-    	this.validMessage = options.validMessage || ;
+    	this.validMessage = options.validMessage || 'Thankyou!';
     	var node = options.insertAfterWhatNode || this.element;
 		this.insertAfterWhatNode = node.nodeType ? node : document.getElementById(node);
       this.onValid = options.onValid || function(){ this.insertMessage(this.createMessageSpan()); this.addFieldClass(); };

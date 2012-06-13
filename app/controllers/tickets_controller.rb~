@@ -10,7 +10,7 @@ before_filter :authenticate_user!, :unless => :admin_signed_in?
     @ticket = Ticket.find(params[:id])
 	
      @post = @ticket.posts.build
-      
+       redirect_to "/tickets/#{@ticket.id}"
     end
 
 
@@ -44,7 +44,7 @@ before_filter :authenticate_user!, :unless => :admin_signed_in?
 	 admin_signed_in? and current_admin.privilege == false
 	@ticket.update_attributes(:status => "Pending") 
 	redirect_to "staff_ticket_path"
-	
+	end
         else
    	redirect_to "/tickets"
       end
