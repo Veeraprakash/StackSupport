@@ -9,10 +9,6 @@ before_filter :authenticate_admin!
     
     @news = News.find(params[:id])
 
-    respond_to do |format|
-      format.html 
-      format.xml  { render :xml => @news }
-    end
   end
 
   def new
@@ -27,28 +23,20 @@ before_filter :authenticate_admin!
   def create
     @news = News.new(params[:news])
 
-    respond_to do |format|
       if @news.save
-        format.html { redirect_to(@news, :notice => 'News was successfully created.') }
-        format.xml  { render :xml => @news, :status => :created, :location => @news }
+        redirect_to "/news/#{@news.id}"
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @news.errors, :status => :unprocessable_entity }
-      end
+        redirect_to "/news/new"
     end
   end
 
   def update
     @news = News.find(params[:id])
 
-    respond_to do |format|
       if @news.update_attributes(params[:news])
-        format.html { redirect_to(@news, :notice => 'News was successfully updated.') }
-        format.xml  { head :ok }
+        redirect_to "/news/#{@news.id}"
       else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @news.errors, :status => :unprocessable_entity }
-      end
+        redirect_to "/news/#{@news.id}/edit"
     end
   end
 	
@@ -56,9 +44,6 @@ before_filter :authenticate_admin!
     @news = News.find(params[:id])
     @news.destroy
 
-    respond_to do |format|
-      format.html { redirect_to(news_index_url) }
-      format.xml  { head :ok }
-    end
+    redirect_to "/news"
   end
 end

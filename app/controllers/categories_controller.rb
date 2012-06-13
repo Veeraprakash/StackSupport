@@ -4,29 +4,17 @@ before_filter :authenticate_admin!
   def index
     @categories = Category.all
 
-    respond_to do |format|
-      format.html
-      format.xml  { render :xml => @categories }
-    end
   end
 
   def show
     @category = Category.find(params[:id])
 
-    respond_to do |format|
-      format.html 
-      format.xml  { render :xml => @category }
     end
-  end
 
   def new
     @category = Category.new
 
-    respond_to do |format|
-      format.html 
-      format.xml  { render :xml => @category }
-    end
-  end
+   end
 
   def edit
     @category = Category.find(params[:id])
@@ -35,28 +23,20 @@ before_filter :authenticate_admin!
   def create
     @category = Category.new(params[:category])
 
-    respond_to do |format|
       if @category.save
-        format.html { redirect_to(@category) }
-        format.xml  { render :xml => @category, :status => :created, :location => @category }
+        redirect_to "/categories/#{@category.id}"
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @category.errors, :status => :unprocessable_entity }
-      end
-    end
+         redirect_to "/categories/new"
   end
-
+end
   def update
     @category = Category.find(params[:id])
 
-    respond_to do |format|
       if @category.update_attributes(params[:category])
-        format.html { redirect_to(@category) }
-        format.xml  { head :ok }
+        redirect_to "/categories/#{@category.id}"
       else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @category.errors, :status => :unprocessable_entity }
-      end
+       redirect_to "/categories/#{@category.id}/edit"
+     
     end
   end
 
@@ -64,9 +44,6 @@ before_filter :authenticate_admin!
     @category = Category.find(params[:id])
     @category.destroy
 
-    respond_to do |format|
-      format.html { redirect_to(categories_url) }
-      format.xml  { head :ok }
-    end
+    redirect_to "/categories"
   end
 end

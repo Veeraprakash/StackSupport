@@ -10,7 +10,7 @@ before_filter :authenticate_user!, :unless => :admin_signed_in?
     @ticket = Ticket.find(params[:id])
 	
      @post = @ticket.posts.build
-       redirect_to "/ticket"
+       redirect_to "/tickets/#{@ticket.id}"
     end
 
 
@@ -26,9 +26,9 @@ before_filter :authenticate_user!, :unless => :admin_signed_in?
   def create
     @ticket = Ticket.new(params[:ticket])
       if @ticket.save
-        redirect_to "/ticket"
+        redirect_to "/tickets/#{@ticket.id}"
       else
-        redirect_to "/ticket/new"
+        redirect_to "/tickets/new"
       end
   end
 
