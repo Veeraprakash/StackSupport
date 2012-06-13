@@ -3,10 +3,6 @@ before_filter :authenticate_admin!
   def index
     @news = News.all
 
-    respond_to do |format|
-      format.html 
-      format.xml  { render :xml => @news }
-    end
   end
 
   def show
@@ -22,10 +18,6 @@ before_filter :authenticate_admin!
   def new
     @news = News.new
 
-    respond_to do |format|
-      format.html 
-      format.xml  { render :xml => @news }
-    end
   end
 
   def edit

@@ -20,17 +20,12 @@ def search
 
 def news
  @news = News.all
-	respond_to do |format|
-      format.html 
-      format.xml  { render :xml => @news }
-    end
+
 end
 
 def newsview
    @news = News.find(params[:id])
-respond_to do |format|
-      format.html
-end
+
 end
 end
 

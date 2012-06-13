@@ -4,31 +4,18 @@ before_filter :authenticate_user!, :unless => :admin_signed_in?
 
   def index
 	 @tickets = Ticket.find_all_by_user_id(current_user.id)
-    respond_to do |format|
-      format.html 
-      format.xml  { render :xml => @tickets }
-    end
-   
-
   end
 
   def show
     @ticket = Ticket.find(params[:id])
 	
      @post = @ticket.posts.build
-       respond_to do |format|
-      format.html 
-      format.xml  { render :xml => @ticket }
+       redirect_to "/ticket"
     end
-  end
+
 
   def new
     @ticket = Ticket.new
-
-    respond_to do |format|
-      format.html 
-      format.xml  { render :xml => @ticket }
-    end
   end
 
 
@@ -38,51 +25,35 @@ before_filter :authenticate_user!, :unless => :admin_signed_in?
 
   def create
     @ticket = Ticket.new(params[:ticket])
-
-    respond_to do |format|
       if @ticket.save
-        format.html { redirect_to(@ticket, :notice => 'Ticket was successfully created.') }
-        format.xml  { render :xml => @ticket, :status => :created, :location => @ticket }
+        redirect_to "/ticket"
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @ticket.errors, :status => :unprocessable_entity }
+        redirect_to "/ticket/new"
       end
-    end
   end
 
 
   def update
     @ticket = Ticket.find(params[:id])
-    respond_to do |format|
-      if @ticket.update_attributes(params[:ticket])
+       @ticket.update_attributes(params[:ticket])
 
         if admin_signed_in? and current_admin.privilege == true
 	 @ticket.update_attributes(:status => "Pending") 
-               format.html { redirect_to(admin_ticket_path) }
+          redirect_to"admin_ticket_path"
 	elsif
 	 admin_signed_in? and current_admin.privilege == false
 	@ticket.update_attributes(:status => "Pending") 
-		format.html { redirect_to(staff_ticket_path) }
-	else
-	
-	format.html { redirect_to(@ticket) }
-	format.xml  { head :ok }
+	redirect_to "staff_ticket_path"
 	end
-    
-	else
-        format.html { render :action => "edit" }
-        format.xml  { render :xml => @ticket.errors, :status => :unprocessable_entity }
+        else
+   	redirect_to "/tickets"
       end
-    end
-  end
 
+end
   def destroy
     @ticket = Ticket.find(params[:id])
     @ticket.destroy
-
-    respond_to do |format|
-      format.html { redirect_to(tickets_url) }
-      format.xml  { head :ok }
-    end
+     redirect_to "/tickets"
   end
 end
+
