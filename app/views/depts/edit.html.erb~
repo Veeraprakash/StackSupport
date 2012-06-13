@@ -1,6 +1,0 @@
-
-
-<%= render 'form' %>
-
-
-<%= link_to 'Cancel', depts_path %>
