@@ -5,7 +5,6 @@ describe Ticket do
 	before(:each) do
 		@ticket = Ticket.new(:id => "",
 						:to => "",
-						:user_id => "", 
 						:category => "",
 						:priority => "High",
 						:subject => "Product warranty extension", 
@@ -18,9 +17,8 @@ describe Ticket do
 	end
 					
 	 it { should belong_to(:user)}
-	 it { should has_many(:post)}
-	it { should belong_to( :dept)}
-	#it { should belong_to(:user)}
+	 it { should have_many(:posts)}
+	
 
 
  end

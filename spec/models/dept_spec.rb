@@ -20,5 +20,5 @@ describe Dept do
 		Dept.new.should validate_presence_of(:email)
 	end
 
-		it { should have_many(:tickets)}
+		
 end
